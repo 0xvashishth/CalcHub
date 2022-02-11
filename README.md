@@ -34,7 +34,7 @@
 - Create a branch: `git checkout -b <your-new-branch-name>`
 - Put your code :-
 
-    - Make a new folder in `CAlculators` folder.
+    - Make a new folder in `Calculators` folder.
     - Put Your code files (e.g. index.html, style.css, app.js) into your newely created folder.
     - Add all neccessary information like functionalities, screenshots, working video(if required) in the `readme.md` file. (you will have to create it in your newely created folder)
     - Add your folder's link in the main readme.md file of the repo.
