@@ -52,7 +52,7 @@
 | ------------- |:-------------| 
 | 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic) |
 | 2             | [Scientific Calculator](./Calculators/Scientific_Calculator) |
-| 3             | [Matrix Simple Arithmetic](./Calculators/Matrix_Simple_Arithmetic) |
+| 3             | [Matrix Calculator](./Calculators/Matrix_Simple_Arithmetic) |
 
 ---
 
