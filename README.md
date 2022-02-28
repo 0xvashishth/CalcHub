@@ -23,7 +23,7 @@
 
 ## Instructions :-
 
-- Read The [Contributing Guidelines](./Admin/ContributingGuidelines.md)
+- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md)
 
 #### Steps To Contribute :-
 
