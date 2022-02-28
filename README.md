@@ -23,7 +23,7 @@
 
 ## Instructions :-
 
-- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md) and [Code Of Conduct](./.github/CODE_OF_CONDUCT.md)
+- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md) and [Code Of Conduct](./.github/CODE_OF_CONDUCT.MD)
 
 #### Steps To Contribute :-
 
