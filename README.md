@@ -11,7 +11,6 @@
 <!-- <a href="https://open.vscode.dev/organization/repository"><img src="https://open.vscode.dev/badges/open-in-vscode.svg" alt="Open in Visual Studio Code"/></a> -->
 </div>
 
-
 # Tech Stack
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
@@ -34,10 +33,10 @@
 - Create a branch: `git checkout -b <your-new-branch-name>`
 - Put your code :-
 
-    - Make a new folder in `Calculators` folder.
-    - Put Your code files (e.g. index.html, style.css, app.js) into your newely created folder.
-    - Add all neccessary information like functionalities, screenshots, working video(if required) in the `readme.md` file. (you will have to create it in your newely created folder)
-    - Add your folder's link in the main readme.md file of the repo.
+  - Make a new folder in `Calculators` folder.
+  - Put Your code files (e.g. index.html, style.css, app.js) into your newely created folder.
+  - Add all neccessary information like functionalities, screenshots, working video(if required) in the `readme.md` file. (you will have to create it in your newely created folder)
+  - Add your folder's link in the main readme.md file of the repo.
 
 - Push changes to GitHub: `git push origin <add-your-branch-name>`
 - Submit your changes for review.
@@ -47,19 +46,21 @@
 ---
 
 # Calculators List 📑
- 
-| No            | Name Of Calculator    |  
-| ------------- |:-------------| 
-| 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic) |
-| 2             | [Scientific Calculator](./Calculators/Scientific_Calculator) |
-| 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple) |
+
+| No  | Name Of Calculator                                           |
+| --- | :----------------------------------------------------------- |
+| 1   | [Simple Arithmetic](./Calculators/Simple_Arithmetic)         |
+| 2   | [Scientific Calculator](./Calculators/Scientific_Calculator) |
+| 3   | [Simple Matrix Calculator](./Calculators/Matrix_Simple)      |
+| 4   | [Age Calculator](./Calculators/Age_Calculator/)              |
 
 ---
 
 <h1> Project Maintainer ⚡ </h1>
-  <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a> 
+  <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
 
 ---
 
 # Contribution is fun! 🧡
+
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
