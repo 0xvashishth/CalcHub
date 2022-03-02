@@ -15,10 +15,6 @@ A calculator that can convert numbers from base-X to base-Y. Example: `` Decimal
 
 ## Video :-
 
-Here, I demonstrate how to convert a number from decimal of base 10 to a binary number of base 2.
-
-<video height="240" controls>
-  <source src="explanation.mp4" type="video/mp4">
-</video>
+[Here](https://drive.google.com/file/d/19hk7j-5EjiTlxYCXNz8pRKqNv7f1LyaB/view?usp=sharing), I demonstrate how to convert a number from decimal of base 10 to a binary number of base 2.
 
 ## [Calculator Link](./index.html)
