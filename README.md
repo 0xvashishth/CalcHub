@@ -46,6 +46,7 @@
 ---
 
 # Calculators List 📑
+
  
 | No            | Name Of Calculator                                             |  
 | ------------- |:---------------------------------------------------------------| 
@@ -54,6 +55,7 @@
 | 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple)        |
 | 4             | [Statistics Calculator](./Calculators/Statistics%20Calculator) |
 | 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
+| 6             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
 
 
 <h1> Project Maintainer ⚡ </h1>
