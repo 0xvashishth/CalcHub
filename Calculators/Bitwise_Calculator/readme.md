@@ -15,4 +15,4 @@
 
 ### Video:
 
-### [Bitwise Calculator Link](./index.html)
+## [Bitwise Calculator Link](./index.html)
