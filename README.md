@@ -54,6 +54,8 @@
 | 2             | [Scientific Calculator](./Calculators/Scientific_Calculator) |
 | 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple) |
 | 4             | [Statistics Calculator](./Calculators/Statistics%20Calculator)
+| 5             | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator)
+| 6             | [Tax Calculator](./Calculators/IncomeTaxCalculator)
 
 ---
 
