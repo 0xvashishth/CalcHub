@@ -2,7 +2,7 @@
 
 ## Descriptions :
 
-+ The use input two decimal number and it computes the operator(AND,OR,XOR) and displays the result in both decimal and binary value.
++ The user input two decimal number and displays it binary value and computes the operation(AND,OR,XOR) and displays the result in both decimal and binary value.
 
 ## Functions:
 
@@ -11,7 +11,7 @@
 + XOR
 
 ### Screenshot:
-![image](relative/path/in/CalcHub/Calculators/Bitwise_Calculator/Screenshot (450)1.png)
+![image](https://github.com/horosahil/CalcHub/blob/bitwise-calculator/Calculators/Bitwise_Calculator/Screenshot.png)
 
 ### Video:
 
