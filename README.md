@@ -58,6 +58,7 @@
 | 7             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
 | 8             | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator) |
 | 9             | [Tax Calculator](./Calculators/IncomeTaxCalculator) |
+| 10            | [Quadratic Equation Calculator](./Calculators/Quadratic_Equation_Calculator)  |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
