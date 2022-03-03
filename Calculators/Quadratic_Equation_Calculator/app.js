@@ -49,8 +49,8 @@ function calculateRoot() {
 
   //condition for real and different roots
   if (d > 0) {
-    root1 = (-b + Math.sqrt(d)) / (2 * a);
-    root2 = (-b - Math.sqrt(d)) / (2 * a);
+    root1 = ((-b + Math.sqrt(d)) / (2 * a)).toFixed(2);
+    root2 = ((-b - Math.sqrt(d)) / (2 * a)).toFixed(2);
 
     // result
     displayRoot();
@@ -58,7 +58,7 @@ function calculateRoot() {
 
   // condition for real and equal roots
   else if (d == 0) {
-    root1 = root2 = -b / (2 * a);
+    root1 = root2 = (-b / (2 * a)).toFixed(2);
 
     // result
     displayRoot();
@@ -70,8 +70,8 @@ function calculateRoot() {
     let imagPart = (Math.sqrt(-d) / (2 * a)).toFixed(2);
 
     // result
-    root1 = realPart + imagPart;
-    root2 = realPart - imagPart;
+    root1 = `${realPart} + ${imagPart}i`;
+    root2 = `${realPart} - ${imagPart}i`;
 
     displayRoot();
   }
