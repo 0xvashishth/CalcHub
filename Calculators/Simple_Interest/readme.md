@@ -11,7 +11,7 @@
 
 ### ScreenShots:-
 
-![image](./image/calculator-screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/85029373/156372698-f5770836-a730-4642-8134-0e9c511b26e9.png)
 
 ### Video:-
 
