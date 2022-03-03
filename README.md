@@ -53,6 +53,8 @@
 | 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic) |
 | 2             | [Scientific Calculator](./Calculators/Scientific_Calculator) |
 | 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple) |
+| 4             | [BMI_Calculator](./Calculators/BMI_Calculator) |
+
 
 ---
 
