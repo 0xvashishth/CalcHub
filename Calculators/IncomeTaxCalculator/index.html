@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Income Tax Calculator</title>
+    <style>
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2a86ba;
+            margin: 100px auto;
+            width: 500px;
+            border: 3px solid black;
+        }
+        
+        h1 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        section {
+            padding: 1em 2em;
+        }
+        
+        label {
+            float: left;
+            width: 10em;
+            text-align: right;
+        }
+        
+        input {
+            margin-left: 1em;
+            margin-bottom: .5em;
+        }
+    </style>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+        var $ = function(id) {
+            return document.getElementById(id);
+        }
+        var calculate_tax = function() {
+            var total;
+            var income = parseFloat($("income").value);
+            $("tax").value = calcTaxes(income);
+            console.log(tax);
+
+            function calcTaxes(amount) {
+                var max2colors = 0;
+                if (amount > 808080) {
+                    tax = (amount - 808080) * .28 + 870.0 + (55555 - 8700) * .15 + (89350 - 36900) * .25;
+                } else if (amount > 55555) {
+                    tax = (amount - 55555) * .25 + 870.0 + (55555 - 8700) * .15;
+                } else if (amount > 5555) {
+                    tax = (amount - 5555) * .15 + 555.5;
+                } else {
+                    tax = amount * .10;
+                }
+                // tax += amount * .153;
+                return tax;
+                /*
+                10% on taxable income from $0 to $808080 plus
+                15% on taxable income over $8,700 to $55555, plus
+                25% on taxable income over $35,350 to $5555, plus
+                */
+            }
+        }
+        window.onload = function() {
+            $("max2colors").onclick = calculate_tax;
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <h1>Income Tax Calculator</h1>
+        <label>Enter taxable income:</label>
+        <input type="text" id="income" />
+        <input type="button" value="calculate" name="max2colors" id="max2colors" /><br><br>
+        <label>Income tax owed:</label>
+        <input type="text" id="tax"><br>
+    </section>
+</body>
+</html

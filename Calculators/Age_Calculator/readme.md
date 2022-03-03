@@ -4,4 +4,4 @@
 
 ### Here's the screenshot of the same
 
-![screenshot](./ageCalc.png)
+![image](https://user-images.githubusercontent.com/76911582/156394510-12646fd9-914d-4327-b847-d87660f69b0d.png)
