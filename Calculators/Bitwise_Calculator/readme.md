@@ -11,7 +11,8 @@
 + XOR
 
 ### Screenshot:
-![image](https://github.com/horosahil/CalcHub/blob/bitwise-calculator/Calculators/Bitwise_Calculator/Screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/60027035/156490361-a2a3ff3c-3de3-40da-8796-05ab9015384c.png)
+
 
 ### Video:
 
