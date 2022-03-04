@@ -23,4 +23,4 @@ A calculator that can convert numbers from base-X to base-Y. Example: `Decimal t
 
 <br/>
 
-![base-x calc.png](basexcalc.png)
+<img width="960" alt="basexcalc" src="https://user-images.githubusercontent.com/70331405/156779954-0938ffe8-81bd-422a-ba8e-5c2c9f819768.png">
