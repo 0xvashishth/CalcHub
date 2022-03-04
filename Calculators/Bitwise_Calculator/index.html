@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Bitwise Calculator</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #ff5733;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+		#card-container{
+			display: flex;
+    		width: 400px;
+    		height: fit-content;
+    		flex-direction: column;
+    		padding: 20px;
+    		border-radius: 5px;
+    		border: 1px solid lightgray;
+    		margin-top: 12px;
+		}
+		#button{
+			margin-top: 12px;
+			font-size: 15px;
+			background-color: #f0c14b;
+			height: 30px;
+			width: 100%;
+			cursor: pointer;
+		}
+		#p{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-top: 10px;
+			font-weight: 500;
+			font-family: 'Open Sans', sans-serif;
+		}
+		input{
+			height: 30px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function Binary (number) {
+    		let num = number;
+    		let binary = (num % 2).toString();
+    		for (; num > 1; ) {
+        		num = parseInt(num / 2);
+        		binary =  (num % 2) + (binary);
+    		}
+    		return binary;
+		}
+		function and(){
+			let a=Number(document.getElementById("first").value);
+			let b=Number(document.getElementById("second").value);
+			let c=a&b;
+			document.getElementById("result").value= c;
+			let result = Binary(c);
+			let first = Binary(a);
+			let second = Binary(b);
+			document.getElementById("firstbinary").value= first;
+			document.getElementById("secondbinary").value= second;
+			document.getElementById("binaryresult").value= result;
+		}
+		function or(){
+			let a=Number(document.getElementById("first").value);
+			let b=Number(document.getElementById("second").value);
+			let c=a|b;
+			document.getElementById("result").value= c;
+			let result = Binary(c);
+			let first = Binary(a);
+			let second = Binary(b);
+			document.getElementById("firstbinary").value= first;
+			document.getElementById("secondbinary").value= second;
+			document.getElementById("binaryresult").value= result;
+		}
+		function xor(){
+			let a=Number(document.getElementById("first").value);
+			let b=Number(document.getElementById("second").value);
+			let c=a^b;
+			document.getElementById("result").value= c;
+			Binary(c);
+			let result = Binary(c);
+			let first = Binary(a);
+			let second = Binary(b);
+			document.getElementById("firstbinary").value= first;
+			document.getElementById("secondbinary").value= second;
+			document.getElementById("binaryresult").value= result;
+		}
+	</script>
+	</head>
+	<body>
+	<div id='container'>
+		<h1>Bitwise Calculator</h1>
+		<div id="card-container">
+			<p id='p'>Enter 1st number :(decimal number)<input id='first' type="number"></p>
+			<p id='p'>1st number in Binary:<input id='firstbinary' disabled=""></p>
+			<p id='p'>Enter 2nd number :(decimal number)<input id='second' type="number"></p>
+			<p id='p'>2nd number in Binary:<input id='secondbinary' disabled=""></p>
+			<button id='button' onclick="and()">And</button>
+			<button id='button' onclick="or()">OR</button>
+			<button id='button' onclick="xor()">XOR</button>
+			<p id='p'>Result :<input id='result' disabled=""></p>		
+			<p id='p'>Result in Binary:<input id='binaryresult' disabled=""></p>	
+		</div>
+	</div>
+	</body>
+</html>
