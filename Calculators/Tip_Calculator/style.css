@@ -1,0 +1,111 @@
+body{
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 300%;
+    background-attachment:fixed;
+  float: none;
+    color:hsl(239, 57%, 33%,10);
+    font-weight:540;
+    padding: 40px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   font-size: larger;
+   margin-top: 30px;
+}
+
+h1{
+    box-sizing: border-box;
+    width: 415px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    background-color: hsl(209, 52%, 31%,0.5);
+    border-top:6px solid #022140;
+   position: relative;
+color: #022140;
+
+}
+.child-container{
+    box-sizing: border-box;
+   width: 415px;
+  
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: hsl(0, 0%, 96%,0.5);
+
+}
+.child-container2{
+    box-sizing: border-box;
+    background: #B993D6;  /* fallback for old browsers */
+    background-color: hsl(0, 0%, 96%,0.5);
+    width: 415px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px ;
+    border-bottom:6px solid #022140;
+}
+.calculator{
+   
+   position: absolute;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.container{
+    padding-top: 0%;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    
+}
+.billTip{
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+#calcbtn{
+    padding: 10px;
+    background-color: hsl(209, 52%, 31%);
+    font-size: large;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid hsl(209, 52%, 31%);
+}
+.btn{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 415px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 96%,0.5);
+}
+
+ 
+ .calcinput{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid hsl(209, 52%, 31%);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+   
+ }
+ .calc {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid hsl(209, 52%, 31%);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+ }
