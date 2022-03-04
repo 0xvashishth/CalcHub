@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background: #a6dfee;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+    margin-right: 50%;
+    }
+    h1{
+        margin-top: 20px;
+        width: 800px;
+    }
+    .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    }
+    
+    .screen-body-item {
+    width: 100px;
+    padding: 13px;
+    }
+    input {
+    margin: 10px 10px 10px;
+    }
+    .showdata {
+    color: black;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    }
+    .form-control{
+        width: 150px;
+        height: 30px;
+    }
+    .btn{
+        width: 250px;
+    }
+    .app{
+        width:700px;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .form-group{
+        width: 800px;
+    }
