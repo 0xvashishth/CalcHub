@@ -55,10 +55,8 @@
 | 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple) |
 | 4             | [BMI_Calculator](./Calculators/BMI_Calculator) |
 
-
 ---
-# BMI Caculator image
-(https://drive.google.com/file/d/1neyFn42oSHxJvALhcSmPzVb-zF_dwc3H/view?usp=sharing)
+
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a> 
