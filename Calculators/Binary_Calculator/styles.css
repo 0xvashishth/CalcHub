@@ -1,0 +1,195 @@
+.jumbotron {
+    font-family: 'Share Tech Mono';
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding-bottom: 60px;
+    height: fit-content;
+  }
+
+  #res {
+    background: rgb(0, 0, 0);
+    border: solid, black;
+    height: 50px;
+    font-size: 20px;
+    color: limegreen;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-right: 10px;
+  }
+  
+  .btn {
+    font-family: 'Share Tech Mono';
+  }
+
+  .upper {
+    display: inline;
+    position: top;
+    height: fit-content;
+  }
+  
+  .lgreen {
+    background: lightgreen;
+    color: brown;
+    display: inline;
+    width: 22%;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .dgreen {
+    background: darkgreen;
+    color: white;
+    display: inline;
+    width: 22%;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .lower {
+    position: bottom;
+    padding-top: 40px;
+    height: fit-content;
+  }
+  
+  .operator {
+    background: black;
+    color: red;
+    height: 36px;
+    width: 22%;
+    font-size 18px;
+  }
+
+  .button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #2ecc71;
+    border: none;
+    border-bottom: 5px solid #27ae60;
+    text-shadow: 0px -2px #27ae60;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+   }
+   
+   .button:hover, button:active {
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #2ecc71;
+   }
+
+   .button-name {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+   }
+   
+   .button-name:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+   }
+   
+   .button-name:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+   }
+   
+   .button-name:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+   }
+
+   .button-calc {
+    appearance: button-calc;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   .button-calc:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   .button-calc:main, .button-calc:focus {
+    user-select: auto;
+   }
+   
+   .button-calc:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   .button-calc:disabled {
+    cursor: auto;
+   }
+   
+   .button-calc:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   .button-calc:active {
+    padding-bottom: 10px;
+   }

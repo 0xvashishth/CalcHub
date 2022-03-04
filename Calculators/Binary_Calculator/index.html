@@ -1,0 +1,50 @@
+<head>
+    <meta charset="utf-8">
+    <title>Binary Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./binary.js" ></script>
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+  
+      <div class="jumbotron">
+        <h1>Binary Calculator</h2>
+        <h3>Perform basic arithmetic with binary numbers</h3>
+        <div id="res" maxlength="8"></div>
+  
+        <div id="btns" class="btn">
+          <div class="upper">
+              <label>Binary Digits and Result operations</label>
+              <br/>
+            <button class="button" id="btn0" onclick="key('0')">0</button>
+            <button class="button" id="btn1" onclick="key('1')">1</button>
+            <button class="button-name" id="btnClr" onclick="cl()">C</button>
+            <button class="button-name" id="btnEql" onclick="operatorFunx()">=</button>
+          </div>
+          <div class="lower">
+              <label>Operators</label>
+              <br/>
+            <button id="btnSum" class="button-calc" onclick="key('+')">
+                    +</button>
+            <button id="btnSub" class="button-calc" onclick="key('-')">
+                    -</button>
+            <button id="btnMul" class="button-calc" onclick="key('*')">
+                    *</button>
+            <button id="btnDiv" class="button-calc" onclick="key('/')">
+                    /</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+  
+  </html>
