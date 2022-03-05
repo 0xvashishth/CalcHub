@@ -1,0 +1,68 @@
+* {
+  padding: 10px;
+}
+body {
+  font-size: large;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+.container {
+  position: absolute;
+  background-color: rgb(173, 173, 172);
+  color: rgb(44, 44, 44);
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  /* border: solid red 1px; */
+  box-shadow: rgba(221, 63, 14, 0.3) 0px 19px 38px,
+    rgba(224, 9, 9, 0.22) 0px 15px 12px;
+}
+
+#date {
+  font-weight: bolder;
+}
+#date1 {
+  color: rgb(127, 68, 182);
+}
+.dob {
+  height: auto;
+  width: auto;
+  font-weight: bolder;
+}
+
+/* CSS */
+button {
+  background-color: rgb(127, 68, 182);
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transform: translate(150px, 20px);
+  width: auto;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+}
+button:hover {
+  outline: 0;
+  background: rosybrown;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+input {
+  background-color: rgb(221, 208, 208);
+}
+
+#text {
+  position: relative;
+  transform: translate(10px, 50px);
+  font-size: larger;
+  color: blueviolet;
+  font-weight: bolder;
+}
