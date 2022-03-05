@@ -92,32 +92,39 @@
 		button:active {
 			background: #bfbfbf;
 		}
-
 		button:nth-child(2) {
-			margin-left: 205px;
-			display: block;
+			margin-left: 137px;
+			
 			background: #ef4a49;
 			color: white;
 		}
 
-		button:nth-child(2):active {
+		button:nth-child(3) {
+			
+			background: #ef4a49;
+			color: white;
+		}
+        button:nth-child(2):active {
+			background: #b14e4d;
+		}
+		button:nth-child(3):active {
 			background: #b14e4d;
 		}
 
-		button:nth-child(6),
-		button:nth-child(10),
-		button:nth-child(14),
-		button:nth-child(17),
-		button:nth-child(18) {
+		button:nth-child(7),
+		button:nth-child(11),
+		button:nth-child(15),
+		button:nth-child(18),
+		button:nth-child(19) {
 			background: #00b49a;
 			color: white;
 		}
 
-		button:nth-child(6):active,
-		button:nth-child(10):active,
-		button:nth-child(14):active,
-		button:nth-child(17):active,
-		button:nth-child(18):active {
+		button:nth-child(7):active,
+		button:nth-child(11):active,
+		button:nth-child(15):active,
+		button:nth-child(18):active,
+		button:nth-child(19):active {
 			background: #218d7e;
 		}
 
@@ -169,6 +176,7 @@
 	<body>
 		<div id="calculator">
 			<div id="result">0</div>
+			<button onclick="del();">DEL</button>
 			<button onclick="cls();">AC</button>
 			<button onclick="num(this.innerHTML);">7</button>
 			<button onclick="num(this.innerHTML);">8</button>
@@ -310,7 +318,25 @@
 			}
 			return tot;
 		}
+        function del(){
+			if (val_1 &&!operPressed&&!val_2){
+				result.innerHTML=result.innerHTML.slice(0,-1)
+				smallResult.innerHTML=smallResult.innerHTML.slice(0,-1)
+			    val_1=result.innerHTML
+			}
+			if (val_2 ){
+				result.innerHTML=result.innerHTML.slice(0,-1)
+				smallResult.innerHTML=smallResult.innerHTML.slice(0,-1)
+			    val_2=result.innerHTML
+				
+			}
 
+			
+		    
+			
+			
+
+		}
 
 		function cls() {
 			smallResult.innerHTML = '';
