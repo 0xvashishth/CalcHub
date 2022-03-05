@@ -62,6 +62,7 @@
 | 11            | [Bitwise Calculator](./Calculators/Bitwise_Calculator/)  |
 | 12            | [Simple Interest Calculator](./Calculators/Simple_Interest/) |
 | 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
+| 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
