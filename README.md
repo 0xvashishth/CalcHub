@@ -47,17 +47,18 @@
 
 # Calculators List 📑
 
-| No            | Name Of Calculator                                             |  
-| ------------- |:---------------------------------------------------------------| 
-| 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic)           |
-| 2             | [Scientific Calculator](./Calculators/Scientific_Calculator)   |
-| 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple)        |
-| 4             | [Statistics Calculator](./Calculators/Statistics%20Calculator) |
-| 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
-| 6             | [BaseX Calculator](./Calculators/BaseX_Calculator)             |
-| 7             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
-| 8             | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator) |
-| 9             | [Tax Calculator](./Calculators/IncomeTaxCalculator) |
+| No  | Name Of Calculator                                                    |
+| --- | :-------------------------------------------------------------------- |
+| 1   | [Simple Arithmetic](./Calculators/Simple_Arithmetic)                  |
+| 2   | [Scientific Calculator](./Calculators/Scientific_Calculator)          |
+| 3   | [Simple Matrix Calculator](./Calculators/Matrix_Simple)               |
+| 4   | [Statistics Calculator](./Calculators/Statistics%20Calculator)        |
+| 5   | [Age Calculator](./Calculators/Age_Calculator/)                       |
+| 6   | [BaseX Calculator](./Calculators/BaseX_Calculator)                    |
+| 7   | [Temperature Calculator](./Calculators/Temperature_Calculator)        |
+| 8   | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator) |
+| 9   | [Tax Calculator](./Calculators/IncomeTaxCalculator)                   |
+| 10  | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)     |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
