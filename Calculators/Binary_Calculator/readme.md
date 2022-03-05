@@ -17,4 +17,4 @@
 
 ## Calculator :-
 
-### [Calculator Link](https://github.com/vasu-1/CalcHub/new/main/Calculators/Binary_Calculator/index.html)
+### [Calculator Link](./index.html)
