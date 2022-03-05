@@ -9,7 +9,7 @@
 
 Write the [Preview Text] - Example Hi.
 
-Set them ::
+Set them :: According to the Measurements
 
   1. Base Size
   2. Scale
