@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+  font-family: "Fredoka One", cursive;
+}
+
+body {
+  background-color: #ffffcc;
+}
+
+.calculator {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5),
+    inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding-top: 2vw;
+  padding-bottom: 5vw !important;
+}
+
+h1 {
+  margin: 20px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.title {
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.surface {
+  background-color: #afeeee;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-bottom: 3vw;
+  padding-top: 3vw;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#a,
+#b,
+#c {
+  width: 10%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 2px;
+  padding: 5px !important;
+  padding-left: 10px !important;
+  border-radius: 20px;
+  border-width: 0;
+  background-color: #ffff99;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5),
+    inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+}
+
+#submit {
+  width: 35%;
+  background-color: #00ced1;
+  border-width: 0 !important;
+  border-radius: 20px;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5),
+    inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+}
+
+.e-box {
+  background-color: #ffff99;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50%;
+  padding: 10px;
+  padding-left: 30px !important;
+  border-width: 0 !important;
+  border-radius: 20px;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5),
+    inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+}
+
+.e-text {
+  font-size: 18px;
+}
+
+.root {
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  width: 20%;
+  padding-left: 10px !important;
+  border-width: 0 !important;
+  border-radius: 20px !important;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5),
+    inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 769px) {
+  .calculator {
+    width: 70%;
+    padding-top: 5vw;
+    padding-bottom: 10vw !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .calculator {
+    width: 80%;
+    padding-top: 7vw;
+    padding-bottom: 15vw !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .calculator {
+    width: 90%;
+    padding-top: 7vw;
+    padding-bottom: 15vw !important;
+  }
+}
