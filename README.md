@@ -64,6 +64,7 @@
 | 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
 | 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
 | 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
+| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix Adjoint and Inverse Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
