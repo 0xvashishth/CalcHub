@@ -1,18 +1,24 @@
-$( "button" ).click(function() {
-    var a = $("#11").val();
-    var b = $("#12").val();
-    var c = $("#13").val();
-    var d = $("#21").val();
-    var e = $("#22").val();
-    var f = $("#23").val();
-    var g = $("#31").val();
-    var h = $("#32").val();
-    var i = $("#33").val();
-  
+document.getElementById("bts").addEventListener( 'click' , function(){
+
+    
+    var a = document.getElementById('num11').value;
+    var b = document.getElementById('num12').value;
+    var c = document.getElementById('num13').value;
+    var d = document.getElementById('num21').value;
+    var e = document.getElementById('num22').value;
+    var f = document.getElementById('num23').value;
+    var g = document.getElementById('num31').value;
+    var h = document.getElementById('num32').value;
+    var i = document.getElementById('num33').value;
+
+
     console.log("In function");
+    console.log("Working Fine");
+
     //find determinant
     var det = (a*e*i)+(b*f*g)+(c*d*h)-(g*e*c)-(h*f*a)-(i*d*b);
-    $( "#det" ).text( "Determinant : " + det );
+    
+    document.getElementById("det").textContent =  "Determinant : " + det ;
   
     //adjoint
     var a11=(e*i)-(h*f);
@@ -36,28 +42,28 @@ $( "button" ).click(function() {
     var ina32=(1/det*(a32*(-1))).toFixed(2);
     var ina33=(1/det*(a33*(1))).toFixed(2);
   
-    $("#adj").text("Adjoint : ")
-    $( "#a1" ).text( a11 );
-    $( "#a2" ).text( a12 );
-    $( "#a3" ).text( a13 );
-    $( "#a4" ).text( a21 );
-    $( "#a5" ).text( a22 );
-    $( "#a6" ).text( a23 );
-    $( "#a7" ).text( a31 );
-    $( "#a8" ).text( a32 );
-    $( "#a9" ).text( a33 );
+    document.getElementById("adj").textContent =  "Adjoint : ";
+    document.getElementById("a1").textContent =  a11 ;
+    document.getElementById("a2").textContent =  a12 ;
+    document.getElementById("a3").textContent =  a13 ;
+    document.getElementById("a4").textContent =  a21 ;
+    document.getElementById("a5").textContent =  a22 ;
+    document.getElementById("a6").textContent =  a23 ;
+    document.getElementById("a7").textContent =  a31 ;
+    document.getElementById("a8").textContent =  a32 ;
+    document.getElementById("a9").textContent =  a33 ;
       
-    $("#inv").text("Inverse : ")  
-    $( "#1" ).text( ina11 );
-    $( "#2" ).text( ina21 );
-    $( "#3" ).text( ina31 );
-    $( "#4" ).text( ina12 );
-    $( "#5" ).text( ina22 );
-    $( "#6" ).text( ina32 );
-    $( "#7" ).text( ina13 );
-    $( "#8" ).text( ina23 );
-    $( "#9" ).text( ina33 );
-    });
+    document.getElementById("inv").textContent =  "Inverse : " ;
+    document.getElementById("1").textContent =  ina11 ;
+    document.getElementById("2").textContent =  ina21 ;
+    document.getElementById("3").textContent =  ina31 ;
+    document.getElementById("4").textContent =  ina12 ;
+    document.getElementById("5").textContent =  ina22 ;
+    document.getElementById("6").textContent =  ina32 ;
+    document.getElementById("7").textContent =  ina13 ;
+    document.getElementById("8").textContent =  ina23 ;
+    document.getElementById("9").textContent =  ina33 ;
 
 
-    
+}
+);
