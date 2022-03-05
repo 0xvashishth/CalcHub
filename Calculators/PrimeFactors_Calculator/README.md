@@ -11,5 +11,4 @@ An application to calculate prime factors using _Sieve of Eratosthenes_.
 - a clean UI is presented for the application
 
 ### Here's the screenshot
-
 ![screenshot](https://user-images.githubusercontent.com/40180496/156871293-f6953b8f-acb6-4a75-a822-b7b6c6ffd794.png)
