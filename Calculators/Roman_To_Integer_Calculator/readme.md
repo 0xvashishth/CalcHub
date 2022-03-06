@@ -15,15 +15,17 @@
     X can be placed before L (50) and C (100) to make it 40 and 90. 
     C can be placed before D (500) and M (1000) to make it 400 and 900.
 
-### Functionalities :-
+### Functionalities :
 - Converts a roman numeral to its integer.
 
-### Built With :-
+### Built With :
 
 - Html, Css, Javascript
 
-### ScreenShot :-
+### Screenshot :
+#### Roman :
 ![Roman](https://user-images.githubusercontent.com/29122581/156942789-b336a32e-ff6e-4159-bb3a-bcea6d719dc6.jpg)
+#### Integer :
 ![Integer](https://user-images.githubusercontent.com/29122581/156942793-ceb98e13-e32b-4a68-9a1a-9ad657b330ca.jpg)
 
 ### [Calculator Link](./index.html)
