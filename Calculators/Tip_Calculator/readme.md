@@ -15,9 +15,7 @@ As per the three inputs it generates a tip for the serving person.
 - Javascript
 
 # Screenshot
-![screenshot](https://user-images.githubusercontent.com/72096769/156646146-fd146ce1-8c91-41a0-82f3-dd44fe171818.png)
-
-## [Tip Calculator Link](./index.html)
+![Screenshots tip](https://user-images.githubusercontent.com/72096769/156924972-bfbc68b6-773c-4f82-a91c-74ffb4fd5c2d.png)
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yashi-khare-6a6a621a8)
