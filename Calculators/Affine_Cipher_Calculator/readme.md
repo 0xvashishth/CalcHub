@@ -7,11 +7,13 @@ The ‘key’ for the Affine cipher consists of 2 numbers, we’ll call them a a
 
 ## SCREENSHOTS OF THE CALCULATOR
 
-![image1](af1.PNG)
+![af1](https://user-images.githubusercontent.com/82095877/156921805-5bcb5024-745e-441a-85e0-f759380e0eb6.PNG)
 
-![image1](af2.PNG)
+![af2](https://user-images.githubusercontent.com/82095877/156921810-bb2ddca9-74c2-4407-8b67-49418a54b646.PNG)
 
-![image1](af3.PNG)
+
+![af2](https://user-images.githubusercontent.com/82095877/156921812-906505bf-42f1-4795-93a4-bcb1a374b1fc.PNG)
+
 
 ## TO RUN
 
