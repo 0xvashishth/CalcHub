@@ -65,6 +65,7 @@
 | 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
 | 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
 | 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix Adjoint and Inverse Calculator/) |
+| 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
 
 
 <h1> Project Maintainer ⚡ </h1>
