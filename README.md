@@ -53,9 +53,9 @@
 | 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic) |
 | 2             | [Scientific Calculator](./Calculators/Scientific_Calculator) |
 | 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple) |
-| 4             | [BMI_Calculator](./Calculators/BMI_Calculator) |
 
 ---
+
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a> 
 
