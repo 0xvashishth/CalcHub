@@ -23,6 +23,7 @@
 - Html, Css, Javascript
 
 ### ScreenShot :-
-
+![Roman](https://user-images.githubusercontent.com/29122581/156942789-b336a32e-ff6e-4159-bb3a-bcea6d719dc6.jpg)
+![Integer](https://user-images.githubusercontent.com/29122581/156942793-ceb98e13-e32b-4a68-9a1a-9ad657b330ca.jpg)
 
 ### [Calculator Link](./index.html)
