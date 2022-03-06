@@ -1,32 +1,143 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <title>BaseX Calculator</title>
-        <script src="./app.js"></script>
-    </head>
-    
-    <body>
-        <div class="box">
-            <div>
-                <label>Enter Number to Convert: </label>
-                <input name="to_convert" id="to_convert" type="text" style="width: 70%;">
-            </div>
-            <br>
-            <div style="text-align: right;">
-                <label>Base_X: </label>
-                <input name="x" id="x" min=2 type="number">
-                <br>
-                <br>
-                <label>Base_Y: </label>
-                <input name="y" id="y" min=2 type="number">
-            </div>
-
-            <br><br>
-            <button onclick="convert()" style="width: 40%">Calculate</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+    <title>BaseX Calculator</title>
+  </head>
+  <body>
+    <!--Title-->
+    <section
+      class="container justify-content-center bg-white text-primary p-3 rounded-2 w-75"
+    >
+      <div class="container">
+        <div class="justify-content-between text-center">
+          <h3 class="mb-1 mb-md-0">BaseX-Calculator</h3>
         </div>
-        
-        <h2 style="margin-top: 10%;">Result</h2>
-        <input readonly id="res" style="width: 20%;">
-    </body>
+      </div>
+    </section>
+
+    <!--Calculator & About Cards-->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-white text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-4">
+                  <i class="bi bi-calculator ps-2 pe-2 bg-primary pb-2"></i>
+                </div>
+                <h3 class="card-title mb-3 dark text-dark">Input</h3>
+                <input
+                  name="to_convert"
+                  id="to_convert"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Number to Convert"
+                />
+                <br />
+                <input
+                  name="x"
+                  id="x"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Base_X"
+                />
+                <br />
+                <input
+                  name="y"
+                  id="y"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Base_Y"
+                />
+                <br />
+                <a href="#" onclick="convert()" class="btn btn-primary"
+                  >Calculate</a
+                >
+                <br /><br />
+                <div class="input-group news-input">
+                  <input
+                    readonly
+                    id="res"
+                    type="text"
+                    class="form-control"
+                    placeholder="Result"
+                  />
+                  <button
+                    class="btn btn-success btn-lg"
+                    type="button"
+                    onclick="copyres()"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-white text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-4">
+                  <i class="bi bi-info-circle pb-2 ps-2 pe-2 bg-primary"></i>
+                </div>
+                <h3 class="card-title mb-3 text-dark">About</h3>
+                <ul
+                  class="entry-content text-start text-dark"
+                  style="list-style-type: square"
+                >
+                  <li>
+                    A calculator that can convert numbers from base-X to base-Y
+                  </li>
+                  <li>
+                    Convert from & to decimal, binary, hexadecimal, octal etc.
+                  </li>
+                  <li>
+                    User can go beyond than the known bases and convert from &
+                    to other bases such as base-15.
+                  </li>
+                </ul>
+                <a
+                  href="https://drive.google.com/file/d/19hk7j-5EjiTlxYCXNz8pRKqNv7f1LyaB/view?usp=sharing"
+                  target="_blank"
+                  class="btn btn-danger me-5"
+                  >Tutorial</a
+                >
+                <a
+                  href="https://github.com/vasu-1/CalcHub/tree/main/Calculators/BaseX_Calculator#readme"
+                  target="_blank"
+                  class="btn btn-primary ms-5"
+                  >Read More</a
+                >
+                <br />
+                <br />
+                <h3 class="card-title mb-2 text-dark">
+                  Thank You For Visiting!
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
