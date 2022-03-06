@@ -66,6 +66,7 @@
 | 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
 | 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
 | 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
+| 18            | [Affine_Cipher_Calculator](./Calculators/Affine_Cipher_Calculator/)  |
 
 
 <h1> Project Maintainer ⚡ </h1>
