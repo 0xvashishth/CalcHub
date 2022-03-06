@@ -17,7 +17,7 @@ A calculator that allows the conversion between color code formats such as: RGB,
 
 Here is a quick explanation of converting from Hsl and having the other formats as an output
 
-![image](./assets/media/Capture.PNG)
+![image](https://drive.google.com/uc?export=view&id=1KuKdYpYgOCVdDw9lX8AhZjjih1QECD5s)
 
 ## Calculator [Link](./index.html)
 
