@@ -64,7 +64,7 @@
 | 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
 | 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
 | 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
-| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix Adjoint and Inverse Calculator/) |
+| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
 | 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
 
 
