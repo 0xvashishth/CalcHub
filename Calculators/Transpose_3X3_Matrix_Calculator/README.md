@@ -1,8 +1,19 @@
 # Transpose of 3X3 Matrix Calculator
 
-### This Calculator helps us to calculate transpose of 3X3 matrix.
+### Description:-
+
+This Calculator helps us to calculate transpose of 3X3 matrix. The user needs to input a 3x3 matrix and the Calculator displays its transpose matrix.
+
+### Features:-
+
+- Calculation of transpose of 3x3 matrix is done in very few seconds.
+- User-friendly website: The subscripts associated with each of the elements in array are displayed
+  to indicate the position of the element in array.
+- Responsive and supports all devices.
+
 
 ### Built With:-
+
 - HTML
 - CSS
 - JavaScript
