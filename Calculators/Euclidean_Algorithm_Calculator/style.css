@@ -20,7 +20,7 @@ body{
     font-weight:500;
     text-transform: uppercase;
     letter-spacing:6px;
-    padding:100px 0px 0px;
+    padding:80px 0px 0px;
 }
 .container p{
     color:white;
@@ -73,7 +73,7 @@ body{
     margin: 0 auto;
     color:#eee;
     font-weight:600;
-    font-size:24px;
+    font-size:20px;
     letter-spacing: 2px;
     background: #19172b;
     padding:10px 20px;
@@ -84,7 +84,7 @@ body{
     display:flex;
 }
 .lcm-final{
-    margin:20px auto;
+    margin:15px auto;
 }
 .gcd-final .gcd,.lcm-final .lcm{
     font-weight:700;
