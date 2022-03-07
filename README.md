@@ -67,6 +67,7 @@
 | 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
 | 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
 | 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
+| 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
 
 
 <h1> Project Maintainer ⚡ </h1>
