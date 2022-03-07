@@ -56,10 +56,18 @@
 | 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
 | 6             | [BaseX Calculator](./Calculators/BaseX_Calculator)             |
 | 7             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
-| 8             | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator) |
+| 8             | [Vigenere Cipher Calculator](http://vashishth.me/CalcHub/Calculators/VigenereCipher_Calculator/) |
 | 9             | [Tax Calculator](./Calculators/IncomeTaxCalculator) |
 | 10            | [Quadratic Equation Calculator](./Calculators/Quadratic_Equation_Calculator)  |
 | 11            | [Bitwise Calculator](./Calculators/Bitwise_Calculator/)  |
+| 12            | [Simple Interest Calculator](./Calculators/Simple_Interest/) |
+| 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
+| 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
+| 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
+| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
+| 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
+| 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
+
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
