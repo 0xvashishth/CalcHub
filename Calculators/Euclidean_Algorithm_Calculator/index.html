@@ -11,10 +11,11 @@
     <div class="container">
       <h1>Euclidean Algorithm</h1>
       <p>
-        The Euclidean algorithm, or Euclid's algorithm, is an efficient method
-        for computing the greatest common divisor (GCD) of two integers
-        (numbers), the largest number that divides them both without a
-        remainder.
+        The Euclidean algorithm is an efficient method for computing the
+        greatest common divisor (GCD) of two integers, the largest number that
+        divides them both without a remainder. <br />The LCM of two numbers can
+        be futher computed in Euclid's approach by using GCD of A and B by -
+        LCM(A, B) = (a * b) / GCD(A, B).
       </p>
       <form class="form-container">
         <div class="inp-container">
@@ -29,12 +30,19 @@
         </div>
         <button type="submit" class="submit">CALCULATE</button>
       </form>
-      <h2 class="results">
+      <h2 class="gcd-final">
         GCD(
         <span class="n1"></span>
         ,
         <span class="n2"></span>
         ) = &nbsp<span class="gcd"></span>
+      </h2>
+      <h2 class="lcm-final">
+        LCM(
+        <span class="n3"></span>
+        ,
+        <span class="n4"></span>
+        ) = &nbsp<span class="lcm"></span>
       </h2>
     </div>
     <script type="text/javascript" src="app.js"></script>
