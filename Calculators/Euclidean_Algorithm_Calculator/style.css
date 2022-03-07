@@ -68,7 +68,7 @@ body{
     background:#2c94b1;
 }
   
-.results{
+.gcd-final,.lcm-final{
     width: fit-content;
     margin: 0 auto;
     color:#eee;
@@ -80,10 +80,13 @@ body{
     flex-direction:row;
     display:none;
 }
-.results.show{
+.gcd-final.show,.lcm-final.show{
     display:flex;
 }
-.results .gcd{
+.lcm-final{
+    margin:20px auto;
+}
+.gcd-final .gcd,.lcm-final .lcm{
     font-weight:700;
     color:#2c94b1;
 }
