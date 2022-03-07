@@ -17,9 +17,9 @@ body{
     text-shadow: 3px 3px #361500;
 }
 
-.input_name, 
-.input_hours,
-.input_grade{
+#input_name, 
+#input_hour,
+#input_grade{
     border: 1px solid #b6b5b3;
     background-color: #fff;
     padding: 12px 15px;
@@ -30,7 +30,7 @@ body{
     margin: 10px 0;
 }
 
-.btn_add{
+#btn_add{
     padding: 12px 15px;
     letter-spacing: 1px;
     border: 2px solid #EEEDDE;
@@ -47,7 +47,7 @@ body{
 
 /* All courses */
 
-.all_courses{
+#all_courses{
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ body{
     color: #361500;
 }
 
-.calc{
+#calc{
     padding: 12px 15px;
     letter-spacing: 1px;
     border: 2px solid #ff9800;
@@ -66,7 +66,7 @@ body{
     margin-top: 3%;
 }
 
-.reset{
+#reset{
     padding: 12px 15px;
     letter-spacing: 1px;
     border: 2px solid #FC4F4F;
@@ -78,22 +78,33 @@ body{
 }
 
 /* Course */
-.course{
-    display: flex;
-    border-bottom: 1px solid #e7e7e7;
-    padding: 20px;
-    margin: auto;
+
+#courses{
+    text-align: center;
+    margin:auto;
     width: 50%;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-.c_name{
-    margin-right: 2%;
+th{
+    padding: 2%;
 }
 
-.c_hour{
-    margin-left: 40%;
+.close{
+    width: 25%;
 }
 
-.c_grade{
-    margin-left: 15%;
+.close_btn{
+    all: unset;
+}
+
+/* Result */
+#result{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button {
+    cursor: pointer;
 }
