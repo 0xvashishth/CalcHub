@@ -15,7 +15,5 @@
 
 ![image](https://user-images.githubusercontent.com/76911582/153572570-cfa2bdee-8048-4804-b13c-d4ceb2c2b676.png)
 
-### Video :-
-
 
 ## [Calculator Link](./index.html)
