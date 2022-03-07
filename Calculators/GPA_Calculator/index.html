@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPA Calculator</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "header">
+            <h1 class= "title">GPA Calculator</h1>
+            <h2 class= "title">Enter your grades: </h2>
+            <div class = "input">
+                <input type="text" placeholder="Subject Name" class="input_name">
+                <input type="number" placeholder="Hours" class="input_hours">
+                <select name="Grades" class="input_grade">
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+                <button type="button" class="btn_add">Add</button>
+            </div>
+        </div>
+        <div class = "all_courses">
+            <h1 class = "all_title">All Courses: </h1>
+            <div class = "course">
+                <div class = "c_name">Course name:</div>
+                <div class = "c_hour">Course hours:</div>
+                <div class = "c_grade">Course Grade:</div>
+            </div>
+            <button type="button" class = "calc">Calculate</button>
+            <button type="button" class = "reset">Reset</button>
+        </div>
+    </body>
+</html>
