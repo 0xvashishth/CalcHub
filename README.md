@@ -69,7 +69,7 @@
 | 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
 | 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
 | 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
-
+| 21            | [Log Calculator](./Calculators/Log_Calculator/) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
