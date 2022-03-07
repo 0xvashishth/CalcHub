@@ -1,7 +1,7 @@
 # Euclidean Algorithm Calculator
 
 ### Functionality :-
-Helps calulate the gcd of two numbers in ease.
+Helps calulate the gcd and lcm of two numbers in ease.
 
 
 ### Built Using :-
