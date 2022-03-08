@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Affine Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    
+                <h1>MODULO - INVERSE MODULO</h1>
+               
+                     <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                     <fieldset>
+                    <legend>Modulo Calculator</legend>
+                    <p class="lead">
+                        In a (mod) m
+                      <br>
+                        Number 1 denotes a 
+                       <br>
+                        Number 2 denotes m 
+                    </p>
+                    <div class="form-group">
+                        <label for="plaintext">Number 1</label>
+                        <input type="text" class="form-control" id="n1" placeholder="Enter the value of a">
+                    </div>
+                    <div class="form-group">
+                        <label for="key">Number 2</label>
+                        
+                        <input type="text" class="form-control" id="n2" placeholder="Enter the value of m">
+                        
+                        <br/><button class="btn btn-default" onClick="modulo()">Calculate</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="output">Modulus Output</label>
+                        <textarea class="form-control" id="output" ></textarea>
+                    </div>
+
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>Inverse Modulo</legend>
+                    <p class="lead">
+                        In a^(-1) (mod) m<br>
+                        Number 1 denotes a <br>
+                        Number 2 denotes m 
+                    </p>
+                    <div class="form-group">
+                        <label for="ciphertext">Number 1</label>
+                        <input type="text" class="form-control" id="n3" placeholder="Enter the value of a">
+                    </div>
+                    <div class="form-group">
+                        <label for="key">Number 2</label>
+                       
+                        <input type="text" class="form-control" id="n4" placeholder="Enter the value of m">
+                        
+                        <br/><button class="btn btn-default" onClick="inverse()">Calculate</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="deoutput">Inverse Output</label>
+                        <textarea class="form-control" id="deoutput" ></textarea>
+                    </div>
+
+                </fieldset>
+               
+            </div>
+
+        </div>
+    </div>
+    <h2><a href="index.html">Reload</a></h2>
+</body>
+<script type="text/javascript">
+  
+    function moditnow(a, m) {
+
+a = parseInt(a)
+m = parseInt(m) 
+    if (a<m)
+    return a
+    else
+    return (a%m)
+}
+
+    function inverseitnow(a,m)
+    {
+    var a = parseInt(a)
+    var m= parseInt(m) 
+if(m%a==0)
+return -1
+else
+{
+{
+    for(let x = 1; x < m; x++)
+        if (((a % m) * (x % m)) % m == 1)
+            return x;
+            
+       
+}
+        
+    }
+}
+    function modulo() {
+        
+        a= $("#n1").val()
+        b=$("#n2").val()
+        modu= moditnow(a,b)
+        $("#output").val(modu)
+    }
+
+    function inverse() {
+        a = parseInt(document.getElementById('n3').value) 
+        m= parseInt(document.getElementById('n4').value) 
+    
+        inver= inverseitnow(a,m)
+        if(inver==-1)
+        {
+        $("#deoutput").val("The inverse does not exist")
+        }
+        else
+        $("#deoutput").val(inver)
+    }
+</script>
+
+</html>
