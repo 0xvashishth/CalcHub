@@ -19,9 +19,9 @@ It helps in calculating using the cost of real estate, credit term, initial paym
 
 ### Screenshot :-
 
-![image](https://github.com/prathimacode-hub/CalcHub/blob/main/Calculators/Mortgage_Calculator/screenshot/Mortgage%20Calculator.png)
+![image](https://github.com/prathimacode-hub/Mortgage-Calculator/blob/main/Mortgage%20Calculator.png)
 
-[Mortgage Calculator Link](https://github.com/prathimacode-hub/CalcHub/tree/main/Calculators/Mortgage_Calculator/index.html)
+[Mortgage Calculator Link](./index.html)
 
 
 ## Author
