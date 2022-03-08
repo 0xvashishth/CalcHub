@@ -21,7 +21,7 @@ It helps in calculating using the cost of real estate, credit term, initial paym
 
 ![image]()
 
-[Mortgage Calculator Link]()
+[Mortgage Calculator Link](https://github.com/prathimacode-hub/CalcHub/tree/main/Calculators/Mortgage_Calculator/index.html)
 
 
 ## Author
