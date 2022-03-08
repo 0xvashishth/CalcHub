@@ -71,6 +71,7 @@
 | 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
 | 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
 | 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
+| 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
 
 
 <h1> Project Maintainer ⚡ </h1>
