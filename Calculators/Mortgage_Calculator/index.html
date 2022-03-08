@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Calculate the mortgage</title>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="calculator-content">
+            <div class="calculator-content-title">
+                <h1 class="title__h1">Calculate the mortgage</h1>
+                <p class="subtitle">Convenient mortgage calculator for calculating mortgage payments in Indian Banks.</p>
+            </div>
+            <div class="calculator-content-body">
+                <div class="calculator-content-body-left">
+                    <div class="calculator-content-body-left-inputs">
+                        <div class="input-wrapper">
+                            <div class="title">The cost of Real Estate</div>
+                            <div class="input">
+                                <input type="number" id="total-cost" value="0" min="10000" max="250000" required pattern="\d+">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="10000" max="250000" id="total-cost-range" value="0" class="input-range">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="title">Initial payment</div>
+                            <div class="input">
+                                <input type="number" id="an-initial-fee" value="0" min="10000" max="1000000" required pattern="\d+">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="10000" max="100000" id="an-initial-fee-range" value="0" class="input-range">
+                            </div>
+                            <p class="error">Not in Range!</p>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="title">Credit Term</div>
+                            <div class="input">
+                                <input type="number" id="credit-term" value="0" min="1" max="20" required pattern="\d+">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="1" max="20" id="credit-term-range" value="0" class="input-range">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-content-title">
+                        <h2>Select bank</h2>
+                    </div>
+                    <div class="calculator-content-body-left-btns">
+                        <button data-name="alfa" class="bank active">
+                            <div class="text">State-Bank-Of-India</div>
+                            <div class="value">8,7%</div>
+                        </button>
+                        <button data-name="sberbank" class="bank">
+                            <div class="text">Axis-Bank</div>
+                            <div class="value">8,4%</div>
+                        </button>
+                        <button data-name="pochta" class="bank">
+                            <div class="text">ICICI-Bank</div>
+                            <div class="value">7,9%</div>
+                        </button>
+                        <button data-name="tinkoff" class="bank">
+                            <div class="text">Bank-Of-India</div>
+                            <div class="value">9,2%</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="calculator-content-body-right">
+                    <div class="final-results-wrapper">
+                        <div class="final-result-item">
+                            <div class="title">Credit Amount</div>
+                            <div class="value" id="amount-of-credit">0<span>$</span></div>
+                        </div>
+                        <div class="final-result-item">
+                            <div class="title">Monthly payment</div>
+                            <div class="value" id="monthly-payment">0<span>$</span></div>
+                        </div>
+                        <div class="final-result-item">
+                            <div class="title">Recommended Income</div>
+                            <div class="value" id="recommended-income">0<span>$</span></div>
+                        </div>
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <script src="app.js"></script> 
+</body>
+</html>
