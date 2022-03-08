@@ -70,7 +70,7 @@
 | 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
 | 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
 | 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
-
+| 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
