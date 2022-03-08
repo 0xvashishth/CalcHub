@@ -9,15 +9,14 @@
 
 <body>
     <div class="calculator">
-        <h1>Tip calculator</h1>
+        <div><h1>Tip calculator</h1></div>
         <div class="container" style="padding-top: 0%;">
-            <div class="child-container" >
+            <div class="child-container col-s-12" >
                 <label class="container bill"><label>Total Bill:&nbsp&nbsp</label>
                     <input type="text" class="calcinput" id="amount" placeholder="Amount to be paid"> ₹
                 </label>
 
-
-                <div class="container servicepeople">
+                <div class="container servicepeople col-s-12">
                     <label>How was the service ?&nbsp</label>
 
                     <select  class="calcinput" id="services">   
@@ -33,16 +32,16 @@
                     </select>
                 </div>
 
-                <div class="container split">
+                <div class="container split col-s-12">
                     <label>Split(Number of people):</label>
                     <input type="range" id="splitInput" value="0" oninput="myFunction(this.value)">
                     <span id="splitOutput"></span>
                 </div>
             </div>
-            <div class="btn">
+            <div class="btn col-s-12">
                 <button id="calcbtn">Calculate</button>
             </div>
-            <div class="child-container2">
+            <div class="child-container2 col-s-12">
                 <div class="container tip">
                     <span class="input-group-addon">Tip Amount(per person): </span>
                     <input type="number" class="calc" id="tipAmtPerPerson" disabled>₹
