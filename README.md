@@ -67,7 +67,13 @@
 | 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
 | 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
 | 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
-| 19            | [Log Calculator](./Calculators/Log_Calculator/) |
+| 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
+| 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
+| 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
+| 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
+| 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
+| 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
+
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
