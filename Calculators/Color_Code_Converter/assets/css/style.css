@@ -1,6 +1,7 @@
 body{
     background-color: #efefef;
     text-align: center;
+    text-overflow: break;
 }
 
 .box{
@@ -8,6 +9,6 @@ body{
     background-color: rgb(255 255 255 / 50%);
     box-shadow: -10px 5px 30px rgb(0 0 0 / 50%);
     border-radius: 15px;
-    width: 50rem;
+    width: 50%;
     padding: 30px;
 }

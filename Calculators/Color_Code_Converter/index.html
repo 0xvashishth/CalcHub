@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Color Code Calculator</title>
         <script src="./scripts/app.js"></script>
@@ -10,10 +11,19 @@
         <div class="box">
             <div>
                 <label>Enter Color to Convert: </label>
-                <input name="to_convert" id="to_convert" type="text" style="width: 50%;">
+                <input name="to_convert" id="to_convert" type="text" style="width: 50%;" placeholder="Enter Color Format">
                 <button onclick="convert()" style="width: 10%;">Convert</button>
             </div>
-            <br><br>
+
+            <div style="text-align:left;">
+                <p>Supported formats examples:</p>
+                <ul>
+                    <li>RGB: rgb(20 ,30, 50)</li>
+                    <li>CMYK: cmyk(60%, 40%, 0%, 80%)</li>
+                    <li>Hex: #141E32</li>
+                    <li>Hsl: hsl(220, 43%, 14%)</li>
+                </ul>
+            </div>
 
             <div style="text-align: left;">
                 <h2 style="margin-top: 10%;">Results</h2>
