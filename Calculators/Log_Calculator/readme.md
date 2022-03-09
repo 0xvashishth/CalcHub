@@ -12,4 +12,4 @@ Displays the value of Log B to the base A :
 - JavaScript
 
 
-## [Calculator Link](./Log.html)
+## [Calculator Link](./index.html)
