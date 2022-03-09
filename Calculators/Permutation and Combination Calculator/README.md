@@ -7,5 +7,6 @@ A simple calculator which will take the values of 'n' and 'r' and give no. of pe
 - JavaScript
 
 ## Screenshot:
-![img1](https://user-images.githubusercontent.com/86347266/157397610-93cb7ded-e5ee-41b1-994b-aa3dbfb12f27.png)
+![img2](https://user-images.githubusercontent.com/86347266/157402453-4399fa51-65d2-4509-b5e7-103a00a88653.png)
+
 
