@@ -56,7 +56,7 @@
 | 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
 | 6             | [BaseX Calculator](./Calculators/BaseX_Calculator)             |
 | 7             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
-| 8             | [Vigenere Cipher Calculator](./Calculators/VigenereCipher_Calculator) |
+| 8             | [Vigenere Cipher Calculator](http://vashishth.me/CalcHub/Calculators/VigenereCipher_Calculator/) |
 | 9             | [Tax Calculator](./Calculators/IncomeTaxCalculator) |
 | 10            | [Quadratic Equation Calculator](./Calculators/Quadratic_Equation_Calculator)  |
 | 11            | [Bitwise Calculator](./Calculators/Bitwise_Calculator/)  |
@@ -64,7 +64,15 @@
 | 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
 | 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
 | 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
-| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix Adjoint and Inverse Calculator/) |
+| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
+| 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
+| 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
+| 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
+| 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
+| 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
+| 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
+| 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
+| 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
