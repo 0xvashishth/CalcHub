@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PnC Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="./script.js"></script>
+    <h1>Permutations and Combinations</h1>
+    <div class="calc">
+        <p id="alert"></p>
+        <div class="objects">
+            <h3>Total items in the set (n) = </h3>
+            <input type="text" name="" id="n">
+        </div>
+        <div class="objects">
+            <h3>Items taken at a time (r) = </h3>
+            <input type="text" id="r">
+        </div>
+
+        <button class="calculate-btn" onclick="calculate()">Calculate</button>
+        <div class="result">
+            <h4>Permutations = </h4>
+            <span id="per"></span>
+        </div>
+        <div class="result">
+            <h4>Combinations = </h4>
+            <span id="comb"></span>
+        </div>
+    </div>
+</body>
+
+</html>
