@@ -16,5 +16,7 @@ The provided BMI Calculator is capable of calculating BMI of a person based on h
 - Javascript
 ## Screenshot
 
+![BMIss](https://user-images.githubusercontent.com/90457566/157593824-38431a7b-c0dc-4089-b2fa-01ac3ce7f651.png)
+
 
 
