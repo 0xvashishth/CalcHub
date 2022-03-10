@@ -14,7 +14,6 @@ The provided BMI Calculator is capable of calculating BMI of a person based on h
 - HTML
 - CSS
 - Javascript
-
 ## Screenshot
 
 
