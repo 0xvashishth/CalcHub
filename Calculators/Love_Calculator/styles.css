@@ -1,0 +1,54 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+    background-color: beige;
+    max-width: 30rem;
+    position:absolute;
+  top:30%;
+  left:50%;
+  margin-top:-70px; 
+  margin-left:-100px; 
+}
+input{
+    width: 220px;
+}
+.card-header {
+    background-color: black;
+    text-align: center;
+    color: brown;
+}
+.card-footer{
+    text-align: center;
+    color: brown;
+}
+.addition{
+    display: flex;
+    justify-content: center;
+}
+.final-button{
+  display: flex;
+  justify-content: center;
+}
+button{
+    background-color: red;
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: black;
+ background-size: cover;
+ background-repeat: no-repeat;
+    }
+    
+    .card {
+        background-image: none;
+        max-width: 30rem;
+        position:absolute;
+      top:40%;
+      left:45%;
+      margin-top:-70px; 
+      margin-left:-100px; 
+    }
+}
