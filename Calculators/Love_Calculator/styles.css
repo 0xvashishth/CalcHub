@@ -37,10 +37,9 @@ button{
 }
 @media screen and (max-width:600px) {
     body{
-        background-color: black;
- background-size: cover;
- background-repeat: no-repeat;
+        background:none;
     }
+    
     
     .card {
         background-image: none;
