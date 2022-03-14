@@ -74,6 +74,7 @@
 | 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
 | 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
 | 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
+| 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
 
 
 
