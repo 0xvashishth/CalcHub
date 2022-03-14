@@ -1,41 +1,42 @@
 body{
-    margin: 0px;
+    margin: 0%;
     font-family: 'Nunito', sans-serif;
+    width: 100%;
 }
 /* Header */
 .header{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuuTCok3g7IVnzzONfMAQmgFLx5Zrf1b4IA&usqp=CAU");
-    margin:0px;
+    margin:0%;
     width: 100%;
 }
 
 .title{
-    margin:0px;
+    margin:0%;
     text-align: center;
     padding-top: 4%;
     color: #EEEDDE  ;
-    text-shadow: 3px 3px #361500;
+    text-shadow: 3% 3% #361500;
 }
 
 #input_name, 
 #input_hour,
 #input_grade{
-    border: 1px solid #b6b5b3;
+    border: 1% solid #b6b5b3;
     background-color: #fff;
-    padding: 12px 15px;
-    border-radius: 5px;
+    padding: 1% 1%;
+    border-radius: 5%;
     transition: border 0.3s;
     color: inherit;
     font-family: inherit;
-    margin: 10px 0;
+    margin: 5% 0;
 }
 
 #btn_add{
-    padding: 12px 15px;
-    letter-spacing: 1px;
-    border: 2px solid #EEEDDE;
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #EEEDDE;
     background-color: #EEEDDE;
-    border-radius: 5px;
+    border-radius: 5%;
     transition: background-color .4s, color .4s;
     width: fit-content;
 }
@@ -56,22 +57,22 @@ body{
 }
 
 #calc{
-    padding: 12px 15px;
-    letter-spacing: 1px;
-    border: 2px solid #ff9800;
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #ff9800;
     background-color: #ff9800;
-    border-radius: 5px;
+    border-radius: 5%;
     transition: background-color .4s, color .4s;
     width: fit-content;
     margin-top: 3%;
 }
 
 #reset{
-    padding: 12px 15px;
-    letter-spacing: 1px;
-    border: 2px solid #FC4F4F;
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #FC4F4F;
     background-color: #FC4F4F;
-    border-radius: 5px;
+    border-radius: 5%;
     transition: background-color .4s, color .4s;
     width: fit-content;
     margin-top: 3%;
@@ -83,7 +84,7 @@ body{
     text-align: center;
     margin:auto;
     width: 50%;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1% solid #e7e7e7;
 }
 
 th{
