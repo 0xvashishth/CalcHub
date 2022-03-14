@@ -77,6 +77,7 @@
 | 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
 | 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
 | 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
+| 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
