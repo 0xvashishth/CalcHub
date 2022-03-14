@@ -78,6 +78,7 @@
 | 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
 | 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
 | 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
+| 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
