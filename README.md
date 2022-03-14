@@ -76,7 +76,7 @@
 | 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
 | 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
 | 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
-
+| 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
