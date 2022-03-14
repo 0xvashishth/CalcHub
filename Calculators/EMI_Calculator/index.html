@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMI Calculator</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <br/><br/><br/><h1 align="center">EMI CALCULATOR</h1><br/><br/>
+        
+        <div align="center">
+            <form id="Form">
+                <b><label id="lab">Enter Principal amount (in Rs): </label></b>
+                <input type="text" id="princi" name="princi"><br/><br/><br/>
+                <b><label id="lab">Enter rate of interest (in %): </label></b>
+                <input type="text" id="rate" name="rate"><br/><br/><br/>
+                <b><label id="lab">Enter tenure (number of months): </label></b>
+                <input type="text" id="tenure" name="tenure"><br/><br/><br/>
+                <input type="button" value="OK" id="btn" onclick="calculate()"><br/><br/>
+            </form>
+        </div>
+        <p id="res"></p>
+    </body>
+</html>
