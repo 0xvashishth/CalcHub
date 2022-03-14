@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(10, 10, 10);
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .grid-container {
+    background-color: #fff;
+    height: 500px;
+    width: 800px;
+    border-radius: 7px;
+    border: 30px solid rgb(194, 207, 224);
+    display: grid;
+    grid-template-areas: "left right"  "output output";
+  }
+  
+  .left {
+    grid-area: left;
+    background-color: #fff;
+    text-align: center;
+    height: 400px;
+    padding-top: 100px;
+    line-height: 35px;
+  }
+  
+  .left h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .left h2 {
+    font-size: 1.1em;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 43.5px;
+  }
+  
+  .left p {
+    text-align: left;
+    padding-left: 43.5px;
+  }
+  
+  .right {
+    grid-area: right;
+    height: 400px;
+    padding-top: 30px;
+    padding-left: 100px;
+  }
+  
+  .right h3 {
+    margin-bottom: 10px;
+  }
+  
+  .right input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    outline: none;
+    border: 3px solid rgb(99, 99, 146);
+  }
+  
+  .right input:invalid {
+    border: 3px solid red;
+  }
+  
+  .right button {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #fff;
+    outline: none;
+    border: 3px solid rgb(29, 22, 22);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .right button:hover {
+    background-color: rgb(80, 78, 78);
+    color: white;
+  }
+  
+  .output {
+    grid-area: output;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .output p {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icons/files-and-folders.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Percentage Calculator</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;margin:40px;color:rgb(250, 250, 250)">Marks Percentage Calculator</h1>
+    <div class="container" style="margin-top:-80px">
+      <div class="grid-container">
+        <div class="left">
+          <h2>Instructions:</h2>
+          <p>1. Enter marks for all the five subjects.</p>
+          <p>2. Marks out of 100.</p>
+        </div>
+        <div class="right">
+          <h3>Enter your marks</h3>
+          <div id="input">
+            <input type="text" placeholder="Subject 1" id="sub1" />
+            <input type="text" placeholder="Subject 2" id="sub2" />
+            <input type="text" placeholder="Subject 3" id="sub3" />
+            <input type="text" placeholder="Subject 4" id="sub4" />
+            <input type="text" placeholder="Subject 5" id="sub5" />
+          </div>
+          <button id="submit">Calculate</button>
+        </div>
+        <div class="output">
+            <p style="margin-top:-30px;color:rgb(104, 184, 104)">Your Result:</p>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+ 
+</html>
