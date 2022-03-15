@@ -22,7 +22,8 @@ where r is rate/(12*100)
 <br/>
 <br/>
 <h4>After Computation: </h4>
-![SS2](https://user-images.githubusercontent.com/75256548/158432686-3791c0fe-0363-4892-bd71-22d586fa1443.png)
+
+![SS2](https://user-images.githubusercontent.com/75256548/158433060-28bebf1b-4d87-4986-beea-1bcb6d5bc2db.png)
 
 <br/><br/>
 <h4>Functionalities : </h4>
