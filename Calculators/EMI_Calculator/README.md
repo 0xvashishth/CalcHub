@@ -16,11 +16,11 @@ where r is rate/(12*100)
 <br/><br/>
 
 <h4>Before Computation: </h4>  
-<img src="C:\Users\VASUDHA\Desktop\VASUDHA\Calculators\CalcHub\Calculators\EMI_Calculator\SS_1.png">
+<img src="C:\Users\VASUDHA\Desktop\VASUDHA\Calculators\CalcHub\Calculators\EMI_Calculator\SS1.png">
 <br/>
 <br/>
 <h4>After Computation: </h4>
-<img src="C:\Users\VASUDHA\Desktop\VASUDHA\Calculators\CalcHub\Calculators\EMI_Calculator\SS_2.png">
+<img src="C:\Users\VASUDHA\Desktop\VASUDHA\Calculators\CalcHub\Calculators\EMI_Calculator\SS2.png">
 
 <br/><br/>
 <h4>Functionalities : </h4>
