@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock PnL </title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📉</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+    <div class="main-section">
+
+        <header>
+
+            <h1> Stock Profit And Loss Calculator </h1>
+
+        </header>
+
+        <label class="input-label" for="stock-initial-price">Buying Price (₹):
+
+            <input class="input" placeholder="Enter Buying Price Of Stock " id="initial-price" type="number" required />
+
+        </label>
+
+        <label class="input-label" for="stock-quantity"> Stock Quantity :
+            <input class="input" placeholder=" Enter Number Of Stocks Purchased " id="stock-quantity" type="number"
+                required />
+
+        </label>
+
+        <label class="input-label" for="selling-price">Selling Price (₹):
+            <input class="input" id="selling-price" type="number" placeholder="Enter Selling Price of Stock"
+                required /></label>
+
+        <button id="submit-btn" class="btn-check">Check PnL !!</button>
+        <div id="output-box" class="output"></div>
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

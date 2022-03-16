@@ -56,21 +56,32 @@
 
             function calcTaxes(amount) {
                 var max2colors = 0;
-                if (amount > 808080) {
-                    tax = (amount - 808080) * .28 + 870.0 + (55555 - 8700) * .15 + (89350 - 36900) * .25;
-                } else if (amount > 55555) {
-                    tax = (amount - 55555) * .25 + 870.0 + (55555 - 8700) * .15;
-                } else if (amount > 5555) {
-                    tax = (amount - 5555) * .15 + 555.5;
-                } else {
-                    tax = amount * .10;
+                if (amount <=500000) {
+                    tax = 0;
+                } else if (amount <=750000) {
+                    tax = (250000*0.05)+((amount-500000)*0.1);
+                } else if (amount <=1000000) {
+                    tax = (250000*0.05)+(250000*0.1)+((amount-750000)*0.15);
+                }
+                else if (amount <=1250000) {
+                    tax = (250000*0.05)+(250000*0.1)+(250000*0.15)+((amount-1000000)*0.2);
+                }
+                else if (amount <=1500000) {
+                    tax = (250000*0.05)+(250000*0.1)+(250000*0.15)+(250000*0.2)+((amount-1250000)*0.25)
+                }
+                else {
+                    tax = (250000*0.05)+(250000*0.1)+(250000*0.15)+(250000*0.2)+(250000*0.25)+((amount-1500000)*0.3)
                 }
                 // tax += amount * .153;
-                return tax;
+                return parseInt(tax + tax*0.04);
                 /*
-                10% on taxable income from $0 to $808080 plus
-                15% on taxable income over $8,700 to $55555, plus
-                25% on taxable income over $35,350 to $5555, plus
+                upto RS 2.5 lakhs--NIL
+                from RS 250001 to 5 lakh--5% [If an individual has a salary which is less than 5 lakh then he/she gets a Rebate discount of RS 12500 ,So ending up the tax for that person to be Zero]
+                from RS 500001 to 7.5 lakh--10%
+                from RS 750001 to 10 lakh--15%
+                from RS 1000001 to 12.5 lakh--20%
+                from RS 1250001 to 15 lakh--25%
+                from RS 1500001 and above--30%
                 */
             }
         }

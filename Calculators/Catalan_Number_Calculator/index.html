@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalan Number Calculator</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Catalan Number Calculator</h1>
+      <p>
+        The Catalan numbers are a sequence of positive integers that appear 
+        in many counting problems in combinatorics.
+        They count certain types of lattice paths, permutations, binary trees
+        and many other combinatorial objects.
+      </p>
+      <form class="form-container">
+        <div class="input-container">
+          <div class="values">
+            <label name="val">The n<sup>th</sup> Catalan Number :</label>
+            <input type="number" class="num" placeholder="n" min="1" />
+          </div>
+        </div>
+        <button type="submit" class="submit">Calculate</button>
+      </form>
+      <h2 class="result">
+          <span id="answer"></span>
+      </h2>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

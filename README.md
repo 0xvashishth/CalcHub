@@ -69,6 +69,18 @@
 | 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
 | 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
 | 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
+| 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
+| 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
+| 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
+| 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
+| 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
+| 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
+| 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
+| 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
+| 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
+| 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
+| 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
+| 32            | [BMI Calculator](./Calculators/BMI_Calculator/) | 
 
 
 <h1> Project Maintainer ⚡ </h1>
