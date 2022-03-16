@@ -4,15 +4,15 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .calc {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: auto;
     margin-top: 30px;
-    width: 40%;
+    width: 50%;
     padding-bottom: 20px;
     background-color: #fff;
     border: 1px solid #D9DBDE;
@@ -23,33 +23,35 @@ body {
 .objects {
     display: flex;
     margin: 25px;
+    justify-content: space-evenly;
 }
 
 .objects > h3 {
-    margin-right: 30px;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 0px;
-    margin-bottom: 0;
-    max-width: 200px
+    width: 50%;
+    text-align: center;
 }
 
 input {
     height: 50px;
-    width: 200px;
+    width: 170px;
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: 0 5px 15px rgba(73, 72, 72, 0.3);
     border-radius: 10px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 10px;
 }
 
 .result {
     padding: 10px;
     display: flex;
-    max-width: 80%;
+    justify-content: center;
 }
 
 h4 {
@@ -64,6 +66,7 @@ h1 {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
     color: #a8a6a6;
+    text-align: center;
 }
 
 span {
@@ -72,10 +75,15 @@ span {
     padding-top: 7px;
 }
 
+.calculate-div {
+    text-align: center;
+    padding: 20px 0;
+}
+
 .calculate-btn {
-    margin: 20px;
+    
     height: 35px;
-    width: 25%;
+    width: 100px;
     border-radius: 10px;
 
 }
@@ -83,3 +91,31 @@ span {
 .calculate-btn:hover {
     cursor: pointer;
 }
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .calc {
+        width: 65%;
+    }
+}
+
+@media (max-width: 900px) {
+    .calc {
+        width: 80%;
+    }
+    .objects {
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        margin-bottom: 20px;
+    }
+    input {
+        width: 150px;
+        margin-left: 0;
+    }
+    .result {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
