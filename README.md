@@ -80,6 +80,7 @@
 | 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
 | 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
 | 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
+| 32            | [BMI Calculator](./Calculators/BMI_Calculator/) | 
 
 
 <h1> Project Maintainer ⚡ </h1>
