@@ -1,0 +1,252 @@
+body {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .table-bordered {
+        text-align: center;
+        background: #FFF1FE;
+
+    }
+
+    h5 {
+        font-family: Helvetica Rounded LT;
+        font-size: 18px;
+        color: #f055f0;
+        text-align: left;
+    }
+
+    .roundedge {
+        border: 2px solid rgb(248, 69, 179);
+    }
+
+    .btn {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 3px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 50px 2px;
+        transition: 0.3s;
+
+    }
+
+    .btn:hover {
+        background-color: #e43788;
+        color: white;
+    }
+
+    .red {
+        color: white;
+        background-color:#F36;
+
+    }
+
+    .violet {
+        color: white;
+        background-color: #7e70ff;
+
+    }
+
+    .pink {
+        color: white;
+        background-color:#ee10f6;
+    }
+
+    .cyan {
+        color: white;
+        background-color:#00aeef;
+    }
+
+    #month1 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    #month2 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    #month3 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    th {
+        width: 65px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        background: #ec1a9c;
+    }
+
+    li {
+        height: 80px;
+        font-size: 20px;
+    }
+
+    /*Application Classes*/
+
+    .numberCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        background: transparent;
+        color: #1f1e1e;
+        text-align: center;
+        font: 28px Arial, sans-serif;
+        display: inline-block;
+    }
+
+    #dno {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .unCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        background: transparent;
+        text-align: center;
+        font: 28px Arial, sans-serif;
+        display: inline-block;
+        cursor: default !important;
+        color: #aaa !important;
+    }
+
+    .numberCircle:hover {
+        border: 1px solid #e40dda;
+        background: #e40dda;
+    }
+
+    .spin {
+        font-size: 35px;
+        color: #8a6d3b !important;
+    }
+
+
+    .cal-head {
+        background: #fff;
+        height: 30px;
+        align-content: center;
+    }
+
+    .month-head {
+        background: #e4229a !important;
+        color: #fff !important;
+        padding: 5px 0px;
+    }
+
+    .month-head h4 {
+        color: #fff !important;
+
+    }
+
+    .monthYear {
+        color: #fff !important;
+    }
+
+    .spin-div {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .modal-title {
+        padding-top: 20px;
+        width: 100% !important;
+    }
+
+
+
+    #titl {
+        text-align: center;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+
+    #datepicker {
+        width: 200px;
+        margin: 0 20px 0px 0px;
+    }
+
+    #datepicker>span:hover {
+        cursor: pointer;
+    }
+
+
+    .rectangle {
+        height: 30px;
+        width: 50px;
+        background-color: #ee10f6;
+        
+    }
+
+    .rectangle1 {
+        height: 30px;
+        width: 50px;
+        background-color: red;
+    }
+
+    .rectangle2 {
+        height: 30px;
+        width: 50px;
+        background-color: #7e70ff;
+    }
+
+    .rectangle3{
+        height: 30px;
+        width: 50px;
+        background-color: cyan;
+    }
+
+    .mdec {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    .minc {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+    }
+
+    .ddec {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    .dinc {
+        height: 30px;
+        width: 30px;
+
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    h4 {
+        background: #fae3fa;
+        border-radius: 5px;
+        font-family: Arial;
+        font-size: 12;
+        text-align: center;
+
+    }
