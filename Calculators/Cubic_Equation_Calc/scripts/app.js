@@ -33,9 +33,9 @@ function solve(){
         let N = Math.sqrt(3) * Math.sin(k/3);
         let P = (x2/(x3*3)) *-1;
 
-        x.value = 2*j* Math.cos(k/3) - (x2/(x3*3));
-        y.value = L * (M + N) + P;
-        z.value = L * (M - N) + P;
+        x.value = Math.round(2*j* Math.cos(k/3) - (x2/(x3*3)), 5);
+        y.value = Math.round(L * (M + N) + P, 5);
+        z.value = Math.round(L * (M - N) + P, 5);
     }else{
         let R = -(g/2) + Math.sqrt(h);
         let S;
