@@ -1,0 +1,737 @@
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Datepicker libs-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+        rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+
+<style>      /*Change in default elements*/
+
+    body {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .table-bordered {
+        text-align: center;
+        background: #FFF1FE;
+
+    }
+
+    h5 {
+        font-family: Helvetica Rounded LT;
+        font-size: 18px;
+        color: #f055f0;
+        text-align: left;
+    }
+
+    .roundedge {
+        border: 2px solid rgb(248, 69, 179);
+    }
+
+    .btn {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 3px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 50px 2px;
+        transition: 0.3s;
+
+    }
+
+    .btn:hover {
+        background-color: #e43788;
+        color: white;
+    }
+
+    .red {
+        color: white;
+        background-color:#F36;
+
+    }
+
+    .violet {
+        color: white;
+        background-color: #7e70ff;
+
+    }
+
+    .pink {
+        color: white;
+        background-color:#ee10f6;
+    }
+
+    .cyan {
+        color: white;
+        background-color:#00aeef;
+    }
+
+    #month1 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    #month2 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    #month3 td {
+        padding: 3px !important;
+        width: 250px;
+        height: 150;
+    }
+
+    th {
+        width: 65px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        background: #ec1a9c;
+    }
+
+    li {
+        height: 80px;
+        font-size: 20px;
+    }
+
+    /*Application Classes*/
+
+    .numberCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        background: transparent;
+        color: #1f1e1e;
+        text-align: center;
+        font: 28px Arial, sans-serif;
+        display: inline-block;
+    }
+
+    #dno {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .unCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        background: transparent;
+        text-align: center;
+        font: 28px Arial, sans-serif;
+        display: inline-block;
+        cursor: default !important;
+        color: #aaa !important;
+    }
+
+    .numberCircle:hover {
+        border: 1px solid #e40dda;
+        background: #e40dda;
+    }
+
+    .spin {
+        font-size: 35px;
+        color: #8a6d3b !important;
+    }
+
+
+    .cal-head {
+        background: #fff;
+        height: 30px;
+        align-content: center;
+    }
+
+    .month-head {
+        background: #e4229a !important;
+        color: #fff !important;
+        padding: 5px 0px;
+    }
+
+    .month-head h4 {
+        color: #fff !important;
+
+    }
+
+    .monthYear {
+        color: #fff !important;
+    }
+
+    .spin-div {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .modal-title {
+        padding-top: 20px;
+        width: 100% !important;
+    }
+
+
+
+    #titl {
+        text-align: center;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+
+    #datepicker {
+        width: 200px;
+        margin: 0 20px 0px 0px;
+    }
+
+    #datepicker>span:hover {
+        cursor: pointer;
+    }
+
+
+    .rectangle {
+        height: 30px;
+        width: 50px;
+        background-color: #ee10f6;
+        
+    }
+
+    .rectangle1 {
+        height: 30px;
+        width: 50px;
+        background-color: red;
+    }
+
+    .rectangle2 {
+        height: 30px;
+        width: 50px;
+        background-color: #7e70ff;
+    }
+
+    .rectangle3{
+        height: 30px;
+        width: 50px;
+        background-color: cyan;
+    }
+
+    .mdec {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    .minc {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+    }
+
+    .ddec {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    .dinc {
+        height: 30px;
+        width: 30px;
+
+        background-color: rgb(248, 69, 179);
+
+    }
+
+    h4 {
+        background: #fae3fa;
+        border-radius: 5px;
+        font-family: Arial;
+        font-size: 12;
+        text-align: center;
+
+    }
+
+
+}
+
+ 
+</style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h5>WHEN DID YOUR LAST PERIOD START?</h5>
+                <input class="roundedge" id="datepicker" width="206" style="text-align:center; color: palevioletred" />
+            </div>
+            <div class="col-sm-3">
+                <h5>HOW MANY DAYS DID IT LAST?</h5>
+                <button class="ddec" onclick="ddec()">-</button>
+
+                <input class="roundedge" id="pdays" width="276" value=5
+                    style="text-align:center; color: palevioletred" />
+                <button class="dinc" onClick="dinc()">+</button>
+            </div>
+            <div class="col-sm-3">
+                <h5>HOW LONG IS YOUR MENSTRUAL?</h5>
+                <button class="mdec" onclick="mdec()">-</button>
+                <input class="roundedge" id="plength" width="276" value=28
+                    style="text-align:center; color: palevioletred" />
+                <button class="minc" onClick="minc()">+</button>
+            </div>
+
+            <div class="col-sm-3">
+                <button class="btn" onclick="generate()">Click</button>
+
+            </div>
+
+            <div class="col-sm-3">
+                <button class="btn" onclick="generateCal('05/23/2019')">Any date</button>
+
+            </div>
+
+        
+
+        </div>
+        </br><br />
+        <div class="row">
+            <div class="col-md-1">
+                <a href="#" id="page-left" onclick="prevMonth()"><i class="fa fa-arrow-left"></i></a>
+            </div>
+
+            <div class="col-md-10">
+            </div>
+
+            <div class="col-md-1">
+                <a href="#" id="page-right" onclick="nextMonth()"><i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h4 id="monthOneName"></h4>
+                <table  id="month1" class="table-bordered">
+                </table>
+            </div>
+            <div class="col-sm">
+                <h4 id="monthTwoName"></h4>
+                <table id="month2" class="table-bordered">
+                </table>
+            </div>
+            <div class="col-sm">
+                <h4 id="monthThreeName"></h4>
+                <table id="month3" class="table-bordered">
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" language="javascript">
+    </script>
+    <br />
+    <br />
+    <div class="row">
+        <div class=" col-sm-2"></div>
+        <div class=" col-sm-1 rectangle"></div>
+        <div class="col-sm-1">periods</div>
+
+        <div class=" col-sm-1 rectangle1"></div>
+        <div class="col-sm-1">pre</div>
+
+        <div class=" col-sm-1 rectangle2"></div>
+        <div class="col-sm-1">post</div>
+
+        <div class=" col-sm-1 rectangle3"></div>
+        <div class="col-sm-1">peakOvulation</div>
+        <div class=" col-sm-2"></div>
+        
+    </div>
+
+<script>
+$(function () {
+    $("#datepicker").datepicker({
+        autoclose: true,
+        todayHighlight: true
+    }).datepicker('update', new Date());
+});
+const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+const weekNames = [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+]
+let getDaysInMonth = function (month, year) {
+    console.log(month, year)
+    return new Date(year, month, 0).getDate();
+};
+
+function range(start, end) {
+    return (new Array(end - start + 1)).fill(undefined).map((_, i) => i + start);
+}
+
+function nextMonth() {
+    if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear += 1;
+    } else {
+        currentMonth += 1;
+    }
+    myFunction();
+}
+
+function prevMonth() {
+    console.log("df")
+    clearCal();
+    let d = new Date($("#datepicker").val());
+    var m = d.getMonth();
+    var pm = m - 3;
+    var pDays = 28;
+
+    while (d.getMonth() > pm || d.getDate() - pDays >= 1) {
+        d.setDate(d.getDate() - pDays);
+
+    }
+
+    console.log(d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear())
+    generateCal(d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear());
+
+    $("#datepicker").datepicker('update', new Date(d))
+
+}
+
+const todayDate = new Date();
+const actualCurrentMonth = todayDate.getMonth();
+const actualCurrentYear = todayDate.getFullYear();
+const actualCurrentDay = todayDate.getDate();
+let currentMonth = todayDate.getMonth();
+let currentYear = todayDate.getFullYear();
+let monthOneDays = [];
+let monthTwoDays = [];
+let monthThreeDays = [];
+
+function myFunction() {
+
+    let monthOneTable = document.getElementById("month1");
+    let monthTwoTable = document.getElementById("month2");
+    let monthThreeTable = document.getElementById("month3");
+    monthOneTable.innerHTML = "";
+    monthTwoTable.innerHTML = "";
+    monthThreeTable.innerHTML = "";
+    let b1 = 0;
+    let b2 = 0;
+    let b3 = 0;
+
+    //select the current day in the first week
+    let weekDay = new Date(currentYear, currentMonth, 1).getDay();
+    let weekDay1 = new Date(currentYear, currentMonth + 1, 1).getDay();
+    let weekDay2 = new Date(currentYear, currentMonth + 2, 1).getDay();
+    for (let weekDaySelect = 0; weekDaySelect < weekDay; weekDaySelect++) monthOneDays.unshift({
+        date: ""
+    })
+    for (let weekDaySelect = 0; weekDaySelect < weekDay1; weekDaySelect++) monthTwoDays.unshift({
+        date: ""
+    })
+    for (let weekDaySelect = 0; weekDaySelect < weekDay2; weekDaySelect++) monthThreeDays.unshift({
+        date: ""
+    })
+
+
+    for (i = 0; i < monthOneDays.length / 7; i++) {
+        let row = monthOneTable.insertRow(i);
+        for (j = 0; j < 7; j++) {
+            if (monthOneDays[i + j + b1] != undefined) {
+                let cell1 = row.insertCell(j);
+                cell1.className = monthOneDays[i + j + b1].class;
+                let x = document.createElement("span");
+
+                x.className = monthOneDays[i + j + b1].class;
+                x.innerHTML = monthOneDays[i + j + b1].date;
+                cell1.append(x);
+            }
+        }
+        b1 += 6;
+    }
+    for (i = 0; i < monthTwoDays.length / 7; i++) {
+        let row = monthTwoTable.insertRow(i);
+        for (j = 0; j < 7; j++) {
+            if (monthTwoDays[i + j + b2] != undefined) {
+                let cell1 = row.insertCell(j);
+                cell1.className = monthTwoDays[i + j + b2].class;
+                let x = document.createElement("span");
+                x.className = monthTwoDays[i + j + b2].class;
+                x.innerHTML = monthTwoDays[i + j + b2].date;
+                cell1.append(x);
+            }
+        }
+        b2 += 6;
+    }
+    for (i = 0; i < monthThreeDays.length / 7; i++) {
+        let row = monthThreeTable.insertRow(i);
+        for (j = 0; j < 7; j++) {
+            // //console.log("i", i, "j", j, "i+j", i + j, "b1", b1)
+            if (monthThreeDays[i + j + b3] != undefined) {
+                let cell1 = row.insertCell(j);
+                cell1.className = monthThreeDays[i + j + b3].class;
+                let x = document.createElement("span");
+                x.className = monthThreeDays[i + j + b3].class;
+                x.innerHTML = monthThreeDays[i + j + b3].date;
+                cell1.append(x);
+            }
+        }
+        b3 += 6;
+    }
+
+    let rowm1 = monthOneTable.insertRow(0);
+    let rowm2 = monthTwoTable.insertRow(0);
+    let rowm3 = monthThreeTable.insertRow(0);
+    for (i = 0; i < 7; i++) {
+        let cell1 = rowm1.insertCell(i);
+        cell1.className = "week-head";
+        let x1 = document.createElement("span");
+        x1.innerHTML = weekNames[i];
+        cell1.append(x1);
+
+        let cell2 = rowm2.insertCell(i);
+        cell2.className = "week-head";
+        let x2 = document.createElement("span");
+        x2.innerHTML = weekNames[i];
+        cell2.append(x2);
+
+        let cell3 = rowm3.insertCell(i);
+        cell3.className = "week-head";
+        let x3 = document.createElement("span");
+        x3.innerHTML = weekNames[i];
+        cell3.append(x3);
+    }
+}
+
+function clearCal() {
+    $("#month1").innerHTML = "";
+    $("#month2").innerHTML = "";
+    $("#month3").innerHTML = "";
+}
+
+function generate() {
+    clearCal();
+    let selectedDate = $("#datepicker").val();
+    generateCal(selectedDate);
+}
+
+
+function generateCal(selectedDate) {
+
+    let selectedDateMonth = parseInt(selectedDate.split("/")[0]);
+    let selectedDateDay = parseInt(selectedDate.split("/")[1]);
+
+    let pdays_ip = $("#pdays").val(); // HOW MANY DAYS DID IT LAST? Backup
+    let pdays = $("#pdays").val(); //  HOW MANY DAYS DID IT LAST?
+    let plength = $("#plength").val(); // HOW LONG IS YOUR MENSTRUAL?
+    let postp = 2; // Post period 2 days
+    let postToPeak = 3; // Post period to peak ovul
+    let peakOvul = 5; // Peak Ovulation 5 days
+    let prep = 2; // Pre peroid 2 days
+
+    let normalday = plength - pdays - postp - postToPeak - peakOvul - prep;
+    console.log(normalday);
+    console.log(selectedDate, pdays, plength, );
+    console.log(selectedDateDay)
+
+    let monthOne = getDaysInMonth(parseInt(selectedDateMonth), 2019);
+    let monthTwo = getDaysInMonth(parseInt(selectedDateMonth) + 1, 2019);
+    let monthThree = getDaysInMonth(parseInt(selectedDateMonth) + 2, 2019);
+    console.log("monthOne : " + monthOne, monthTwo, monthThree);
+
+    monthOneDays = range(1, monthOne);
+    monthTwoDays = range(1, monthTwo);
+    monthThreeDays = range(1, monthThree);
+
+    document.getElementById("monthOneName").innerHTML = monthNames[selectedDateMonth - 1] + " " + currentYear;
+    document.getElementById("monthTwoName").innerHTML = monthNames[selectedDateMonth] + " " + currentYear;
+    document.getElementById("monthThreeName").innerHTML = monthNames[selectedDateMonth + 1] + " " + currentYear;
+    let monthOneDaysObj = [];
+    let allDays = monthOneDays.concat(monthTwoDays).concat(monthThreeDays);
+
+    console.log(allDays);
+
+    for (var i = 0; i < allDays.length; i++) {
+        let d = allDays[i];
+        if (pdays === 0 && postp === 0 && normalday === 0 && prep === 0) {
+            pdays = pdays_ip;
+            prep = 2;
+            postToPeak = 3;
+            peakOvul = 5;
+            postp = 2;
+            normalday = plength - pdays - postp - postToPeak - peakOvul - prep;
+        }
+        if (pdays === 0 && postp === 0 && postToPeak == 0 && peakOvul == 0 && normalday === 0 && prep > 0) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "red"
+            })
+            prep--;
+        }
+        if (pdays === 0 && postp === 0 && postToPeak == 0 && peakOvul == 0 && normalday > 0) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "normal"
+            })
+            normalday--;
+        }
+        if (pdays === 0 && postp === 0 && postToPeak == 0 && peakOvul > 0) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "cyan"
+            })
+            peakOvul--;
+        }
+        if (pdays === 0 && postp === 0 && postToPeak > 0) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "normal"
+            })
+            postToPeak--;
+        }
+        if (pdays === 0 && postp > 0) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "violet"
+            })
+            postp--;
+        }
+        if (pdays > 0 && i > selectedDateDay - 2) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "pink"
+            })
+            pdays--;
+        }
+        if (i <= selectedDateDay - 2) {
+            monthOneDaysObj.push({
+                date: d,
+                class: "normal"
+            })
+        }
+    }
+
+    console.log(selectedDateDay)
+    pdays = pdays_ip;
+    prep = 2;
+    postToPeak = 3;
+    peakOvul = 5;
+    postp = 2;
+    normalday = plength - pdays - postp - postToPeak - peakOvul - prep;
+
+
+
+    let monthOneDaysPrev = monthOneDaysObj.slice(0, monthOne)
+    console.log(monthOneDaysPrev)
+
+    for (var i = selectedDateDay - 2; i >= 0; i--) {
+        console.log(i, prep, normalday, peakOvul)
+        if (prep > 0) {
+            monthOneDaysPrev[i].class = 'red';
+            prep--;
+            console.log("prep")
+        } else if (prep === 0 && normalday > 0) {
+            monthOneDaysPrev[i].class = 'normal';
+            normalday--;
+            console.log("normal")
+
+        } else if (prep === 0 && normalday === 0 && peakOvul > 0) {
+            monthOneDaysPrev[i].class = 'cyan';
+            peakOvul--;
+            console.log("cyan")
+        } else if (prep === 0 && normalday === 0 && peakOvul === 0 && postToPeak > 0) {
+            monthOneDaysPrev[i].class = 'normal';
+            postToPeak--;
+            console.log("postToPeak")
+        } else if (prep === 0 && normalday === 0 && peakOvul === 0 && postToPeak === 0 && postp > 0) {
+            monthOneDaysPrev[i].class = 'violet';
+            postp--;
+            console.log("postp")
+        }
+
+    }
+
+    monthOneDays = [...monthOneDaysPrev];
+
+    monthTwoDays = monthOneDaysObj.slice(monthOne, monthOne + monthTwo);
+    monthThreeDays = monthOneDaysObj.slice(monthOne + monthTwo, monthOne + monthTwo + monthThree);
+    myFunction();
+}
+
+
+function minc() {
+  var m=  document.getElementById('plength');
+  m.value++;
+}
+
+function mdec() {
+    m=  document.getElementById('plength');
+    m.value--;
+}
+
+let d = 0;
+
+function dinc() {
+    
+    var d=document.getElementById('pdays');
+    d.value++;
+}
+
+function ddec() {
+    
+   d= document.getElementById('pdays');
+   d.value--;
+}
+let values = [];
+let selectedDate;
+let selectedFullDate;
+let gslot;
+let gcurrent;
+let bookings = [];
+// A $( document ).ready() block.
+$(document).ready(function () {
+    let d = new Date();
+    let n = d.getMonth();
+});
+</script>
+</body>
+</html> 
