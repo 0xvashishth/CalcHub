@@ -80,8 +80,10 @@
 | 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
 | 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
 | 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
-| 32            | [BMI Calculator](./Calculators/BMI_Calculator/) | 
-| 33			| [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/) |
+| 32            | [BMI Calculator](./Calculators/BMI_Calculator/) |
+| 33            | [GPA_Calculator](./Calculators/GPA_Calculator/index.html) |
+| 34            | [Permutation and Combination Calculator](./Calculators/Permutation%20and%20Combination%20Calculator/) |
+| 35			      | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>

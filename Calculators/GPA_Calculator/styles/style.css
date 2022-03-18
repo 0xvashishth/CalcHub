@@ -1,0 +1,111 @@
+body{
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+}
+/* Header */
+.header{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuuTCok3g7IVnzzONfMAQmgFLx5Zrf1b4IA&usqp=CAU");
+    margin:0%;
+    width: 100%;
+}
+
+.title{
+    margin:0%;
+    text-align: center;
+    padding-top: 4%;
+    color: #EEEDDE  ;
+    text-shadow: 3% 3% #361500;
+}
+
+#input_name, 
+#input_hour,
+#input_grade{
+    border: 1% solid #b6b5b3;
+    background-color: #fff;
+    padding: 1% 1%;
+    border-radius: 5%;
+    transition: border 0.3s;
+    color: inherit;
+    font-family: inherit;
+    margin: 5% 0;
+}
+
+#btn_add{
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #EEEDDE;
+    background-color: #EEEDDE;
+    border-radius: 5%;
+    transition: background-color .4s, color .4s;
+    width: fit-content;
+}
+
+.input{
+    text-align: center;
+    padding: 2%;
+}
+
+/* All courses */
+
+#all_courses{
+    text-align: center;
+}
+
+.all_title{
+    color: #361500;
+}
+
+#calc{
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #ff9800;
+    background-color: #ff9800;
+    border-radius: 5%;
+    transition: background-color .4s, color .4s;
+    width: fit-content;
+    margin-top: 3%;
+}
+
+#reset{
+    padding: 1% 2%;
+    letter-spacing: 1%;
+    border: 2% solid #FC4F4F;
+    background-color: #FC4F4F;
+    border-radius: 5%;
+    transition: background-color .4s, color .4s;
+    width: fit-content;
+    margin-top: 3%;
+}
+
+/* Course */
+
+#courses{
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    border-bottom: 1% solid #e7e7e7;
+}
+
+th{
+    padding: 2%;
+}
+
+.close{
+    width: 25%;
+}
+
+.close_btn{
+    all: unset;
+}
+
+/* Result */
+#result{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button {
+    cursor: pointer;
+}
