@@ -6,7 +6,7 @@ Let's have a look its functionality and working method...
 
 ## Screenshots
 
-![Screenshot](https://user-images.githubusercontent.com/81005795/158002704-a299c99b-1c3a-46f7-aa1a-53575073d531.png)
+![Screenshot](https://user-images.githubusercontent.com/81005795/159104001-16d78a01-f990-49ad-97f5-f7318457746c.png)
 
 ## Authors
 
