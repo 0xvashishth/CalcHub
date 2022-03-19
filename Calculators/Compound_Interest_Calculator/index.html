@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Compound Interest Calculator</title>
+
+
+</head>
+
+<body>
+    <div class="container mt-5" style="width:80%">
+        <div class="text-center">
+            <h1>Compound Interest Calculator</h1>
+        </div>
+
+        <div style="border:3px solid rgb(15, 13, 13)">
+
+            <div class="col-md-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group input-group-sm mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Principal</span>
+                            </div>
+                            <input type="text" class="form-control" id="base-amount" placeholder="Enter Original Amount">
+                        </div>
+
+                        <div class="input-group input-group-sm mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Interest(%)</span>
+                            </div>
+                            <input type="text" class="form-control" id="interest-rate" placeholder="Enter Number..">
+                        </div>
+
+                        <div class="input-group input-group-sm mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" >Time Period</span>
+                            </div>
+                            <input type="text" class="form-control" id="period" placeholder="Enter number of Years..">
+                        </div>
+                        <div class="input-group input-group-sm mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Interest Compunded</span>
+                            </div>
+                            <input type="text" class="form-control" id="compounded" placeholder="No. of times">
+                        </div>
+
+                        <button type="button" style="color:hsl(0, 4%, 90%);background-color:rgb(12, 11, 11)" class="btn mt-3 mb-2" id="calculate"
+                            onclick="runApp()">Calculate</button>
+                        <hr>
+
+                        <div id="results">
+                            <h6></h6>
+                            <h6 id="total-value" style="color: green"></h6>
+                            <h6></h6>
+                            <h6 id="interest-earned" style="color: rgb(15, 146, 15)"></h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-2">
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
