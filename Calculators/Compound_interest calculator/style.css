@@ -1,0 +1,22 @@
+.container{
+    background-color:rgb(22, 20, 20)
+}
+.text-center{
+    color:rgb(10, 9, 9);
+}
+.form-label{
+    color:rgb(219, 217, 217);
+    font-size: 22px;
+
+}
+.btn{
+    font-size:17px;
+    margin:0 130px;
+    width:200px;
+    color: hsl(0, 7%, 3%);
+    background-color: rgb(255, 255, 255);
+}
+#calculate:hover{
+   background-color: rgb(138, 132, 132);
+   color:aliceblue
+}
