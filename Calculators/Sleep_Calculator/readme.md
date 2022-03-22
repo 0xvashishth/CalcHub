@@ -13,4 +13,5 @@ The provided Sleep Calculator calculates your bed time based on the time at whic
 - Javascript
 ## Screenshot
 
-![Screenshot (5)](https://user-images.githubusercontent.com/90457566/158638284-9f621146-3f28-48b7-8273-150ee483310a.png)
+
+![Screenshot (6)](https://user-images.githubusercontent.com/90457566/159419061-544bb13f-dfd5-4597-8b86-613710409fcc.png)
