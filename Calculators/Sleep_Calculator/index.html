@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sleep Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,56 +12,30 @@
       <form>
         <div class="base">
           <div class="enter">
-            <h4>
-              Sleep Calculator 
-            </h4>
-            <h6>
-                Enter your DOB.
-            </h6>
+            <h4>Sleep Calculator</h4>
+            <h6>What time do you want to wake up?</h6>
+          </div>
+
+          <div class="block">
+            <input type="text" placeholder="hours" name="hours" id="hour" />
           </div>
           <div class="block">
-            <p class="title">Date</p>
-            <input
-              type="text"
-              name="date"
-              id="date"
-              placeholder="dd"
-              required="required"
-              minlength="1"
-              maxlength="2"
-            />
+            <input type="text" placeholder="minutes" name="minutes" id="minute" />
           </div>
           <div class="block">
-            <p class="title">Month</p>
-            <input
-              type="text"
-              name="month"
-              id="month"
-              placeholder="mm"
-              required="required"
-              minlength="1"
-              maxlength="2"
-            />
-          </div>
-          <div class="block">
-            <p class="title">Year</p>
-            <input
-              type="text"
-              name="year"
-              id="year"
-              placeholder="yyyy"
-              required="required"
-              minlength="4"
-              maxlength="4"
-            />
+            <select name="meridian" id="meridian">
+              <option value="am">AM</option>
+              <option value="pm">PM</option>
+            </select>
           </div>
         </div>
         <div class="base">
           <div class="enter">
-            <input type="button" name="submit" value="Submit" onclick="age()" />
+            <input type="button" name="submit" value="Submit" onclick="time()" />
           </div>
         </div>
-        <div id="age"></div>
+        <div id="sleepTime"></div>
+        <div id="otherSleepTime"></div>
         <div id="sleep"></div>
       </form>
     </div>

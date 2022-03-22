@@ -1,10 +1,10 @@
 # Sleep Calculator
 
-The provided Sleep Calculator calculates the amount of sleep that a person needs each day.
+The provided Sleep Calculator calculates your bed time based on the time at which you want to wake up. It ensures that you get proper sleep in 90 mins cycles.
 
-# Inputs required for calculation of BMI
+# Inputs required for calculation of Sleep hours
 
-- Date of Birth
+- Wake up time
 
 ## Built with
 
