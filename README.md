@@ -73,6 +73,7 @@
 | 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
 | 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
 | 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
+| 25            | [Matrix Operations Calculator](./Calculators/Matrix_Operations_Calculator/) |
 
 
 <h1> Project Maintainer ⚡ </h1>
