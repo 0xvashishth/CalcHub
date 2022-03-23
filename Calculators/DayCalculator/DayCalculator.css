@@ -1,0 +1,36 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    color: white;
+}
+button
+{
+    background-color: rgb(0, 255, 76);
+    border: 10px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: rgb(0, 0, 0); 
+    border: 2px solid #979797;
+}  
+button:hover
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+input
+{
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
