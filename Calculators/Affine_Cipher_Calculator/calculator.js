@@ -1,39 +1,12 @@
-var alpha = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+
 function encipherMessage(a, b, word) {
   a = parseInt(a);
   b = parseInt(b);
 
-  for (var i = 0; i < word.length; i++) {
-    var alphaIndex = alpha.indexOf(word[i]);
-
-    var troublesome = (a * alphaIndex + b) % alpha.length;
+  for (let i = 0; i < word.length; i++) {
+    let alphaIndex = alpha.indexOf(word[i]);
+    let troublesome = (a * alphaIndex + b) % alpha.length;
 
     word = word.substring(0, i) + alpha[troublesome] + word.substring(i + 1);
   }
@@ -44,31 +17,46 @@ function decipherMessage(a, b, word) {
   a = parseInt(a);
   b = parseInt(b);
 
-  for (var i = 0; i < word.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     a %= alpha.length;
 
     //Bruteforce the modular invert of the a
 
-    for (var j = 1; j < alpha.length; j++) {
-      if ((a * j) % alpha.length == 1) var invert = j;
+    let invert;
+
+    for (let j = 1; j < alpha.length; j++) {
+      if ((a * j) % alpha.length == 1) invert = j;
     }
 
-    var alphaIndex = alpha.indexOf(word[i]);
+    let alphaIndex = alpha.indexOf(word[i]);
 
-    var troublesome = (invert * (alphaIndex - b)) % alpha.length;
+    let troublesome = (invert * (alphaIndex - b)) % alpha.length;
     if (troublesome < 0) troublesome += alpha.length;
     word = word.substring(0, i) + alpha[troublesome] + word.substring(i + 1);
   }
   return word;
 }
+
 function affine() {
   plaintext = $("#plaintext")
     .val()
     .toLowerCase()
     .replace(/\W/g, "")
     .replace(/[0-9]/g, "");
+
   a1 = $("#key").val();
   b1 = $("#key1").val();
+
+  if (
+    !a1 ||
+    !b1 ||
+    a1 === null ||
+    b1 === null ||
+    isNaN(parseInt(a1)) ||
+    isNaN(parseInt(b1))
+  )
+    return;
+
   ciphertext = encipherMessage(a1, b1, plaintext);
   $("#output").val(ciphertext);
 }
@@ -79,8 +67,20 @@ function deaffine() {
     .toLowerCase()
     .replace(/\W/g, "")
     .replace(/[0-9]/g, "");
-  a2 = parseInt(document.getElementById("keycipher").value);
-  b2 = parseInt(document.getElementById("keycipher1").value);
+
+  a2 = $("#keycipher").val();
+  b2 = $("#keycipher1").val();
+
+  if (
+    !a2 ||
+    !b2 ||
+    a2 === null ||
+    b2 === null ||
+    isNaN(parseInt(a2)) ||
+    isNaN(parseInt(b2))
+  )
+    return;
+
   plaintext = decipherMessage(a2, b2, ciphertext);
   $("#deoutput").val(plaintext);
 }

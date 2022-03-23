@@ -119,6 +119,7 @@ h2 {
 
 .form-group button {
     width: 90%;
+    margin-top: 20px;
     color: white;
     background-color: rgb(39, 114, 199);
     border: none;
