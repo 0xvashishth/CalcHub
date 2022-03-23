@@ -83,6 +83,7 @@
 | 32            | [BMI Calculator](./Calculators/BMI_Calculator/) |
 | 33            | [GPA_Calculator](./Calculators/GPA_Calculator/index.html) |
 | 34            | [Permutation and Combination Calculator](./Calculators/Permutation%20and%20Combination%20Calculator/) |
+| 35            | [Matrix Operations Calculator](./Calculators/Matrix_Operations_Calculator/) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
