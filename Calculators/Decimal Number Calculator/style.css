@@ -1,0 +1,23 @@
+body{
+    background:url("binary\ bg.jpg");
+    text-align:center;
+    color:rgb(255, 142, 227);
+}
+#primary{
+    margin:0 30%;
+}
+.heading{
+    margin:40px;
+    text-shadow:2px 1px rgb(33, 78, 255);
+}
+.decimal, .binary, .hexadecimal, .octal {
+    margin:30px;
+    text-shadow:2px 1px rgb(33, 78, 255);
+}
+h5{
+    text-align:left;
+}
+input{
+    width:100%;
+    border-radius:5px;
+}
