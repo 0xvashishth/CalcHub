@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2782e3;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    width: 520px;
+    height: auto;
+    margin: 100px auto;
+    background-color: #eee;
+    border-radius: 25px;
+  }
+  .base {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+  }
+  .block {
+    width: 195px;
+    padding: 5px 10px;
+    margin-left: 114px;
+    margin-bottom: 19px;
+    display: inline-block;
+    /* border: 2px solid red; */
+    float: left;
+  }
+  .base h4 {
+    font-size: 26px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    background: white;
+    font-size: 34px;
+    color: navy;
+  }
+  h6 {
+    font-size: 24px !important;
+    text-align: center;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+  
+    color: rgb(17, 17, 43);
+  }
+  .title {
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #1073d0;
+  }
+  input[type="password"] {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #1073d0;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #1073d0;
+    font-size: 27px;
+    
+
+  }
+  input[type="password"]:focus {
+    background-color: #ffffff;
+    border: 2px solid orange;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 150px;
+    margin-left: 23%;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #0761b6;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+    
+  }
+  input[type="button"]:hover {
+    background-color: #003669;
+  }
+  #btn{
+    background-color: #328bda;
+    max-width: 100%;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 1%;
+    position: absolute;
+    top: 416px;
+    left: 53%;
+  }
+  #strength {
+    display: block;
+    margin: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: navy;
+  }
+  #uppercase,#lowercase,#number,#special,#length{
+    display: block;
+   
+    margin-top: 6px;
+    padding: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: rgb(92, 88, 168);
+  }
+ 

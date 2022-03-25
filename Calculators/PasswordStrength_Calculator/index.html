@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="base">
+          <div class="enter">
+            <h4>Password Strength Calculator</h4>
+            <h6>Enter Your Password</h6>
+          </div>
+          <div class="block">
+
+              <input type="password" name="" id="password">
+          </div>
+          <div class="base">
+            <div class="enter">
+              <input type="button" name="submit" value="Check" onclick="pass()" />
+            </div>
+          </div>
+          <div class="base">
+            <div class="enter">
+                <button id="btn">Clear</button>
+            </div>
+          </div>
+          
+          <!-- <div cla ss="block">
+            <input type="text" placeholder="hours" name="hours" id="hour" />
+          </div>
+          <div class="block">
+            <input type="text" placeholder="minutes" name="minutes" id="minute" />
+          </div>
+          <div class="block">
+            <select name="meridian" id="meridian">
+              <option value="am">AM</option>
+              <option value="pm">PM</option>
+            </select>
+          </div>
+        </div>
+        <div id="sleepTime"></div>
+        <div id="otherSleepTime"></div> -->
+        <ul>
+            <li id="strength"></li>
+            <li id="uppercase"></li>
+            <li id="lowercase"></li>
+            <li id="number"></li>
+            <li id="special"></li>
+            <li id="length"></li>
+        </ul>
+        
+    </form>
+</div>
+<script src="./script.js"></script>
+  </body>
+</html>
