@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content = "width-device=width,initial-scale=1">
+    <title>Weight Calculator</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p>Weight Calculator</p>
+        <input type="text" id="grams" ><br>
+        <span id="error"></span>
+        <p>Convert to:
+            <select id="type">
+                <option value="Pounds">Pounds</option>
+                <option value="Kilograms">Kilograms</option>
+                <option value="Ounces">Ounces</option>
+                <option value="Stones">Stones</option>
+            </select>
+        </p>
+        <button id="btn">Convert</button>
+        <p id="output">&nbsp;</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
