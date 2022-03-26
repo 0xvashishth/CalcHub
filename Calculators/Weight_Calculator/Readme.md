@@ -13,8 +13,12 @@
 
 <h2>Screenshot/Video:</h2>
 
-![Weight](https://user-images.githubusercontent.com/72568715/160248535-f4754b26-a36d-4014-b26a-6c8eebdd61e9.PNG)
+![Weight](https://user-images.githubusercontent.com/72568715/160254349-0412fa9d-1c01-4997-b5cc-b70a062516dc.PNG)
 
 
-<video src="https://user-images.githubusercontent.com/72568715/160248564-69b46018-1e44-420e-b67b-37244eb45e2f.mp4" width="200"></video>
+
+
+<video src="https://user-images.githubusercontent.com/72568715/160254366-6d5e3244-e170-4848-a1bc-2f85bffc7585.mp4" width="200"></video>
+
+
 
