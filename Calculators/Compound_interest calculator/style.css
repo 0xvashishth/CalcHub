@@ -1,5 +1,8 @@
 .container{
-    background-color:rgb(22, 20, 20)
+    background-color:rgb(22, 20, 20);
+    width: 500px;
+    height:600px;
+    margin-top:10px;
 }
 .text-center{
     color:rgb(255, 255, 255);
@@ -19,4 +22,11 @@
 #calculate:hover{
    background-color: rgb(138, 132, 132);
    color:aliceblue
+}
+@media only screen and (max-width:450)
+{
+     .container{
+         width:100%;
+         height:700px;
+     }
 }
