@@ -34,7 +34,7 @@ button.addEventListener('click', function () {
         function convert_kilogram(gram){
             let rate = 0.001, kilogram;
             kilogram = gram * rate;
-            document.getElementById('output').innerHTML = gram + " grams = " + kilogram.toFixed(3) + ' kg.';
+            document.getElementById('output').innerHTML = gram + " grams = " + kilogram.toFixed(3) + ' kgs.';
         }
         function convert_ounces(gram){
             let rate = 0.035274, ounces;
