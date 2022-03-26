@@ -1,6 +1,6 @@
 ## Weight Calculator
 
-<p>This calculator will calculate body weights.This wight will convert into pounds,kilograms,ounces,stones.</p>
+<p>This calculator will calculate body weights.This weight will convert into pounds,kilograms,ounces,stones.</p>
 
 <h2>Tech Stack</h2>
 <ul>
