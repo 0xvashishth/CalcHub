@@ -1,134 +1,126 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Affine Cipher</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="stylesheet" href="style.css" />
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  </head>
 
-</head>
+  <body>
+    <div id="left-wrapper" class="left-wrapper">
+      <div id="left-container" class="left-container">
+        <form>
+          <h1>Encrypt</h1>
+          <div class="form-group">
+            <label for="plaintext">Plaintext</label>
+            <input
+              type="text"
+              class="form-control"
+              id="plaintext"
+              placeholder="Enter text to encrypt"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="key">a</label>
 
-<body>
-    
-                <h1>AFFINE CIPHER</h1>
-                <p class="lead"> The Affine cipher is a monoalphabetic substitution cipher, where each letter 
-                    in the alphabet
-                     is mapped to another letter through a simple mathematical formula: (ax + b) mod 26.
-                     It can be broken using the standard statistical methods for monoalphabetic substitution ciphers.</p>
-                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                     <fieldset>
-                    <legend>Encrypt</legend>
-                    <div class="form-group">
-                        <label for="plaintext">Plaintext</label>
-                        <input type="text" class="form-control" id="plaintext" placeholder="Enter text to encrypt">
-                    </div>
-                    <div class="form-group">
-                        <label for="key">a</label>
-                        
-                        <input type="text" class="form-control" id="key" placeholder="Enter a numeric key">
-                        <label for="key">b</label>
-                        <input type="text" class="form-control" id="key1" placeholder="Enter a numeric key">
-                        <br/><button class="btn btn-default" onClick="affine()">Encrypt</button>
-                    </div>
-                    <div class="form-group">
-                        <label for="output">Ciphertext Output</label>
-                        <textarea class="form-control" id="output" rows="3"></textarea>
-                    </div>
+            <input
+              type="number"
+              class="form-control"
+              id="key"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <label for="key">b</label>
+            <input
+              type="number"
+              class="form-control"
+              id="key1"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <button id="btn-encrypt" class="btn btn-default" onClick="affine()">
+              Encrypt
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="output">Ciphertext Output</label>
+            <textarea class="form-control" id="output" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div id="left-container" class="left-container">
+        <form>
+          <h1>Decrypt</h1>
+          <div class="form-group">
+            <label for="ciphertext">Ciphertext</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ciphertext"
+              placeholder="Enter text to decrypt"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="key">a</label>
 
-                </fieldset>
-                <br/>
-                <fieldset>
-                    <legend>Decrypt</legend>
-                    <div class="form-group">
-                        <label for="ciphertext">Ciphertext</label>
-                        <input type="text" class="form-control" id="ciphertext" placeholder="Enter text to decrypt">
-                    </div>
-                    <div class="form-group">
-                        <label for="key">a</label>
-                       
-                        <input type="text" class="form-control" id="keycipher" placeholder="Enter a numeric key">
-                        <label for="key">b</label>
-                        <input type="text" class="form-control" id="keycipher1" placeholder="Enter a numeric key">
-                        <br/><button class="btn btn-default" onClick="deaffine()">Decrypt</button>
-                    </div>
-                    <div class="form-group">
-                        <label for="deoutput">Plaintext Output</label>
-                        <textarea class="form-control" id="deoutput" rows="3"></textarea>
-                    </div>
-
-                </fieldset>
-               
-            </div>
-
-        </div>
+            <input
+              type="number"
+              class="form-control"
+              id="keycipher"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <label for="key">b</label>
+            <input
+              type="number"
+              class="form-control"
+              id="keycipher1"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <button
+              id="btn-decrypt"
+              type="button"
+              class="btn btn-default"
+              onclick="deaffine()"
+            >
+              Decrypt
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="deoutput">Plaintext Output</label>
+            <textarea class="form-control" id="deoutput" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
     </div>
-    <h2><a href="index.html">Reload</a></h2>
-</body>
-<script type="text/javascript">
-    var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    function encipherMessage(a, b, word) {
-
-a = parseInt(a)
-b = parseInt(b) 
-
-    for (var i = 0; i < word.length; i++) {
-
-        var alphaIndex = alpha.indexOf(word[i])
-
-        var troublesome = (a * alphaIndex + b) % alpha.length
-
-        word = word.substring(0, i) + alpha[troublesome] + word.substring(i + 1)
-    }
-    return word
-}
-
-    function decipherMessage(a,b,word)
-    {
-     a = parseInt(a)
-    b = parseInt(b) 
-
-        for (var i = 0; i < word.length; i++) {
-            a %= alpha.length
-
-            //Bruteforce the modular invert of the a
-
-            for (var j = 1; j < alpha.length; j++) 
-            {
-                if ((a * j) % alpha.length == 1)
-                    var invert = j
-            }
-
-            var alphaIndex = alpha.indexOf(word[i])
-
-            var troublesome = (invert * (alphaIndex - b)) % alpha.length
-            if (troublesome < 0)
-                troublesome += alpha.length
-            word = word.substring(0, i) + alpha[troublesome] + word.substring(i + 1)
-        }
-        return word
-    }
-    function affine() {
-        plaintext = $("#plaintext").val().toLowerCase().replace(/\W/g, '').replace(/[0-9]/g, '')
-        a1= $("#key").val()
-        b1=$("#key1").val()
-        ciphertext = encipherMessage(a1,b1,plaintext)
-        $("#output").val(ciphertext)
-    }
-
-    function deaffine() {
-        ciphertext = $("#ciphertext").val().toLowerCase().replace(/\W/g, '').replace(/[0-9]/g, '')
-        a2= parseInt(document.getElementById('keycipher').value) 
-        b2=parseInt(document.getElementById('keycipher1').value) 
-        plaintext = decipherMessage(a2,b2,ciphertext)
-        $("#deoutput").val(plaintext)
-    }
-</script>
-
+    <div id="right-wrapper" class="right-wrapper">
+      <div id="right-container" class="right-container">
+        <h1>AFFINE CIPHER</h1>
+        <h2>
+          The Affine cipher is a monoalphabetic substitution cipher, where each
+          letter in the alphabet is mapped to another letter through a simple
+          mathematical formula: (ax + b) mod 26. It can be broken using the
+          standard statistical methods for monoalphabetic substitution ciphers.
+        </h2>
+        <button id="btn-encrypt-desc" class="default-button">Encrypt</button>
+        <button id="btn-decrypt-desc" class="default-button">Decrypt</button>
+        <button id="btn-start" class="mobile-button">Start</button>
+      </div>
+    </div>
+  </body>
+  <script src="interactionHandler.js"></script>
+  <script src="calculator.js"></script>
 </html>
