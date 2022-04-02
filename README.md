@@ -87,7 +87,8 @@
 | 36            | [Sleep Calculator](./Calculators/Sleep_Calculator/) |
 | 37			      | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/) |
 | 38			      | [Complex Number Calculator](./Calculators/Complex_Number_Calculator/) |
-| 39            | [Multiplication Table](./Calculators/Multiplication_table/)  |
+| 39            | [Matrix Operations Calculator](./Calculators/Matrix_Operations_Calculator/) |
+| 40            | [Multiplication Table](./Calculators/Multiplication_table/)  |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
