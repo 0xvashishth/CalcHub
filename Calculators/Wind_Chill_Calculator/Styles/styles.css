@@ -1,0 +1,70 @@
+body{
+    background-color: #FDF6EC;
+}
+
+.container{
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    padding: 3% 10% 3% 10%;
+    margin-left: 18%;
+    margin-top: 3%;
+    background-color: #DAB88B;
+    border-radius: 15px;
+}
+
+.input{
+    border: 1% solid #b6b5b3;
+    background-color: #fff;
+    padding: 1% 1%;
+    border-radius: 5%;
+    transition: border 0.3s;
+    color: inherit;
+    font-family: inherit;
+    margin: 5% 0;
+}
+
+div input{
+    width: 65%;
+}
+
+div select{
+    width: 25%;
+}
+
+#btn{
+    background-color: #B7CADB; 
+    color: black;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.answer{
+    margin-left: 25%;
+}
+
+#result{
+    width: 51%;
+    font-size: 170%;
+    margin-left: 3%;
+}
+
+#r_title{
+    background-color: #97DBAE;
+    width: 51%;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+#advice{
+    width: 51%;
+    font-size: 110%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
