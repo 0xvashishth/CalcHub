@@ -8,7 +8,7 @@ body{
     height: 40%;
     padding: 3% 10% 3% 10%;
     margin-left: 18%;
-    margin-top: 3%;
+    margin-top: 5%;
     background-color: #DAB88B;
     border-radius: 15px;
 }
@@ -55,7 +55,7 @@ div select{
     margin-left: 3%;
 }
 
-#r_title{
+.r_title{
     background-color: #97DBAE;
     width: 51%;
     padding: 1%;

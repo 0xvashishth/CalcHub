@@ -7,28 +7,28 @@
     </head>
     <body>
         <div class="container">
-            <h3>Enter the Air temperature:</h3>
+            <strong>Enter the Air temperature:</strong><br/>
             <input type="text" class="input" id="temp" value="0" required/>
             <select class="input" id="temp_unit">
                 <option value="F">&#176;F</option>
                 <option value="C">&#176;C</option>
                 <option value="k">Kelvin</option>
-            </select>
-            <h3>Enter the Wind Speed:</h3>
+            </select><br/>
+            <strong>Enter the Wind Speed:</strong><br/>
             <input type="text" class="input" id="speed" value="0" required/>
             <select class="input" id="speed_unit">
                 <option value="mph">mph</option>
                 <option value="km/h">Km/h</option>
                 <option value="m/s">m/s</option>
-            </select>
+            </select><br/>
             <button type="submit" id="btn">Calculate</button>
         </div>
         <div class="answer">
-            <h2 id="r_title">Result: </h2>
+            <h3 class="r_title">Result: </h3>
             <div id="result"></div>
         </div>
         <div class="answer">
-            <h2 id="r_title">Advice: </h2>
+            <h3 class="r_title">Advice: </h3>
             <div id="advice"></div>
         </div>
         <script src="./JS/index.js"></script>
