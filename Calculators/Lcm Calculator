@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width,initial-scale=1.0">
+	<title>LCM Calculator</title>
+	<font face="Arial" size="4">
+    <style>
+    /* Background image */
+        body{
+            background-image: url('https://i.pinimg.com/originals/32/f0/63/32f063b6c163ce113aaf3a148eb74e3f.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .shape{
+        	width: 450px;
+        	height: 200px;
+        	border: 3px solid black;
+        	border-radius:  4px;
+        	box-shadow: 10px 6px 6px #8b0000; /* page box border */
+        	margin:  180px 300px 300px 90px;
+        	padding: 30px;
+        }
+        /* boxes */
+        input[type="text"]{ 
+        	width:  90%;
+        }
+        h3{
+        	text-align: center;
+
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="shape">
+    	<h3> Least Common Multiple </h3>
+    	
+    	<table>
+    		<tr>
+    			<td><input type="text" id="Fvalue"></td>
+    			<td><input type = "text" id="Svalue"></td>
+    			<!-- button value attribute -->
+    			<td><button onclick="lcm()">Click</button></td> <!-- last button -->
+    		</tr>
+    		<tr>
+    			<td>LCM = </td>
+    			
+    			<td><span id="ans"></span></td>
+    		</tr>
+    	</table>
+
+    </div>
+    <script>
+        var f = document.getElementById("Fvalue").value;
+        var s = document.getElementById("Svalue").value;
+        var view = document.getElementById("ans");
+        function lcm(){
+    	    for(i=1;i<=f*s; i++){
+    		    if(i%f==0 && i%s==0){
+    			    lcm = i;
+    	        }
+    	    }
+    	    view.innerHTML=lcm;
+        }
+    </script>
+</body>
+</html>
