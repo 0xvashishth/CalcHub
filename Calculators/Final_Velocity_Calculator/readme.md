@@ -17,5 +17,6 @@ a = acceleration
 t = time
 
 # Screenshot
-![image](https://user-images.githubusercontent.com/53929423/162031119-40297055-68b1-41ff-ae2b-b8dd8791b0a0.png)
+
+![try](https://user-images.githubusercontent.com/53929423/162037470-5e34ccad-3519-4126-9a47-31ef3e49f80a.PNG)
 
