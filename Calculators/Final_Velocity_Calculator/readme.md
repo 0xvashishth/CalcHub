@@ -9,7 +9,7 @@ This velocity calculator uses the equation that the final velocity of an object 
 # Velocity Equation in these calculations:
 Final velocity (v) of an object equals initial velocity (u) of that object plus acceleration (a) of the object times the elapsed time (t) from u to v.
 
-# Formula ==> v=u+at
+# Formula => v=u+at
 Where:
 u = initial velocity
 v = final velocity
