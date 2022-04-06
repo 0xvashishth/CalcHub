@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width,initial-scale=1.0">
+	<title>LCM and HCF Calculator</title>
+	<font face="Arial" size="4">
+    <style>
+    /* Background image */
+        body{
+            background-image: url('https://i.pinimg.com/originals/32/f0/63/32f063b6c163ce113aaf3a148eb74e3f.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .shape{
+        	width: 450px;
+        	height: 200px;
+        	border: 3px solid black;
+        	border-radius:  4px;
+        	box-shadow: 10px 6px 6px #8b0000; /* page box border */
+        	margin:  180px 300px 300px 90px;
+        	padding: 30px;
+        }
+        /* boxes */
+        input[type="text"]{ 
+        	width:  90%;
+        }
+        h3{
+        	text-align: center;
+
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="shape">
+    	<h3>LCM and HCF Calculator</h3>
+        <table>
+    		<tr>
+                <td> Enter the 1st Number </td>
+    			<td>
+                    
+                    <input type="text" id="a">
+                </td>
+            </tr>
+            <tr>
+                <td> Enter the 2nd Number </td>
+    			<td>
+                    
+                    <input type = "text" id="b">
+                </td>
+    			<!-- button value attribute -->
+            </tr>
+            
+            <tr>
+    			<td>
+                    <button onclick="calc(this.innerHTML)">HCF</button> <!-- last button for lcm -->
+                    <button onclick="calc(this.innerHTML)">LCM</button> <!--last button for hcf -->
+                </td> 
+
+            </tr>
+
+            <tr>
+                <td id="ans"></td>
+            </tr>
+        </table>
+
+    </div>
+    <script>
+        function calc(e){
+
+                var num1 = document.getElementById("a").value;
+                var num2 = document.getElementById("b").value;
+                var view = document.getElementById("ans");
+                var result;
+                if(e=="HCF"){
+                    for(let i=1;i<=num1 && i<=num2;i++){
+                        if(num1%i==0 && num2%i==0){
+                            result=i;
+                        }
+                    }
+                }else if(e=="LCM"){
+                    let max=num1>num2?num1:num2;
+                    while(true){
+                        if(max%num1 == 0 && max%num2 == 0){
+                            result = max;
+                            break;
+                        }
+                        max++;
+                    }
+            
+                }
+                view.innerHTML = result;
+}
+    </script>
+    
+</body>
+</html>
