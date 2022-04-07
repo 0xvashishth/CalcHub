@@ -8,5 +8,9 @@ Let's have a look at its working method...
 
 * And just press the Calculate button and it will show us the number of days between both the dates.
 
-For Example :
+For Example : <br>
 Let's find the number of days between 07/04/2022 and 12/04/2022.
+<br><br>
+![1](https://user-images.githubusercontent.com/73993775/162237485-1095edb0-3db2-4391-96ba-23d655260a09.png)
+<br>
+So Yes, There are 5 days between 07/04/2022 and 12/04/2022 and hence, calculator is working fine !!!
