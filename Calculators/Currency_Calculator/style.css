@@ -1,61 +1,81 @@
-body{
-    background-color: #675afe;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+	background-color: #0e1538;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
-.box{
-    margin-top: 100px;
-    width: 320px;
-    height:350px;
-    background-color: white;  
-    border-radius: 7px;
-}
-h1{
-    font-size: 23px;
-    text-align: center;
-    margin-top: 25px;
-    
-}
-.input{
-    width: 225px;
-    height: 30px;
-    margin-left:40px;
-    margin-bottom: 20px;
-    margin-top: 17px;
-    text-align: center;
-}
-select{
-    width: 100px;
-    height: 25px;
-    margin-inline-end: 30px;
-    text-align: center;
-    
-}
-.select{
-    margin-left: 40px;
 
+.heading {
+	font-family: 'Times New Roman', sans-serif;
+	margin: 35px auto 20px;
 }
-.btn{
-    width: 100px;
-    height: 25px;
-    margin-left: 107px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #675afe;
-    color: white;
-    border-radius: 10px;
-}
-.output{
-    width: 225px;
-    height: 30px;
-    margin-left:40px;
-    margin-top: 13px;
-    text-align: center;
 
+hr {
+	border-top: 2px solid black;
+	width: 40%;
+	margin-bottom: 55px;
 }
-b{
-    margin-left: 40px;
-    margin-inline-end: 50px;
-    font-size: 13px;
+
+.main {
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	padding: 30px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	/*background: linear-gradient(#00ccff,#d400d4) ;*/
+}
+
+
+
+
+label {
+	font-size: 20px;
+}
+
+.btn {
+	width: 200px;
+    background-color: darkorange;
+}
+
+#finalAmount {
+	font-family: 'Lobster', cursive;
+	display: none;
+	margin: 50px auto;
+}
+
+#finalAmount h2 {
+	font-size: 50px;
+	color: lightsalmon;
+}
+
+.finalValue {
+	font-family: 'Calibri', serif;
+}
+
+#heading {
+    color: deepskyblue;
+}
+
+@media (max-width: 768px) {
+	hr {
+		width: 60%;
+	}
+	.main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.heading {
+		font-size: 60px;
+	}
+	hr {
+		width: 75%;
+	}
+	#finalAmount h2, .finalValue {
+		font-size: 40px;
+	}
 }
