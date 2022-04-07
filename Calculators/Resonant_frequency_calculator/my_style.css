@@ -1,0 +1,52 @@
+body{
+    background: lightgoldenrodyellow;
+    font-size: 200 px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: blue;
+}
+
+p{
+    font-size: 25px;
+}
+
+form{
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 45%;
+    display: inline-block;
+    background-color: orange;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+input{
+    width : 25%;
+    border-radius: 6px;
+}
+
+button{
+    color : darkred;
+    width : 40%;
+    border-radius: 6px;
+    background-color: lightblue;
+    margin-top: 18px;
+    height: 27px;
+}
+
+button:active{
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+button:hover{
+    background-color: beige;
+    color: black;
+}
