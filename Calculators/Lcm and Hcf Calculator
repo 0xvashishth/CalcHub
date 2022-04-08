@@ -7,12 +7,14 @@
 	<font face="Arial" size="4">
     <style>
     /* Background image */
+        
         body{
-            background-image: url('https://i.pinimg.com/originals/32/f0/63/32f063b6c163ce113aaf3a148eb74e3f.jpg');
+            background-color: darkkhaki;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
         }
+
         .shape{
         	width: 450px;
         	height: 200px;
