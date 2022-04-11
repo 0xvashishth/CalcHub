@@ -108,3 +108,15 @@ button{
     color: #ffffff;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 465px) {
+    .container{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .container{
+        max-width: 250px;
+    }
+}
