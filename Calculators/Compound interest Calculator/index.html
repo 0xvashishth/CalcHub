@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <div style="background-color:gainsboro">
-    <div class="container " >
-        <div class="text-center"><h3>Compound interest Calculator</h3>
-        </div>
+   <div style="width:100%">
+    <div class="container">
+        <h3 class="text-center">Compound interest Calculator</h3>
+        <hr>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Principal :</label>
             <input type="text" class="form-control" id="base-amount" placeholder="Enter your Original Amount" />
@@ -41,25 +41,28 @@
         <div class="mb-3">
             <label for="exampleFormControlInput4" class="form-label">Interest Componded:</label>
 
-            <input type="number" class="form-control" id="compounded" placeholder="Enter no. of times interest has been compounded" />
+            <input type="number" class="form-control" id="compounded"
+                placeholder="Enter no. of times interest has been compounded" />
         </div>
 
 
-        <button type="button"  class="btn mt-3 mb-10"
-            id="calculate" onclick="runApp()">
+        <button type="button" class="btn mt-3 mb-10" id="calculate" onclick="runApp()">
             Calculate
         </button>
         <hr />
 
         <div id="results">
             <h6></h6>
-            <h6 id="total-value" style="color: green;text-align:center"></h6>
+            <h6 id="total-value" style="color: rgb(17, 73, 17);text-align:center"></h6>
             <h6></h6>
-            <h6 id="interest-earned" style="color: rgb(15, 146, 15);text-align:center"></h6>
+            <h6 id="interest-earned" style="color: rgb(17,73,17);text-align:center"></h6>
         </div>
+        </div>
+
+     
+        <script type="text/javascript" src="runApp.js"></script>
     </div>
 </div>
-    <script type="text/javascript" src="runApp.js"></script>
-</body>
+    </body>
 
 </html>

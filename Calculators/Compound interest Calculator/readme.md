@@ -1,4 +1,4 @@
-### Multiplication table Calculator
+### Compound interest Calculator
 
 ### Functionality :-
 This is the calculator which gives the value of compound interest.it will take the value of principal,time,rate and interest compounded.
