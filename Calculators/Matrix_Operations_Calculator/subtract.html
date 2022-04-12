@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Matrix Operations Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="add.html">Add</a></li>
+            <li class="active"><a href="subtract.html">Subtract</a></li>
+            <li><a href="multiply.html">Multiply</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content_container">
+            <div class="info">
+                <p>
+                <h3>Method:</h3>
+                <ul>
+                    <li>Subtraction in matrices occur only if they are of same order.</li>
+                    <li>That is if matA is order (m x n) then matB must also be (m x n) for matA-matB to be defined.</li>
+                    <li>While finding the resulting matrix the corresponding elements of the input matrices are simply
+                        subtracted.</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="matrixDetails">
+                <label for="rows">Enter number of Rows</label>
+                <select name="rowsSubtract" id="rows">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <br>
+                <label for="columns">Enter number of Columns</label>
+                <select name="columnsSubtract" id="columns">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <br>
+                <button class="inputButton">Input Values</button>
+            </div>
+
+            <div class="inputVals"></div>
+
+            <div class="result"></div>
+        </div>
+    </main>
+</div>
+</body>
+<script src="./scripts/subtract.js"></script>
+
+</html>

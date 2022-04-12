@@ -92,6 +92,7 @@
 		button:active {
 			background: #bfbfbf;
 		}
+		
 
 		button:nth-child(2) {
 			margin-left: 205px;
@@ -99,10 +100,10 @@
 			background: #ef4a49;
 			color: white;
 		}
-
-		button:nth-child(2):active {
+        button:nth-child(2):active {
 			background: #b14e4d;
 		}
+		
 
 		button:nth-child(6),
 		button:nth-child(10),
@@ -169,6 +170,7 @@
 	<body>
 		<div id="calculator">
 			<div id="result">0</div>
+			
 			<button onclick="cls();">AC</button>
 			<button onclick="num(this.innerHTML);">7</button>
 			<button onclick="num(this.innerHTML);">8</button>
@@ -310,7 +312,7 @@
 			}
 			return tot;
 		}
-
+        
 
 		function cls() {
 			smallResult.innerHTML = '';

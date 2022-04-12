@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 100%;
+    flex-direction:column;
+  
+
+  }
+
+  .main-section {
+
+    box-shadow: 0 10px 20px -5px rgba(115,115,115,0.75),
+                -10px 0 20px -5px rgba(115,115,115,0.75);
+                padding:5%;
+   
+
+  }
+
+
+
+
+  .input-label {
+
+    display: block;
+    text-align: center;
+    font-size: large;
+  }
+  .input {
+
+
+    font-size: large;
+    display: block;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 325px;
+
+  }
+
+
+
+  .input:focus {
+    border: 3px solid #555;
+  }
+
+  .output {
+   
+    font-size: x-large;
+    font-weight: 600;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .btn-check {
+    
+    background: black;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: auto;
+    display: block;
+    color: white;
+  }
+
+ /* Made With Love By Abhiii  */
+

@@ -1,0 +1,64 @@
+body {
+	font: 20px/1.5 Helvetica;
+	margin: 0;
+	margin-bottom: 50px;
+	background: #222;
+	background-size: cover;
+	color: #fff;
+	line-height: 30px;
+}
+.matrixform {
+	color: #fff;
+}
+.matrixform > p {
+	color: lightblue;
+}
+
+.matrixform input[type=number] {
+	width: 60px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	padding: 5px;
+	color: #fff;
+	height: 30px;
+	margin-top: 5px;
+}
+
+button {
+	width: 150px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: none;
+	padding: 10px;
+	margin: 10px;
+	transition: 0.25s;
+}
+
+button {
+	background-color: lightblue;
+	color: #000;
+	cursor: pointer;
+}
+
+.box {
+	width: 65%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	margin-top: 20px;
+	display: block;
+}
+p {
+	display: inline-block;
+}
+.result {
+	line-height: 5px;
+}
+.block {
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 55px;
+	height: 30px;
+	margin: 10px 10px 0px 0px;
+	color: #fff;
+}

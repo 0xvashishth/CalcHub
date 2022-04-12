@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPA Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "header">
+            <h1 class= "title">GPA Calculator</h1>
+            <h2 class= "title">Enter your grades: </h2>
+            <div class = "input">
+                <input type="text" placeholder="Subject Name" id="input_name">
+                <input type="number" placeholder="Hours" id="input_hour">
+                <select name="Grades" id="input_grade">
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+                <button type="button" id="btn_add">Add</button>
+            </div>
+        </div>
+        <div id = "all_courses">
+            <h1 class = "all_title">All Courses: </h1>
+            <table id="courses">
+                <tr class = "h_course">
+                    <th class = "h_c_name">Course name:</th>
+                    <th class = "h_c_hour">Course hours:</th>
+                    <th class = "h_c_grade">Course Grade:</th>
+                </tr>
+            </table>
+            <button type="button" id = "calc">Calculate</button>
+            <button type="button" id = "reset">Reset</button>
+            <div id="result">
+                
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

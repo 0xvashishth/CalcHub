@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Calculator</title>
+</head>
+<body>
+    <h1 class="text">Number System Conversion Calculator</h1>
+    <div class="form1"></div>
+    <input class="input_num" id="inNUM" placeholder="Enter Here" >
+    <select class="input_select" id="select_in">
+        <option value="inbin">BIN</option>
+        <option value="inoct">OCT</option>
+        <option value="indec">DEC</option>
+        <option value="inhex">HEX</option>
+    </select>
+    <br>
+    <button class="btn" onclick="determine()">CONVERT</button>
+    <br>
+    <input class="output_num" id="outNUM">
+    <select class="output_select" id="select_out">
+        <option value="outbin">BIN</option>
+        <option value="outoct">OCT</option>
+        <option value="outdec">DEC</option>
+        <option value="outhex">HEX</option>
+    </select>
+    </div>
+</body>
+<script src="operation.js"></script>
+</html>
