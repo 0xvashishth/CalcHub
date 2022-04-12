@@ -1,1 +1,0 @@
-GCD calculator takes two numbers from user and shows greatest common divisor of two numbers.
