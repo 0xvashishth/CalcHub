@@ -23,4 +23,5 @@ where fr - Resonanat frequency, L  - Inductance, C  - Capacitance
 
 ## Screenshot :
 
-![image](https://user-images.githubusercontent.com/84305637/162411957-3ff9a8cb-97b4-491d-b49e-6e9f61d728be.png)
+![image](https://user-images.githubusercontent.com/84305637/163678593-651d2048-2e41-4d0a-a88b-6dc2de802070.png)
+
