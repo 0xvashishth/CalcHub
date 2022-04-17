@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Resonant Frequency Calculator</title>
+        <link rel = "stylesheet" href = "my_style.css">
+        <script src = "back.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>Resonant Frequency Calculator</h1>
+        <p>Welcome, <br> Calculate the Resonant frequency by using the Capacitance and Inductance</p> 
+    
+        <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for = "capacity">Enter the Capacitance in Farads :</label>
+                </div>
+                
+                <div class="col-75">
+                    <input type = "text" id="capacity" name="firstname" placeholder="CAPACITANCE...">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-25">
+                    <label for = "inductive">Enter the Inductance in Henries : </label>
+                </div>
+          
+                <div class="col-75">
+                    <input type = "text" id = "inductive" name="lastname" placeholder="INDUCTANCE...">
+                </div>
+            </div>
+        <br>
+        <div class="row">
+            <button type = "button" value = "Calculate" onclick = "computeResoFreq()"> Calculate </button>
+            <p>The frequency in Hertz is : <br>
+                <span id = "freq"></span>
+            </p>
+        </div>
+      </form>
+    </div>
+    
+    </body>
+</html>
