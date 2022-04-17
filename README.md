@@ -91,6 +91,7 @@
 | 40            | [Multiplication Table](./Calculators/Multiplication_table/)  |
 | 41            | [VAT_Calculator](./Calculators/VAT_Calculator/) |
 | 42            | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)  |
+| 43            | [Daily Water Intake Calculator](./Calculators/Daily_Water_Intake_Calculator) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
