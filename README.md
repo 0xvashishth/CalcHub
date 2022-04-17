@@ -92,10 +92,22 @@
 | 41            | [VAT_Calculator](./Calculators/VAT_Calculator/) |
 | 42            | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)  |
 
-<h1> Project Maintainer ⚡ </h1>
-  <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
+<h1 align=center> Project Admin ❤️ </h1>
+<p align="center">
+<table align="center">
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/vasu-1"><img alt="" src="https://avatars.githubusercontent.com/vasu-1" width="125px;"><br><sub><b> Vashishth Patel </b></sub></a><br></td> </a></td>
 
----
+</tbody></table>
+
+ <h1 align=center> Project Mentor 👩‍🏫 </h1>
+<p align="center">
+<table align="center">
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/Chayan-11"><img alt="" src="https://avatars.githubusercontent.com/Chayan-11" width="125px;"><br><sub><b>Chayan Debbarma</b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/mansi-garg-12"><img alt="" src="https://avatars.githubusercontent.com/mansi-garg-12" width="125px;"><br><sub><b>Mansi Garg</b></sub></a><br></td> </a></td>
+
+</tbody></table>
 
 # Contribution is fun! 🧡
 
