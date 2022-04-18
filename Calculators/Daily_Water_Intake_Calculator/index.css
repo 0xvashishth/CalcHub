@@ -6,20 +6,23 @@
   box-shadow: 0 0 20px rgba(0,0,0,.1),0 10px 20px rgba(0,0,0,.05),0 20px 20px rgba(0,0,0,.05),0 30px 20px rgba(0,0,0,.05); 
   
 }
-body
+body, html
 {
   padding: 20px;
-  font-style: 'Helvetica', sans-serif;
-  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background: #ffefe7;
 }
 .calculator-table-form td
 {
   border: solid 1px #fff;
   padding: 10px;
+  font-size: 15px;
 }
 h1
 {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
 .calculator-table-form tfoot
 {
@@ -48,7 +51,7 @@ h1
   padding-right: 5px;
   padding-left: 5px;
 }
-.calculator-table-form input[type=text],textarea
+.calculator-table-form input[type=text],select,textarea
 {
   min-height: 32px;
   background: #fff;
@@ -66,7 +69,7 @@ h1
   box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%),0 2px 2px 0 rgb(0 0 0 / 20%);
   display: inline-block;
   color: #fff;
-  font-size: 1.105rem;
+  font-size: .875rem;
   line-height: 1;
   padding: .65rem 1.2rem;
   text-decoration: none!important;
@@ -78,51 +81,13 @@ h1
   border: 1px solid #ccc;
   outline: 0;
 }
-.calculator-table-form input[type=text]:focus,select:focus,textarea:focus
-{
-  min-height: 32px;
-  background: #fff;
-  border: 1px solid #ccc;
-  outline: 0;
-  padding-right: 5px;
-  padding-left: 5px;
-}
 input[type=text]:focus,select:focus,textarea:focus
 {
   min-height: 32px;
 }
-.overlay-menu
-{
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f9f9f9;
-  border: 1px solid #f9f9f9;
-  overflow-x: hidden;
-  transition: all .17s cubic-bezier(.37,.15,.32,.94);
-  -webkit-transition: all .17s cubic-bezier(.37,.15,.32,.94);
-  z-index: 1000000;
-}
 .calculator-table-form tr:last-child td
 {
   text-align: center;
-}
-.flat-btn
-{
-  cursor: pointer;
-  margin: 10px;
-  background-color: #006666;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%),0 2px 2px 0 rgb(0 0 0 / 20%);
-  display: inline-block;
-  color: #fff;
-  font-size: .875rem;
-  line-height: 1;
-  padding: .75rem 1.5rem;
-  text-decoration: none!important;
 }
 .flat-btn:hover
 {
@@ -132,10 +97,6 @@ input[type=text]:focus,select:focus,textarea:focus
 {
   text-align: center;
   margin: 15px;
-}
-.content11
-{
-  font-size: 14px;
 }
 .result .flat-btn
 {
@@ -147,7 +108,7 @@ input[type=text]:focus,select:focus,textarea:focus
 }
 .calcnote
 {
-  font-size: 14px;
+  font-size: 15px;
 }
 .pad10
 {
@@ -160,10 +121,6 @@ input[type=text]:focus,select:focus,textarea:focus
 .btn:hover
 {
   color: #fff;
-}
-.relatedlinks a:hover
-{
-  color: #105cd5;
 }
 .flat-btn 
 {  
@@ -178,7 +135,7 @@ input[type=text]:focus,select:focus,textarea:focus
   border-radius: 4px 4px 0 0;
   background: #fff;
 }
-.calcresult .result,.result
+.calcresult .res .result,.result
 {
   text-align: center; 
   padding: 5px 0; 
@@ -186,42 +143,180 @@ input[type=text]:focus,select:focus,textarea:focus
 }
 .calcresult table
 {
-  width: 33%;
   margin: 15px auto; 
-  border-bottom: 2px solid #006666; 
-  background: #fff;
+  background: #ebf3f4;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #006666;
+  box-shadow: 0 0 20px rgba(0,0,0,.1),0 10px 20px rgba(0,0,0,.05),0 20px 20px rgba(0,0,0,.05),0 30px 20px rgba(0,0,0,.05); 
+  
 }
 .calcresult table td
 {
-  padding: 5px; 
-  border: 1px solid #006666;
+  padding: 10px; 
+  border: 1px solid #fff;
+  font-size: 15px;
 }
-.calcnote,.calcresult table .note
+
+.calcresult table tr.table-head
+{
+  background-color: #187681;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+.calcresult table .calcnote .note
 {
   font-style: italic; 
-  font-size: 12px; 
+  font-size: 15px; 
   padding: 10px;
 }
 .breakword
 {
-  word-break: break-all;
+  word-break: keep-all;
   word-wrap: break-word;
 }
-@media screen and (max-width: 500px)
+@media only screen and (max-width: 500px)
 {
- 
-  body, html
+  .calcresult table td
+  {
+    font-size: 15px;
+  }
+  .calcresult table .res .result
+  {
+    font-size: 15px;
+  }
+  .calcresult table .calcnote .note
+  {
+    font-size: 15px;
+  }
+  body
   {
   padding: 20px;
-  font-style: 'Helvetica', sans-serif;
-  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   }
   .calcresult table
  {
   width: 100%;
   margin: 15px auto; 
   border-bottom: 2px solid #006666; 
+  background: #ebf3f4;
+ }
+ .calculator-table-form table
+ {
+   width: 100%;
+   margin: 15px auto;
+ }
+ .calculator-table-form .flat-btn
+ {
+  cursor: pointer;
+  margin: 10px;
+  background-color: #006666;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%),0 2px 2px 0 rgb(0 0 0 / 20%);
+  display: inline-block;
+  color: #fff;
+  font-size: .875rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none!important;
+ }
+ .calculator-table-form table td
+ {
+  border: solid 1px #fff;
+  padding: 10px;
+  font-size: 15px;
+ }
+}
+@media only screen and (min-width: 768px)
+{
+  body
+  {
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  }
+  .calculator-table-form table
+  {
+    width: 800px;
+    height: 800px;
+  }
+  h1
+  {
+    font-size: 75px;
+    font-weight: bold;
+  }
+  .calculator-table-form table td
+  {
+    font-size: 35px;
+  }
+  .calcresult table
+  {
+  width: 90%;
+  margin: 15px auto; 
+  border-bottom: 2px solid #006666; 
+  background: #ebf3f4;
+  
+  }
+  .calcresult table td
+  {
+    font-size: 25px;
+  }
+  .calcresult
+  {
+    background: #ffefe7;
+  }
+  .calcresult table .res .result
+  {
+    font-size: 25px;
+  }
+  .calcresult table .calcnote .note
+  {
+    font-size: 25px;
+    font-style: italic;
+  }
+  .calcresult table tr.table-head
+  {
+  background-color: #187681;
+  color: #fff;
+  padding: 25px;
+  text-align: left;
+  }
+  .calculator-table-form input[type=text]:focus,select:focus,textarea:focus
+  {
+  min-height: 32px;
   background: #fff;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 35px;
+  }
+  .calculator-table-form input[type=text],select,textarea
+  {
+  min-height: 32px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 35px;
+  }
+  .calculator-table-form .flat-btn
+ {
+  cursor: pointer;
+  margin: 10px;
+  background-color: #006666;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%),0 2px 2px 0 rgb(0 0 0 / 20%);
+  display: inline-block;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none!important;
  }
 }
 .flat-btn a
