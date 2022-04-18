@@ -3,7 +3,9 @@ body
     font-family: cursive;
     background-color: rgb(69, 46, 46);
 }
-
+html{
+    font-size: 62.5%;
+}
 p
 {
     margin: 0;
@@ -16,8 +18,8 @@ h1{
     justify-content: center;
     color: beige;
     font-family: cursive;
-    font-size: 50px;
-    margin-top: 80px;
+    font-size: 5rem;
+    margin-top: 8rem;
 }
 
 div
@@ -27,80 +29,93 @@ div
    margin: 60px;
   font-size: 30px;
    background-color: aqua; */
-   top: 460px;
+   top: 46rem;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
-    height: 500px;
-    width: 500px;
-    box-shadow: inset -8px -8px 12px rgb(125, 180, 25),
-                inset 8px 8px 12px rgb(180, 214, 8);
-                border-radius: 50px;
+    height: 50rem;
+    width: 50rem;
+    box-shadow: inset -.8rem -.8rem 1.2rem rgb(125, 180, 25),
+                inset .8rem .8rem 1.2rem rgb(180, 214, 8);
+                border-radius: 5rem;
 
     background-color: rgb(23, 23, 10);
 }
 
 label{
-    padding-top: 100px;
+    padding-top: 10rem;
 }
 
 h3{
-    padding-left: 40px;
-    padding-top: 20px;
+    padding-left: 4rem;
+    padding-top: 2rem;
     color: rgb(229, 229, 245);
     font-family: cursive;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 }
 h4{
-    padding-left: 40px;
-    font-size: 18px;
+    padding-left: 4rem;
+    font-size: 1.8rem;
     font-family: cursive;
     color: rgb(211, 211, 234);
 }
 
 #num{
-  margin-left: 40px;
-  height: 25px;
-  width: 150px;
+  margin-left: 4rem;
+  height: 2.5rem;
+  width: 15rem;
   font-family: cursive;
-  padding-left: 50px;
+  padding-left: 5rem;
  /* margin-bottom: 5px; */
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
-  border-radius: 20px;
-  border: 2px solid rgb(115, 176, 9);
+  border-radius: 2rem;
+  border: .2rem solid rgb(115, 176, 9);
   color: beige;
   /* background-color: aqua; */
   background-color: rgb(49, 15, 6);
 }
 
 #num:hover{
-    border: 4px solid rgb(115, 176, 9);
+    border: .4rem solid rgb(115, 176, 9);
 }
 
 #precision:hover{
-    border: 4px solid rgb(115, 176, 9);
+    border: .4rem solid rgb(115, 176, 9);
 }
 #precision{
    
-    margin-left: 40px;
-    height: 18px;
-    width: 80px;
+    margin-left: 4rem;
+    height: 1.8rem;
+    width: 8rem;
     font-family: cursive;
-    font-size: 16px;
-    border-radius: 20px;color: beige;
-    border:2px solid rgb(115, 176, 9);
+    font-size: 1.6rem;
+    border-radius: 2rem;color: beige;
+    border:.2rem solid rgb(115, 176, 9);
     background-color: rgb(49, 15, 6);
- margin-bottom: 46px;
+ margin-bottom: 4.6rem;
 
 }
 
 
 p{
    font-family: cursive;
-   margin-left: 45px;
-   margin-top: 2px;
+   margin-left: 4.5rem;
+   margin-top: .2rem;
    font-weight: bold;
    color: rgb(251, 251, 251);
 }
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size:45%;
+    }
+}
+
