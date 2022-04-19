@@ -1,0 +1,33 @@
+body{
+    text-align:center;
+    background-color:blanchedalmond;
+}
+
+.button{
+    display:block;
+    margin:20px auto;
+    width:50%;
+}
+
+h1{
+    margin:50px;
+    font-family:verdana;
+}
+
+h3{
+    margin-top:30px;
+    color:black;
+    font-size:15px;
+    font-family:verdana;
+}
+
+input{
+    width:200px;
+}
+
+p{
+    margin-top:40px;
+    font-family:verdana;
+    font-size:15px;
+    display:inline-block;
+}
