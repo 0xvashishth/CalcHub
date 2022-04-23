@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width,initial-scale=1.0">
+	<title> Pot Calculator </title>
+	<font face="Arial" size="4">
+    <style>
+    /* Background image */
+        
+        body{
+            background-color: #B5651D;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .shape{
+        	width: 420px;
+        	height: 190px;
+        	border: 5px solid black;
+        	border-radius:  4px;
+        	box-shadow: 5px 9px 9px #f7ed00 ; /* page box border */
+        	margin:  180px 300px 300px 90px;
+        	padding: 30px;
+        }
+        /* boxes */
+        input[type="text"]{ 
+        	width:  90%;
+        }
+        h3{
+        	text-align: center;
+
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="shape">
+    	<h3> Pot Calculator </h3>
+        <table>
+            <thead>
+    		    <tr>
+                    <td align="centre" bgcolor="#ffdead"> Number of days : </td>
+                    
+                    <td>
+                        <input type="text" id="a">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="centre" bgcolor="#ffdead"> Number of pots needed : </td>
+                    <td>
+                        <input type="text" id="b">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="centre" bgcolor="#ffdead"> Availability quantity of mud : </td>
+                    <td>
+                        <input type="text" id="c">
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+    			    <td align="centre">
+                        <button onclick="pot(this.innerHTML)">Calculate</button> 
+                    
+                    </td> 
+
+            </tr>
+
+
+            <tr>
+                <td id="ans"></td>
+            </tr>
+        </tbody>
+        </table>
+
+    </div>
+    <script>
+        var num1 = document.getElementById("a").value;
+        var num2 = document.getElementById("b").value;
+        var num3 = document.getElementById("c").value;
+        var view = document.getElementById("ans");
+    
+            function pot(){
+                if(num2 / 2 == num3){
+                    pot = document.write("Pots can be made!!!");
+                }
+                else{
+                    pot = document.write("Pots cannot be made!!!");
+                
+                }
+                view.innerHTML = pot;
+        }
+    </script>
+    
+</body>
+</html>
