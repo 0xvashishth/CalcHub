@@ -29,27 +29,27 @@ function determine(){
 }
 //funciton for binary to octal
 function bintooct(iNum){
-    return parseInt(iNum,2).toString(8);
+    return /^[01]+$/.test(iNum) ? parseInt(iNum,2).toString(8) : "Binary number has only 0 and 1";
 }
 //funciton for binary to decimal
 function bintodec(iNum){
-    return parseInt(iNum,2);
+    return  /^[01]+$/.test(iNum) ? parseInt(iNum,2) : "Binary number has only 0 and 1";
 }
 //funciton for binary to hexa
 function bintohex(iNum){
-    return parseInt(iNum,2).toString(16);
+    return /^[01]+$/.test(iNum) ? parseInt(iNum,2).toString(16): "Binary number has only 0 and 1";
 }
 //funciton for octal to binary
 function octtobin(iNum){
-    return parseInt(iNum,8).toString(2);
+    return /^[0-7]+$/.test(iNum) ? parseInt(iNum,8).toString(2): "Octal number has digits 0 to 7 only";
 }
 //funciton for octal to decimal
 function octtodec(iNum){
-    return parseInt(iNum,8);
+    return /^[0-7]+$/.test(iNum) ? parseInt(iNum,8): "Octal number has digits 0 to 7 only";
 }
 //funciton for octal to hexa
 function octtohex(iNum){
-    return parseInt(iNum,8).toString(16);
+    return /^[0-7]+$/.test(iNum) ? parseInt(iNum,8).toString(16): "Octal number has digits 0 to 7 only";
 }
 //funciton for decimal to binary
 function dectobin(iNum){
