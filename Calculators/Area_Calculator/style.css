@@ -1,0 +1,28 @@
+body{
+  background-color: #1beba2;
+  text-align: center;
+  padding: 30px;
+}
+div{
+  background-color: aliceblue;
+  text-align: center;
+}
+.area{
+  padding:  5px;
+  border-radius: 10px;
+}
+button{
+  background-color: chartreuse;
+  border-radius: 5px;
+  font-size: 20px;
+}
+input{
+  font-size: 25px;
+}
+h3{
+  font-size: 25px;;
+}
+h1{
+  font-size: 50px;
+  color: rgb(12, 36, 12);
+}
