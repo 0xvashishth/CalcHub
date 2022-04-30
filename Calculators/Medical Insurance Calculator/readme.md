@@ -5,8 +5,8 @@
 
 ### Preview
 
-![](./preview.png)
-
-![](./preview1.gif)
+![](./preview.jpg)
 =======
+![](./preview1.gif)
+
 
