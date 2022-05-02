@@ -5,7 +5,7 @@
 
 ### Preview
 
-![](./preview.jpg)
+![](https://github.com/DragonUncaged/Mini-WebDev-Projects/blob/main/Medical%20Insurance%20Calculator/preview.jpg)
 =======
 ![](./preview1.gif)
 
