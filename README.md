@@ -76,7 +76,7 @@
 | 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
 | 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
 | 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
-| 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
+| 28            | [Currency_Calculator](./Calculators/Currency-Calculator/) |
 | 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
 | 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
 | 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
