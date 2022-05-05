@@ -5,4 +5,4 @@ You are supposed to know 3 paramters in order to let the velocity equation work 
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/Web%20capture_4-5-2022_213125_127.0.0.1.jpeg)
