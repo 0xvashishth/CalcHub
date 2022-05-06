@@ -1,6 +1,6 @@
 <h1 align="center">CalcHub</h1>
 
-<h3 align="center">This Open-Source repository is all about making new calculators on different apects of Mathematics.</h3>
+<h3 align="center">This Open-Source repository is all about making new calculators on different aspects of Mathematics.</h3>
 
 <div align="center">
 <a href="https://github.com/vasu-1/CalcHub"><img src="https://sloc.xyz/github/vasu-1/CalcHub" alt="total lines"/></a>
@@ -76,7 +76,7 @@
 | 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
 | 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
 | 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
-| 28            | [Currency_Calculator](./Calculators/Currency_Calculator/) |
+| 28            | [Currency_Calculator](./Calculators/Currency-Calculator/) |
 | 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
 | 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
 | 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
@@ -92,6 +92,7 @@
 | 41            | [VAT_Calculator](./Calculators/VAT_Calculator/) |
 | 42            | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)  |
 | 43            | [Resonant frequency calculator](./Calculators/Resonant_frequency_calculator/) |
+| 44            | [Daily Water Intake Calculator](./Calculators/Daily_Water_Intake_Calculator) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
