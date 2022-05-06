@@ -149,6 +149,7 @@ h2 a {
     padding-top: 15px;
     left: 100px;
     border: none;
+    visibility: hidden;
   }
 
   .sidenav .nav-item {
@@ -162,32 +163,6 @@ h2 a {
   }
   
   .main-content {
-    margin-left: 175px;
+    margin:0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
