@@ -57,30 +57,37 @@ function calc() {
 function calcVrms(){
     let ans= Math.sqrt(3*8.3145*(document.getElementById("2in").value)/document.getElementById("1in").value)
     document.getElementById("result").value=ans;
+    stepsVrms(ans);
 }
 function calcVavg(){
     let ans= Math.sqrt(8*8.3145*(document.getElementById("2in").value)/(document.getElementById("1in").value * 3.14159))
     document.getElementById("result").value=ans;
+    stepsVav(ans);
 }
 function calcVmp(){
     let ans= Math.sqrt(2*8.3145*(document.getElementById("2in").value)/document.getElementById("1in").value)
     document.getElementById("result").value=ans;
+    stepsVmp(ans);
 }
 function calcPressure(){
     let ans= ((document.getElementById("1in").value)*8.3145*(document.getElementById("2in").value)/document.getElementById("3in").value)
     document.getElementById("result").value=ans;
+    stepsPressure(ans);
 }
 function calcVolume(){
     let ans= ((document.getElementById("1in").value)*8.3145*(document.getElementById("2in").value)/document.getElementById("3in").value)
     document.getElementById("result").value=ans;
+    stepsVolume(ans);
 }
 function calcTemp(){
     let ans= ((document.getElementById("2in").value)*document.getElementById("3in").value/((document.getElementById("1in").value)*8.3145));
     document.getElementById("result").value=ans;
+    stepsTemp(ans);
 }
 function calcInEng(){
     let ans= (8.3145*(document.getElementById("2in").value)*document.getElementById("1in").value*document.getElementById("3in").value)/2;
     document.getElementById("result").value=ans;
+    stepsInEnergy(ans);
 }
 
 
@@ -191,3 +198,148 @@ function showInEng() {
     <button type="button" class="btn btn-secondary mt-4" onclick="calc()">Calculate</button>
     `
 }
+
+
+function stepsVrms(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Molar Mass = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Temperature = ${document.getElementById("2in").value}</div>
+            <div class="m-2">V<sub>RMS</sub>=&#8730(3*R*T/M)</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">V<sub>RMS</sub>=&#8730(3*8.3145*${document.getElementById("1in").value}/${document.getElementById("2in").value})</div>
+            <div class="m-2">V<sub>RMS</sub>=${ans} m/s</div>   
+    </div>
+    `
+}
+
+function stepsVav(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+    Given,
+    <div class="m-2">Molar Mass = ${document.getElementById("1in").value}</div>
+    <div class="m-2">Temperature = ${document.getElementById("2in").value}</div>
+    <div class="m-2">V<sub>AVG</sub>=&#8730(8*R*T/(&#8508*M))</div>
+    <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+    <div class="m-2">V<sub>RMS</sub>=&#8730(8*8.3145*${document.getElementById("1in").value}/(${document.getElementById("2in").value}*3.14))</div>
+    <div class="m-2">V<sub>RMS</sub>=${ans} m/s</div>   
+    </div>
+    `
+}
+
+function stepsVmp(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Molar Mass = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Temperature = ${document.getElementById("2in").value}</div>
+            <div class="m-2">V<sub>MP</sub>=&#8730(2*R*T/M)</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">V<sub>MP</sub>=&#8730(2*8.3145*${document.getElementById("1in").value}/${document.getElementById("2in").value})</div>
+            <div class="m-2">V<sub>MP</sub>=${ans} m/s</div>   
+    </div>
+    `
+}
+
+function stepsPressure(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Number of moles = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Temperature of Gas = ${document.getElementById("2in").value}</div>
+            <div class="m-2">Volume of Gas = ${document.getElementById("3in").value}</div>
+            <div class="m-2">Using Ideal Gas Law:</div>
+            <div class="m-3">P*V=N*R*T</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">P = N*R*T/V </div>
+            <div class="m-2">P = ${document.getElementById("1in").value}*8.3145*${document.getElementById("2in").value}/${document.getElementById("3in").value} </div>
+
+            <div class="m-2">Pressure =${ans} Pa</div>   
+    </div>
+    `
+}
+
+function stepsVolume(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Number of moles = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Temperature of Gas = ${document.getElementById("2in").value}</div>
+            <div class="m-2">Pressure of Gas = ${document.getElementById("3in").value}</div>
+            <div class="m-2">Using Ideal Gas Law:</div>
+            <div class="m-3">P*V=N*R*T</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">V = N*R*T/P </div>
+            <div class="m-2">V = ${document.getElementById("1in").value}*8.3145*${document.getElementById("2in").value}/${document.getElementById("3in").value} </div>
+
+            <div class="m-2">Volume =${ans} m<sup>3</sup></div>   
+    </div>
+    `
+}
+
+function stepsTemp(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Number of moles = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Volume of Gas = ${document.getElementById("2in").value}</div>
+            <div class="m-2">Pressure of Gas = ${document.getElementById("3in").value}</div>
+            <div class="m-2">Using Ideal Gas Law:</div>
+            <div class="m-3">P*V=N*R*T</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">T = (P*V)/(N*R) </div>
+            <div class="m-2">T = (${document.getElementById("2in").value}*${document.getElementById("3in").value})/(${document.getElementById("1in").value}* 8.3145) </div>
+
+            <div class="m-2">Temperature =${ans} K</div>   
+    </div>
+    `
+}
+
+function stepsTemp(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Number of moles = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Volume of Gas = ${document.getElementById("2in").value}</div>
+            <div class="m-2">Pressure of Gas = ${document.getElementById("3in").value}</div>
+            <div class="m-2">Using Ideal Gas Law:</div>
+            <div class="m-3">P*V=N*R*T</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2">T = (P*V)/(N*R) </div>
+            <div class="m-2">T = (${document.getElementById("2in").value}*${document.getElementById("3in").value})/(${document.getElementById("1in").value}* 8.3145) </div>
+
+            <div class="m-2">Temperature =${ans} K</div>   
+    </div>
+    `
+}
+
+function stepsInEnergy(ans){
+    document.getElementById("steps").innerHTML = `
+    
+    <div>
+        Given,
+            <div class="m-2">Number of moles = ${document.getElementById("1in").value}</div>
+            <div class="m-2">Temperature of Gas = ${document.getElementById("2in").value}</div>
+            <div class="m-2">Degree of freedom of Gas = ${document.getElementById("3in").value}</div>
+            
+            <div class="m-2">Internal Energy(U) = (Degree of Freedom(F) * N*R*T/2</div>
+            <div class="m-2">Here R = 8.3145 ML<sup>2</sup>T<sup>-2</sup>k<sup>-1</sup> </div>
+            <div class="m-2"> U = F*N*R*T/2 </div>
+            <div class="m-2">U = ${document.getElementById("3in").value}*${document.getElementById("1in").value}*8.3145*${document.getElementById("2in").value}/2) </div>
+
+            <div class="m-2">Internal Energy =${ans} Joules</div>   
+    </div>
+    `
+}
+
+
+
+
