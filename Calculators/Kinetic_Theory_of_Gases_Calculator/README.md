@@ -24,5 +24,5 @@ The kinetic theory of gases explains the macroscopic properties of gases, such a
 
 ## Screenshot :
 
-![image](./ScreenShot.jpeg)
+![image](https://github.com/sharma-tanishq/Images/blob/main/2022-05-07_111208.png?raw=true)
 
