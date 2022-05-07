@@ -1,0 +1,27 @@
+/* Background*/
+       
+        body{
+            background-color: #e4d1b9;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .shape{
+            background-color: #f5f5dc;
+        	width: 450px;
+        	height: 200px;
+        	border: 3px solid #8b008b;
+        	border-radius:  4px;
+        	box-shadow: 0px 5px 20px #ffff00; /* page box border */
+        	margin:  180px 300px 300px 90px;
+        	padding: 30px;
+        }
+        /* boxes */
+        input[type="text"]{ 
+        	width:  90%;
+        }
+        h3{
+        	text-align: center;
+
+        }
