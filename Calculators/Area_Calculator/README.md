@@ -27,4 +27,6 @@ area of square = side^2
 
 <h3>Screenshot :-</h3>
 
-![Screenshot](https://user-images.githubusercontent.com/88235823/166089414-b6b48ab9-85ce-4bf1-91d7-9580f2ec1244.PNG)
+![area](https://user-images.githubusercontent.com/88235823/167244213-ea9fe6a2-c417-4723-84c9-d7ff10c3b385.PNG)
+
+![araea](https://user-images.githubusercontent.com/88235823/167244217-88d5bda9-1d1b-4dd9-9905-f2777b24862b.PNG)

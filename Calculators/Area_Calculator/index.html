@@ -5,30 +5,203 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Area Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Area Calculator</h1>
-  <div class="area">
-    <div>
-    <h3>Rectangle</h3>
-    <h4>Length</h4><input class="len"type="text" placeholder="in m">
-    <h4>Breadth</h4><input class="brea"type="text" placeholder="in m">
-    <button onclick="rec()">Area</button><br>
-    <textarea class="recans" placeholder="Output"></textarea>
-    </div><div>
-      <h3>Circle</h3>
-      <h4>Radius</h4><input class="rad" type="text" placeholder="in m">
-      <button onclick="cir()">Area</button><br>
-      <textarea class="cirans" placeholder="Output"></textarea>
-      </div>
-      <div>
-        <h3>Square</h3>
-        <h4>Side</h4><input type="text" class="side"placeholder="in m">
-        <button onclick="sq()">Area</button><br>
-        <textarea class="sqans" placeholder="Output"></textarea>
+  <h1 class="head">Area Calculator</h1>
+  
+  <section class="projects-background" id="projects">
+    
+    <div class="projects center">
+  <ul class="projects-container">
+    
+
+    <li>
+      <a href="rec.html"
+        class="card rect" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Rectangle</h3>
+            <p>
+        
+              A rectangle is a 2D shape that has 4 sides, 4 corners, and 4 right angles. Opposite sides of a rectangle shape are the same length, with one pair being longer than the other pair. 
+            </p>
+          </div>
         </div>
-  </div>
-  <script src="index.js"></script>
+      </a>
+    </li>
+    <li>
+      <a href="circle.html"
+        class="card circ" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Circle</h3>
+            <p>
+              A circle is a round-shaped figure that has no corners or edges. In geometry, a circle can be defined as a closed, two-dimensional curved shape.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="square.html"
+        class="card squar" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Square</h3>
+            <p>
+    
+          
+              A square is closed, two-dimensional shape with 4 equal sides. A square is a quadrilateral. We can find the shape of a square in a game board or chess board.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    
+    <li>
+      <a href="triangle.html"
+        class="card tri" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Triangle</h3>
+            <p>
+              A triangle is a shape with three sides and is categorized as a two-dimensional geometric shape. For example, the shape of tangy nachos, one slice of cheese burst pizza.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="para.html"
+        class="card gram" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Parallelogram</h3>
+            <p>
+        
+              A parallelogram is a special type of quadrilateral that has equal and parallel opposite sides.
+              
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="trap.html"
+        class="card trap" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Trapezium</h3>
+             <p>
+              A trapezoium is a flat 2D shape with four straight sides. It has one pair of parallel sides which are usually the top and bottom sides. The parallel sides are called the bases, while the non-parallel sides are called the legs.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    
+    <li>
+      <a href="ellipse.html"
+        class="card ell" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Ellipse</h3>
+            <p>
+        
+              An ellipse is a shape that has two focal point, known as foci.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="cube.html"
+        class="card cube" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Cube</h3>
+            <p>
+              A cube is a closed three-dimensional geometric shape. It is made up of six squares. It has six faces. For example, a Rubik's cube, a ludo dice, an ice cube.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="prism.html"
+        class="card rect-prism" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Rectangular prism</h3>
+            <p>
+          
+              A rectangular prism is a 3D figure with 6 rectangular faces. To find the volume of a rectangular prism, multiply its 3 dimensions: length x width x height. The volume is expressed in cubic units. 
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    
+    <li>
+      <a href="clinder.html"
+        class="card cyli" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Cylinder</h3>
+            <p>
+              A cylinder is a solid shape that has two flat ends of circular formation. It is a three-dimensional figure which is formed by folding a rectangle. For example, coldrink cans, pool noodles, water bottles.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="cone.html"
+        class="card cone" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Cone</h3>
+            <p>
+              A cone is a solid three-dimensional geometric shape with a flat base. The base is circular in shape. It has a pointed edge at the top called the apex. For example, ice-cream cone, clown hat, etc.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="sphere.html"
+        class="card sph " target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Sphere</h3>
+            <p>
+              A sphere is a solid shape that is similar to a ball. It is a closed three-dimensional shape formed using a circular base. For example, football, basketball, etc.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="hemi.html"
+        class="card hemi" target="_blank" rel="noopener noreferrer">
+        <div class="card-info">
+          <div class="card-details">
+            <h3>Hemisphere</h3>
+            <p>
+              Any circle drawn around the Earth divides it into two equal halves called hemispheres. There are generally considered to be four hemispheres: Northern, Southern, Eastern, and Western. 
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    </ul>
+    </div>
+    </section>
+  
+  
 </body>
 </html>
