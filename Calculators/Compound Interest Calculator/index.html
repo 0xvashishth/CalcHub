@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width,initial-scale=1.0">
+	<title>Calculator</title>
+	<font face="Arial" size="4">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="shape">
+    	<h3> Compound Interest Calculator</h3>
+        <table>
+    		<tr>
+                <td bgcolor="#ffdab9"> Enter the Principle Amount: </td>
+    			<td>
+                    
+                    <input type="text" id="a">
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#fbceb1"> Enter the Time Taken: </td>
+    			<td>
+                    
+                    <input type = "text" id="b">
+                </td>
+    			
+            </tr>
+            <tr>
+                <td bgcolor="#fdd5b1"> Enter the Rate: </td>
+                <td>
+                    
+                    <input type = "text" id="c">
+                </td>
+                <!-- button value attribute -->
+            </tr>
+            
+            <tr>
+    			<td>
+                    <button onclick="calc()">Calculate</button> 
+                    
+                </td> 
+
+            </tr>
+
+        </table>
+        <div id="res">
+        </div>
+
+    </div>
+    <script src = "app.js"></script>
+    
+</body>
+</html>
