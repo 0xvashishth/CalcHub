@@ -1,0 +1,107 @@
+* {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+body {
+    text-align: center;
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Sofia'sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    margin-top: 9%;
+    text-align: center;
+    color: #9750a7;
+    font-size: 500%;
+    text-shadow: 0 1px 0 rgb(94, 5, 5), 0 2px 0 rgb(94, 5, 5),
+        0 3px 0 rgb(94, 5, 5), 0 4px 0 rgb(94, 5, 5),
+        0 5px 0 rgb(94, 5, 5), 0 6px 0 rgb(94, 5, 5),
+        0 7px 0 rgb(94, 5, 5), 0 8px 0 rgb(94, 5, 5),
+        0 9px 0 rgb(94, 5, 5), 0 10px 0 rgb(94, 5, 5),
+        0 11px 0 rgb(94, 5, 5), 0 12px 0 rgb(94, 5, 5),
+        0 20px 30px rgba(230, 241, 241, 0.5);
+}
+
+.form {
+    text-align: center;
+    position: relative;
+    display: contents;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+#input {
+    font-size: 200%;
+    padding: 1%;
+    margin: 2%;
+    margin-top: -1%;
+    border: 3px solid #9750a7;
+}
+
+#input:focus {
+    border: 4px solid #c00909;
+}
+
+/* Modifying buttons */
+
+
+.btn {
+    padding: 15px;
+    font-size: 200%;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#calc {
+    background-color: #08bd7b;
+    margin-right: 5%;
+}
+
+#calc:hover {
+    background-color: #2b502c
+}
+
+#calc:active {
+    background-color: #2b502c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#clear {
+    background-color: #e1e28d;
+}
+
+#clear:hover {
+    background-color: #866f08;
+}
+
+#clear:active {
+    background-color: #866f08;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.output {
+    position: relative;
+    font-size: 200%;
+    text-align: left;
+    border: 3px solid #9750a7;
+    background-color: rgba(253, 251, 251, 0.801);
+    margin-top: 2%;
+}
+
+.theader {
+    color: #0b7a52;
+}

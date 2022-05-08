@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="DivisorsCalc.css" />
+  <script src="DivisorsCalc.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <title>Divisors Calculator</title>
+</head>
+
+<body>
+  <h1 class="header">Divisors Calculator</h1>
+  <div class="form">
+    <input type="number" id="input" min="-10000000" max="10000000" placeholder="Number" /><br>
+    <div class="btns">
+      <button class="btn" id="calc" onclick="calc()">Calulate</button>
+      <button class="btn" id="clear" onclick="reset()">Clear</button>
+    </div>
+    <table class="output">
+      <tr>
+        <td class="theader"><strong>Number of Divisors</strong></td>
+        <td id="dNb">.....</td>
+      </tr>
+      <tr>
+        <td class="theader"><strong>Divisors</strong></td>
+        <td id="d">.....</td>
+      </tr>
+      <tr>
+        <td class="theader"><strong>Sum of Divisors</strong></td>
+        <td id="dSum">.....</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
