@@ -5,6 +5,7 @@ function calc() {
         if (n < 0) {
             n *= -1;
         }
+        // loop until n/i only to avoid repition so in each iteration we push i and n/i
         for (var i = 1; i <= (n / i); i++) {
             if (n % i == 0) {
                 res.push(i);
@@ -12,9 +13,10 @@ function calc() {
                     res.push(n / i);; // to remove any duplicates
             }
         }
+        // Sorting result array
         res.sort(function (a, b) {
             return a - b
-        }); // Sorting result array
+        }); 
 
         document.getElementById('dNb').innerHTML = res.length;
         document.getElementById('d').innerHTML = res;
