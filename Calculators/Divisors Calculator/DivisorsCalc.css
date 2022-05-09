@@ -9,25 +9,22 @@
 
 body {
     text-align: center;
-    background-image: url('background.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    font-family: 'Sofia'sans-serif;
-    width: 100%;
-    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(217,232,233,1) 46%, rgba(110,231,255,1) 82%);
+    font-family: 'Sofia', sans-serif;
 }
 
 .header {
-    margin-top: 9%;
+    margin-top: 4%;
     text-align: center;
-    color: #9750a7;
+    color: #0d0b79;
     font-size: 500%;
-    text-shadow: 0 1px 0 rgb(94, 5, 5), 0 2px 0 rgb(94, 5, 5),
-        0 3px 0 rgb(94, 5, 5), 0 4px 0 rgb(94, 5, 5),
-        0 5px 0 rgb(94, 5, 5), 0 6px 0 rgb(94, 5, 5),
-        0 7px 0 rgb(94, 5, 5), 0 8px 0 rgb(94, 5, 5),
-        0 9px 0 rgb(94, 5, 5), 0 10px 0 rgb(94, 5, 5),
-        0 11px 0 rgb(94, 5, 5), 0 12px 0 rgb(94, 5, 5),
+    text-shadow: 0 1px 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255),
+        0 3px 0 rgb(255, 255, 255), 0 4px 0 rgb(255, 255, 255),
+        0 5px 0 rgb(255, 255, 255), 0 6px 0 rgb(255, 255, 255),
+        0 7px 0 rgb(255, 255, 255), 0 8px 0 rgb(255, 255, 255),
+        0 9px 0 rgb(255, 255, 255), 0 10px 0 rgb(255, 255, 255),
+        0 11px 0 rgb(255, 255, 255), 0 12px 0 rgb(255, 255, 255),
         0 20px 30px rgba(230, 241, 241, 0.5);
 }
 
@@ -44,7 +41,8 @@ body {
     padding: 1%;
     margin: 2%;
     margin-top: -1%;
-    border: 3px solid #9750a7;
+    border: 3px solid #0d0b79;
+    font-family: 'Sofia', sans-serif;
 }
 
 #input:focus {
@@ -62,10 +60,11 @@ body {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    font-family: 'Sofia', sans-serif;
 }
 
 #calc {
-    background-color: #08bd7b;
+    background-color: #0b7a52;
     margin-right: 5%;
 }
 
@@ -80,15 +79,15 @@ body {
 }
 
 #clear {
-    background-color: #e1e28d;
+    background-color: #9c1414;
 }
 
 #clear:hover {
-    background-color: #866f08;
+    background-color: #b66969;
 }
 
 #clear:active {
-    background-color: #866f08;
+    background-color: #b66969;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -97,7 +96,7 @@ body {
     position: relative;
     font-size: 200%;
     text-align: left;
-    border: 3px solid #9750a7;
+    border: 3px solid #0d0b79;
     background-color: rgba(253, 251, 251, 0.801);
     margin-top: 2%;
 }

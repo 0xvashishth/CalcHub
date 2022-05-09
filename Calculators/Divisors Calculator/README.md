@@ -10,9 +10,7 @@ Divisors Calculator will be used calculate divisors of a number (natural factors
  - Javascript
 
 ## Screenshots
-
-![image](https://user-images.githubusercontent.com/29145628/167304564-7eacc875-1add-4003-945f-bce9ee2e8667.png)
+![image](https://user-images.githubusercontent.com/29145628/167487840-b9015de4-4373-4c66-807d-4b0d460bd5c9.png)
 
 ## Video
-
-![video](https://user-images.githubusercontent.com/29145628/167305033-94197959-7b42-4c72-9bde-5b23505f72b1.mp4)
+![video](https://user-images.githubusercontent.com/29145628/167488336-4491966a-434f-4622-9ce6-afe98185ef96.mp4)
