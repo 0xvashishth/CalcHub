@@ -1,17 +1,18 @@
 body {
-  display: flex;
+ display: grid;
   justify-content: center;
-  align-items: center;
+ text-align: center;
   height: 100vh;
-  margin: 0;
+
   background: #222;
   font-family: 'Roboto', sans-serif;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
-  font-size: 120%;
+  font-size: 100%;
 }
 h1{
-  
+  background: #000000d0;
   text-align: center;
+  color: white;
 }
 .area{
   background: #000000d0;
@@ -19,16 +20,16 @@ h1{
   border-radius: 30px;
   color: white;
   width: 100%;
-  max-width: 420px;
-  margin: 1em;
+  max-width: 320px;
+  margin: 20px;
 }
 
 button{
-  margin: 0.5em;
+  margin: 0.4em;
   border-radius: 50%;
   border: none;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   background: #7c7;
   color: white;
@@ -39,12 +40,12 @@ button{
 input{
   border: none;
   outline: none;
-  padding: 0.5em 1em;
-  border-radius:18px;
+  padding: 0.4em 1em;
+  border-radius:15px;
   background: #7c7c7c2b;
   color: white;
   font-family: inherit;
-  font-size: 120%;
+  font-size: 100%;
   width: calc(100%-100px);
 }
 button:hover{
