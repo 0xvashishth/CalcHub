@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
   }
   
+  @media screen and (max-width: 877px) {
+    .content {
+        width: 100%;
+    }
+}
   body {
     background-color: #FFD908;
     margin-top: 2%;
