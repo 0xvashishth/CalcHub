@@ -11,9 +11,9 @@
             background-color: #f5f5dc;
         	width: 450px;
         	height: 200px;
-        	border: 3px solid #8b008b;
+        	border: 3px solid lightcoral;
         	border-radius:  4px;
-        	box-shadow: 0px 5px 20px #ffff00; /* page box border */
+        	box-shadow: 0px 5px 20px lightsalmon; /* page box border */
         	margin:  180px 300px 300px 90px;
         	padding: 30px;
         }
