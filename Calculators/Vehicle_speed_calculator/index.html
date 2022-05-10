@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Resonant Frequency Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "my_style.css">
+    <script src = "behaviour.js" defer></script>
+</head>
+
+<body>
+    <h1>Vehicle Speed Calculator</h1>
+    <p>Calculate the Vehicle Speed by using the distance travelled and time</p> 
+
+    <div class="container">
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for = "distance">Enter the distance travelled in Meters :</label>
+            </div>
+            
+            <div class="col-75">
+                <input type = "text" id="distance" name="firstname" placeholder="Distance in meters..">
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-25">
+                <label for = "time">Enter the time taken to travel in minutes : </label>
+            </div>
+      
+            <div class="col-75">
+                <input type = "text" id = "time" name="lastname" placeholder="Time in minutes...">
+            </div>
+        </div>
+    <br>
+    <div class="row">
+        <button type = "button" value = "Calculate" onclick = "computeSpeed()"> Calculate </button>
+        <p style="color: rgb(232, 13, 13);"><b>The speed in m/s is : </b><br>
+            <span id = "speed"></span>
+        </p>
+    </div>
+  </form>
+</div>
+
+</body>
