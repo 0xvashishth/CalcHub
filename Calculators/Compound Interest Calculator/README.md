@@ -22,7 +22,8 @@ The basic idea of this calculator is to Specify the amount and Compound Interest
 <!----Please delete options that are not relevant .And in order to tick the check box just but x inside them for example [x] like this----->
 
 ## Screenshots / Gif (Optional) 📸
-![Screenshot (525)](https://user-images.githubusercontent.com/93437720/166113827-12e1ec82-63ed-4a6d-ac77-ab340333862e.png)
+![Screenshot (532)](https://user-images.githubusercontent.com/93437720/167542066-e96ad047-517d-480b-9ae7-b7e280c063a2.png)
+
 
 
 <hr>
