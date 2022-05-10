@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Coefficient</title>
+    <link rel="stylesheet" href="App.css" />
+</head>
+
+<body>
+    <div class="father">
+        <div class="main">
+            <h2>Binomial Coefficient Calculator</h2>
+            <img src="https://www.pythonpool.com/wp-content/uploads/2021/08/20210806_123250_0000.png" class ="img" alt="image">
+            <div class="inp">
+                <input type="number" autocomplete="off" id="n" placeholder="enter the value for n" />
+                <input type="number" autocomplete="off" id="k" placeholder="enter the value for k" />
+
+            </div>
+            <div>
+                <button type="submit" id="submit" onclick="binomialCoeff()" class="btn">Calculate</button>
+            </div>
+            <h3 class="root">Answer is:</h3>
+            <div class="result">
+                <p class="result" id="result">answer will be displayed here</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
