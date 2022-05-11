@@ -20,7 +20,7 @@ The basic idea of this calculator is to provide the Net Salary by providing Basi
 <!----Please delete options that are not relevant.And in order to tick the check box just but x inside them for example [x] like this----->
 
 ## Screenshots / Gif (Optional) 📸
-![Screenshot (533)](https://user-images.githubusercontent.com/93437720/167823708-2598de69-7d45-4aee-81b6-ef0aaec0ead2.png)
+![Screenshot (534)](https://user-images.githubusercontent.com/93437720/167826249-b8e77ad5-a04f-418e-ab8b-3024157b8a46.png)
 
 
 <hr>
