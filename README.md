@@ -94,6 +94,7 @@
 | 43            | [Resonant frequency calculator](./Calculators/Resonant_frequency_calculator/) |
 | 44            | [Daily Water Intake Calculator](./Calculators/Daily_Water_Intake_Calculator) |
 | 45            | [Compound Interest](./Calculators/Compound interest Calculator)   |
+| 46            | [Kinetic_Theory_of_Gases_Calculator](./Calculators/Kinetic_Theory_of_Gases_Calculator/) |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
