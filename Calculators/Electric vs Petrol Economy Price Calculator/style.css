@@ -1,0 +1,110 @@
+body {
+	background: hsl(60, 100%, 50%)
+		repeating-conic-gradient(
+			from 45deg at 66% calc(100vh + 80px),
+			hsl(60, 100%, 50%) 0 5deg,
+			hsl(57, 100%, 50%) 0 10deg
+		);
+	background-size: 100vw 100vh;
+}
+
+html {
+  font-size: 4vw;
+  font-family: sans-serif;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+body {
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.input-grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  border: solid 3px #ccc;
+  border-radius: 1rem;
+}
+@media only screen and (min-width: 400px) {
+  .input-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .input-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.graph-item {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+}
+.graph-item span {
+  margin: 0 1rem;
+}
+.graph-item .graph-cost {
+  font-size: 2rem;
+  line-height: 4rem;
+  color: white;
+  width: 0%;
+  background: #f9c400;
+  border-radius: 1rem;
+  text-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
+}
+.graph-item .graph-cost-electric {
+  background: #66cc00;
+}
+.graph-item .graph-cost-savings {
+  background: #0066ff;
+}
+.graph-item .graph-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.visual {
+  margin-bottom: 3rem;
+}
+
+.graph-item-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.graph-item-right .graph-cost span {
+  float: right;
+}
+
+p {
+  font-size: 1rem;
+  font-style: italic;
+}

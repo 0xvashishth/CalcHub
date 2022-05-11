@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Electric vs Petrol Economy Price Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="visual">
+	<div class="graph-item">
+	<span class="graph-title">Electric</span>
+	<div class="graph-cost graph-cost-electric">
+		<span class="cost-electric">$1,404</span>
+	</div>
+</div>
+
+<div class="graph-item">
+	<span class="graph-title">Gas</span>
+	<div class="graph-cost graph-cost-gas">
+		<span class="cost-gas">$1,404</span>
+	</div>
+</div>
+
+<div class="graph-item graph-item-right">
+	<span class="graph-title">Savings</span>
+	<div class="graph-cost graph-cost-savings">
+		<span class="cost-savings">$1,404</span>
+	</div>
+	<span class="cost-description">Gas is 3 × higher</span>
+</div>
+</div>
+
+
+
+
+<div class="input-grid">
+	<div class="input-container">
+		<label for="miles">90000 Miles</label>
+		<input name="miles" type="range" min="500" max="500000" value="90000" step="500" onChange="update()" onInput="update()">
+	</div>
+	<div class="input-container">
+		<label for="mpg" style="display:inline">27 MPG</label>
+		<a href="https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=41189&id=41161&id=42152&id=41037" target="_blank">What's yours?</a>
+		<input name="mpg" type="range" min="10" max="60" value="27" onChange="update()" onInput="update()">
+	</div>
+	<div class="input-container">
+		<label for="kWh">13.3¢ per kWh</label>
+		<input name="kWh" type="range" min="3" max="30" value="13.3" step="0.1" onChange="update()" onInput="update()">
+	</div>
+	<div class="input-container">
+		<label for="cost">$2.85 Per Gallon</label>
+		<input name="cost" type="range" min="1" max="6" value="2.85" step="0.05" onChange="update()" onInput="update()">
+	</div>
+	<div class="input-container">
+		<label for="watts">250 Wh Per Mile</label>
+		<input name="watts" type="range" min="200" max="350" value="260" step="5" onChange="update()" onInput="update()">
+	</div>
+</div>
+
+
+
+
+
+	<p>
+		2019 vehicles average 27 MPG. They will travel an average 13,500 miles a year for an average of almost 7 years. The average price for gas over the last 7 years was $2.88 a gallon. The average price for electricity is 13.3¢ a kWh.
+	</p>
+
+
+
+
+<p>
+	Chevrolet Volt - 310 watts per electric-only mile<br>
+	Chevrolet Bolt - 280 watts per mile<br>
+	Long Range Tesla Model 3 - 260 watts per mile<br>
+	Toyota Prius Prime - 250 watts per electric-only mile
+</p>
+
+<p>
+	This graph doesn't factor in the savings from maintenance. Purely electric vehicles have 1/10 the moving parts which means less wear and tear. There are no oil changes, very little brake wear because of regenerative braking and in some cases no service schedule. Modern electric vehicles have batteries that can last 15-20 years.
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
