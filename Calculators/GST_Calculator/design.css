@@ -4,8 +4,8 @@ body {
   margin-left: 20%;
   margin-right: 25%;
   font-size: x-large;
-  background-image:url("image.jpg");
-  background-repeat: no-repeat;
+  background-color:lime;
+  
   background-size: cover;
   display: flex;
   justify-content: center;
