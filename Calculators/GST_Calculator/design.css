@@ -6,7 +6,10 @@ body {
   font-size: x-large;
   background-image:url("image.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
