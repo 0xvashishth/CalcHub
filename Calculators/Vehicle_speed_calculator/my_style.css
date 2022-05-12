@@ -10,8 +10,7 @@ p{
 
 body{
   text-align: center;
-  background-image: url(img_1.jpg);
-  background-repeat: no-repeat;
+  background-color: rgb(61, 61, 113);
 }
 
 input[type=text], select, textarea{
