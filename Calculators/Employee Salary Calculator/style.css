@@ -7,12 +7,12 @@
 
         .shape{
             background-color: azure;
-            width: 450px;
-            height: 300px;
+            width: 400px;
+            height: 200px;
             border: 3px solid darkblue;
             border-radius:  7px;
             box-shadow: 0px 5px 20px lightcoral; /* page box border */
-            margin:  150px 300px 30px 350px;
+            margin:  180px 300px 300px 90px;
             padding: 30px;
         }
             
