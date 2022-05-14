@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Protein Calculator</title>
+
+    <!-- Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Protein Calculator</h1>
+
+        <form>
+            <!-- Input Name -->
+            <div class="form-group">
+                <label>Name</label>
+                <input class='form-control text-center' type="text" id="name" placeholder="name" autocomplete="off">
+            </div>
+            <hr>
+
+            <!-- Input Height -->
+            <div class="form-group">
+                <label>Height</label>
+                <input class='form-control text-center' type="text" id="height" placeholder="cm" autocomplete="off">
+            </div>
+            <hr>
+
+            <!-- Input Weight -->
+            <div class="form-group">
+                <label>Weight</label>
+                <input class='form-control text-center' type="text" id="weight" placeholder="kg" autocomplete="off">
+            </div>
+            <hr>
+
+            <!-- Input Addition Info -->
+            <label for="sel">Active Type (select one):</label>
+            <select class="form-control" id="sel" name="sellist">
+                <option value="sedentary" style="color:black;">sedentary adult</option>
+                <option value="endurance"style="color:black;">endurance runner</option>
+                <option value="strength"style="color:black;">strength training</option>
+            </select>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="color:black; background-color:rgb(12, 158, 226);">Calculate</button>
+            <ul id="results"></ul>
+            <hr>
+
+            <!-- View History Button -->
+            <button type="button" id="history-button" class="btn btn-secondary" style="color:black; background-color:rgb(12, 158, 226);">View History</button>
+            <hr>
+            <table id="myTable"></table>
+            <hr>
+            <hr>
+
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
