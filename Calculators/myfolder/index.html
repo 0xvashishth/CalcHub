@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Simple Calculator</title>
+
+	<style type="text/css">
+	   * {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		body {
+			background: #ccc;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		
+	   #calculator {
+			position: relative;
+			border-radius: 7px;
+			margin: auto;
+			margin-top: 20px;
+			display: block;
+			height: auto;
+			width: 278px;
+			background-color: rgb(255, 255, 255);
+			font-size: 0.8em;
+			padding: 5px;
+			max-width: 320px;
+		}
+		#calculator:before,
+		#calculator:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+			-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+			top: 10px;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+			-moz-border-radius: 100px / 10px;
+			border-radius: 100px / 10px;
+		}
+		#calculator:after {
+			right: 10px;
+			left: auto;
+			-webkit-transform: skew(8deg) rotate(3deg);
+			-moz-transform: skew(8deg) rotate(3deg);
+			-ms-transform: skew(8deg) rotate(3deg);
+			-o-transform: skew(8deg) rotate(3deg);
+			transform: skew(8deg) rotate(3deg);
+		}
+		
+		#smallResult {
+			position: absolute;
+			top: 3px;
+			right: 10px;
+		}
+
+        #result {
+			width: 100%;
+			padding: 15px 0px;
+			text-align: right;
+			font-size: 2.5em;
+			font-family: 'Oxygen Mono', monospace;
+			background: inherit;
+			color: black;
+		}
+		
+		button {
+			width: 60px;
+			height: 60px;
+			margin: 4px 2px;
+			outline: none;
+			border: none;
+			background: rgb(223, 223, 223);
+			color: black;
+			border-radius: 5px;
+			font-size: 1.4em;
+		}
+		
+		button:active {
+			background: #bfbfbf;
+		}
+		
+
+		button:nth-child(2) {
+			margin-left: 205px;
+			display: block;
+			background: #ef4a49;
+			color: white;
+		}
+        button:nth-child(2):active {
+			background: #b14e4d;
+		}
+		
+		button:nth-child(6),
+		button:nth-child(10),
+		button:nth-child(14),
+		button:nth-child(17),
+		button:nth-child(18) {
+			background: #00b49a;
+			color: white;
+		}
+		
+		button:nth-child(6):active,
+		button:nth-child(10):active,
+		button:nth-child(14):active,
+		button:nth-child(17):active,
+		button:nth-child(18):active {
+			background: #218d7e;
+		}
+		
+		
+		
+	</style>
+	</head>
+	<body>
+	   <div id="calculator">
+	        <div id="result">0</div>
+		  
+		    <button onclick="cls();">AC</button>
+		    <button onclick="num(this.innerHTML);">7</button>
+			<button onclick="num(this.innerHTML);">8</button>
+			<button onclick="num(this.innerHTML);">9</button>
+			<button onclick="calc(this.innerHTML);">/</button>
+			<button onclick="num(this.innerHTML);">4</button>
+			<button onclick="num(this.innerHTML);">5</button>
+			<button onclick="num(this.innerHTML);">6</button>
+			<button onclick="calc(this.innerHTML);">*</button>
+			<button onclick="num(this.innerHTML);">1</button>
+			<button onclick="num(this.innerHTML);">2</button>
+			<button onclick="num(this.innerHTML);">3</button>
+			<button onclick="calc(this.innerHTML);">-</button>
+			<button onclick="num(this.innerHTML);">0</button>
+			<button onclick="num(this.innerHTML);">.</button>
+			<button onclick="total();">=</button>
+			<button onclick="calc(this.innerHTML);">+</button>
+			<div id="smallResult"></div>
+	   </div>
+	   
+	   <script>
+	      var result = document.getElementById('result');
+		  var smallResult = document.getElementById('smallResult');
+		  var cal = false;
+		  var val_1 = false;
+		  var val_2 = false;
+		  var oper = '+';
+		  var operPressed = false;
+		  var tot = 0;
+		  var cal_done = false;
+		  var currentStatus = 0;
+		  var o;
+		  
+		  function num(val) {
+		     val = val.toString();
+			 
+			 if (!operPressed) {
+			    if (!val_1) val_1 = 0;
+				
+				if (val === '.' && val_1.includes('.')) return;
+				
+				val_1 = val_1 + val;
+				val_1 = lengthFix(val_1);
+				result.innerHTML = val_1;
+				smallResult.innerHTML = val_1;
+			 }
+			 
+			 if (operPressed) {
+			    if (!val_2) val_2 = 0;
+				
+				if (val === '.' && val_2.includes('.')) return;
+				
+				val_2 = val_2 + val;
+				val_2 = lengthFix(val_2);
+				
+				result.innerHTML = val_2;
+				smallResult.innerHTML = val_1 + oper + val_2;
+			 }
+		  }
+		  
+		  function calc(val) {
+		     if (val_1 && val_2) {
+			    operPressed = true;
+				total();
+				oper = val;
+			 }
+			 
+			 if (cal_done) {
+			    var x = (val_1 = tot);
+				cls();
+				val_1 = x;
+				val_1 = lengthFix(val_1); // limiting to 12
+				result.innerHTML = val;
+				smallResult.innerHTML = +x + val;
+				oper = val;
+				operPressed = true;
+			 }
+			 
+			 if (!val_1 || operPressed) {
+				return false;
+			 }
+			 
+			 if (val_1 && !val_2) {
+			    result.innerHTML = val;
+				var a = smallResult.innerHTML.toString();
+				smallResult.innerHTML = a + val;
+				oper = val;
+				operPressed = true;
+			 }
+			 
+		  }
+		  
+		  function total() {
+			  if (!val_1) return false;
+			  
+			  if (!val_2 && operPressed) {
+				tot = magic(val_1, val_1, oper);
+				tot = lengthFix(tot);
+			  }
+			  
+			  if (val_1 && val_2) {
+				 tot = magic(val_1, val_2, oper);
+				 tot = lengthFix(tot);
+			  }
+			  
+			  tot = tot.toString();
+			  
+			  result.innerHTML = tot;
+		  }
+		  
+		  function magic(a, b, oper) {
+		     switch (oper) {
+				case '+':
+					tot = +a + +b;
+					cal_done = true;
+					break;
+				case '-':
+					tot = +a - +b;
+					cal_done = true;
+					break;
+				case '/':
+					tot = +a / +b;
+					cal_done = true;
+					break;
+				case '*':
+					tot = +a * +b;
+					cal_done = true;
+					break;
+				default:
+					return false;
+			}
+			return tot;
+		  }
+		  
+		  function cls() {
+			 smallResult.innerHTML = '';
+			 result.innerHTML = 0;
+			 val_1 = false;
+			 val_2 = false;
+			 oper = '+';
+			 tot = 0;
+			 cal_done = false;
+			 operPressed = false;
+		  }
+		  
+		  function lengthFix(o) {
+		     o = o.toString();
+			 
+			 if (o != 0 || o != '0') {
+				if (o.charAt(0) == 0) o = o.slice(1);
+			}
+			
+			if (o.toString().length > 12) o = o.substring(0, 12);
+
+			return o;
+		  }
+		
+	   </script>
+	</body>
+</html>
