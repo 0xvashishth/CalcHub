@@ -8,18 +8,20 @@
         .shape{
             background-color: azure;
             width: 400px;
-            height: 200px;
+            height: 400px;
             border: 3px solid darkblue;
             border-radius:  7px;
-            box-shadow: 0px 5px 20px lightcoral; /* page box border */
-            margin:  180px 300px 300px 90px;
+            box-shadow: 0px 5px 20px lightcoral; 
+            margin:  100px 300px 30px 370px;
             padding: 30px;
         }
             
-            input[type="text"]{ 
-        	width:  90%;
+        input[type="text"]{ 
+        width:  100%;
         }
+
         h3{
         	text-align: center;
 
         }
+        
