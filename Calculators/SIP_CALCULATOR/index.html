@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <form> 
+    <div class="container">
+		<div class="boxx">
+			<div class="left"></div>
+			<div class="right">
+				<h2>SIP Calculator</h2>
+				<input type="text" class="field" placeholder="Enter Your Monthly Investment" id="MIA">
+				<input type="text" class="field" placeholder="Annual Returns" id="EAR">
+				<input type="text" class="field" placeholder="Time Period" id="IP">
+				<input type="button" value="calculate" onclick="calculate()" class="btn">
+                <h3> Amount: </h3>
+				<h3 id="ans"> </h3>
+                
+			</div>
+		</div>
+	</div>
+    </form>
+
+
+    <script>
+
+function calculate(){
+    var principal = parseFloat(document.getElementById("MIA").value);
+	var period = parseFloat(document.getElementById("IP").value);
+//  var freq = parseFloat(document.getElementById("frequency").value);
+	var freq = 1
+	var rateofreturn = parseFloat(document.getElementById("EAR").value);	
+	if (isNaN(principal)) {
+		alert("Please enter Amount Invested in each Installment");
+	} else if (isNaN(period)) {
+		alert("Please enter No of Years");
+	}else if (isNaN(rateofreturn)) {
+		alert("Please enter Rate of Return");
+	} else {
+		var ia = principal;
+		var totalcompper = (12/freq)*period;
+		var int_rate_per_period = rateofreturn/(12/freq)/100;	
+		var totalamount = period*ia*12;
+		var ans =  ia*((Math.pow(1+int_rate_per_period, totalcompper)-1)/int_rate_per_period)*(1+int_rate_per_period);
+        document.getElementById("ans").innerHTML = ans;	
+	}
+}
+
+
+    </script>
+</body>
+  
+</html>
