@@ -1,10 +1,7 @@
-
-
 body { 
   text-align: center;
   margin-bottom: 3em;
 }
-
 button {
   background-color: #DDD;
   color: #555;
@@ -146,12 +143,16 @@ h2 a {
 @media only screen and (max-width: 500px) {
   
   .sidenav {
-    padding-top: 15px;
-    left: 100px;
+    margin:auto;
     border: none;
-    visibility: hidden;
+    width:75%;
+    padding: 0%;
+    margin:0%;
   }
-
+ #main-content{
+  margin-top: 600px;
+}
+ 
   .sidenav .nav-item {
     font-size: 30px;
   }
