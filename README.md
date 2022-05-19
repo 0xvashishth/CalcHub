@@ -22,7 +22,7 @@
 
 ## Instructions :-
 
-- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md) and [Code Of Conduct](./.github/CODE_OF_CONDUCT.MD)
+- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md) and [Code Of Conduct](https://github.com/vasu-1/CalcHub/blob/main/CODE_OF_CONDUCT.md)
 
 #### Steps To Contribute :-
 
