@@ -97,6 +97,7 @@
 | 46            | [Kinetic_Theory_of_Gases_Calculator](./Calculators/Kinetic_Theory_of_Gases_Calculator/) |
 | 47            | [Calculators/Electric vs Petrol Economy Price Calculator/](./Calculators/Electric%20vs%20Petrol%20Economy%20Price%20Calculator/)  |
 | 48            | [Divisors Calculator](./Calculators/Divisors%20Calculator/) |
+| 49            | [Arithmetic Calculator with more functionalities](./Calculators/Arithmetic%20Calculator%20with%20more%20functionalities/)  |
 
 <h1> Project Maintainer ⚡ </h1>
   <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
