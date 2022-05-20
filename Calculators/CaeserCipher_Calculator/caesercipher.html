@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="caesercss.css">
+  <title>Caesar Cipher</title>
+
+</head>
+
+<body>
+  <div class="card">
+   
+    <h1>Caeser Cipher</h1>
+    <p class="para" >The Caesar Cipher technique is one of the earliest and simplest method of encryption technique. It’s simply a type of substitution cipher, i.e., each letter of a 
+      given text is replaced by a letter some fixed number of positions down the alphabet.
+      Below Image shows the working of Algorithm.</p>
+    <img
+      src="https://www2.seas.gwu.edu/~simhaweb/cs1111/classwork/module14/figures/caesarpicture.PNG"
+      alt="" class="img">
+    <div class="container">
+      <div class="speech">Put the text to cipher in the input.</div>
+      <br>
+      <div class="input">
+        <form id="form">
+          Text:
+          <input type="text" id="cypher" placeholder="Provide plaintext" style="margin-left: 30px;"><br/><br/>
+          Offset:
+          <input type="number" value="" id="offset" placeholder="Provide integer key" />
+          <br />
+          <br />
+          Finish:
+          <input type="text" id="finish" placeholder="Click here to get Ciphertext" />
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var fullAlphabet = alphabet + alphabet + alphabet;
+
+    function runCipher() {
+      var cipherText = $('#cypher').val();
+      var cipherOffset = $('#offset').val();
+      cipherOffset = (cipherOffset % alphabet.length);
+      var cipherFinish = '';
+
+      for (i = 0; i < cipherText.length; i++) {
+        var letter = cipherText[i];
+        var upper = (letter == letter.toUpperCase());
+        letter = letter.toLowerCase();
+
+        var index = alphabet.indexOf(letter);
+        if (index == -1) {
+          cipherFinish += letter;
+        } else {
+          index = ((index + cipherOffset) + alphabet.length);
+          var nextLetter = fullAlphabet[index];
+          if (upper) nextLetter = nextLetter.toUpperCase();
+          cipherFinish += nextLetter;
+        }
+      }
+
+      $('#finish').val(cipherFinish);
+    }
+
+    $(document).ready(function () {
+      $('#cypher').keypress(function () {
+        setTimeout(function () { runCipher(); }, 20);
+      });
+      $('#cypher').blur(function () {
+        runCipher();
+      });
+      $('#offset').change(function () {
+        setTimeout(runCipher(), 20);
+      });
+
+    });
+  </script>
+</body>
+
+</html>
