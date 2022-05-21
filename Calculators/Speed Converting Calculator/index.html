@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Convertor</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Speed converting Calculator</h1>
+    </div>
+    
+    <section class = "speed">
+        <h3>Speed</h3>
+        <input id="speed" name="speed" class="speed" type = "speed">
+    </section>
+
+    <section class = "unit">
+        <h3>Unit</h3>
+        <select name="units" id="units">
+            <option id="unit" value="mps">MPS (Meter per second)</option>
+            <option id="unit" value="kmph">KMPH (Kilometer per hour)</option>
+            <option id="unit" value="mph">MPH (miles per hour)</option>
+        </select>
+    </section>
+
+    <section class="convert">
+        <h3>Unit to be converted</h3>
+        <select name="reqUnits" id="reqUnits">
+            <option id="reqUnit" value="mps">MPS (Meter per second)</option>
+            <option id="reqUnit" value="kmph">KMPH (Kilometer per hour)</option>
+            <option id="reqUnit" value="mph">MPH (miles per hour)</option>
+        </select>
+
+    </section>
+
+    <section class="button">
+        <button id="calculate" class="calculate" type="button">Calculate</button>
+    </section>
+
+    <p id="res">Welcome to Speed Converting Calculator</p>
+    <h4 id="result">😊</h3>
+
+
+    <script src="index.js"></script>    
+    
+</body>
+</html>
