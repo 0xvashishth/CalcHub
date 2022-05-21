@@ -1,0 +1,22 @@
+h5,h1{text-align: center;
+   
+    
+    padding-top: 20px;
+}
+
+html,body{
+    background-color: rgb(216, 150, 207);
+
+}
+.btn{
+margin-top: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p{font-size: 2rem;
+    color:white
+}
+div{
+    background-color: rgb(216, 150, 207);
+}
