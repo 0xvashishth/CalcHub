@@ -1,17 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res.css">
     <title> Current week number calculator </title>
-    <script>
-        function weekNumber() {
-            var dateinput = document.getElementById("dateInput1").value;
-            var date1 = new Date(dateinput);
-            var oneJan = new Date(date1.getFullYear(), 0, 1);
-            var numberOfDays = Math.floor((date1 - oneJan) / (24 * 60 * 60 * 1000));
-            var result = Math.ceil((date1.getDay() + 1 + numberOfDays) / 7);
-            return document.getElementById("result").innerHTML = "Week number of given date is: " + result;
-        }  
-    </script>
     <style>
         .container{
             margin: auto;
@@ -37,25 +31,34 @@
         }
     </style>
 </head>
-
 <body>
-  <div class="container">
-    <h2>
-        Calculate Week Number using user input
-        <br> <br>
-    </h2>
-
-    <p> <b> Enter date </b>
-        <input type="date" id="dateInput1">
-        <br> <br>
-
-        <button onclick="weekNumber()">
-            Calculate Week Number
-        </button>
-    </p>
-
-    <h3 style="width:45%" id="result"></h3>
-</div>
+    <div class="container">
+      <h2>
+          Calculate Week Number using user input
+          <br> <br>
+      </h2>
+  
+      <p> <b> Enter date </b>
+          <input type="date" id="dateInput1">
+          <br> <br>
+  
+          <button onclick="weekNumber()">
+              Calculate Week Number
+          </button>
+      </p>
+  
+      <h3 style="width:45%" id="result"></h3>
+  </div>
+    
+    <script>
+        function weekNumber() {
+            var dateinput = document.getElementById("dateInput1").value;
+            var date1 = new Date(dateinput);
+            var oneJan = new Date(date1.getFullYear(), 0, 1);
+            var numberOfDays = Math.floor((date1 - oneJan) / (24 * 60 * 60 * 1000));
+            var result = Math.ceil((date1.getDay() + 1 + numberOfDays) / 7);
+            return document.getElementById("result").innerHTML = "Week number of given date is: " + result;
+        }  
+    </script>
 </body>
-
 </html>

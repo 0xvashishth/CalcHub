@@ -1,0 +1,11 @@
+@media only screen and (max-width:500px){
+.container{
+    width:100%;
+}
+h2{
+    width:50%;
+}
+p{
+    width:50%;
+}
+}
