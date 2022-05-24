@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title> Current week number calculator </title>
+    <script>
+        function weekNumber() {
+            var dateinput = document.getElementById("dateInput1").value;
+            var date1 = new Date(dateinput);
+            var oneJan = new Date(date1.getFullYear(), 0, 1);
+            var numberOfDays = Math.floor((date1 - oneJan) / (24 * 60 * 60 * 1000));
+            var result = Math.ceil((date1.getDay() + 1 + numberOfDays) / 7);
+            return document.getElementById("result").innerHTML = "Week number of given date is: " + result;
+        }  
+    </script>
+    <style>
+        .container{
+            margin: auto;
+            width: 50%;
+            margin-top: 100px;
+            background-color:rgba(95, 95, 94, 0.082);
+            border:2px solid gray;
+        }
+        h2,h3{
+            margin:auto;
+            width: 63.5%;
+            color: #5e5ea6;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        p{
+            width: 30%;
+            margin: auto;
+        }
+        button{
+            background-color: rgb(106, 106, 121);
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>
+        Calculate Week Number using user input
+        <br> <br>
+    </h2>
+
+    <p> <b> Enter date </b>
+        <input type="date" id="dateInput1">
+        <br> <br>
+
+        <button onclick="weekNumber()">
+            Calculate Week Number
+        </button>
+    </p>
+
+    <h3 style="width:45%" id="result"></h3>
+</div>
+</body>
+
+</html>
