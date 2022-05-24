@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:30px;
+  margin:0 0 10px 0;
+}
+input[type="submit"], input[type="button"], a.button {
+	background-color:rgb(29, 187, 222);
+	color:beige;
+	padding:5px;
+	border: 5px solid rgb(23, 75, 180);
+  border-radius:6px;
+	text-decoration:none;
+	display:inline-block;
+  height:40px;
+  font-size:16px;
+  font-family:sans-serif;
+  margin:0 0 0 10px;
+}
+input[type="submit"]:hover, input[type="button"]:hover, a.button:hover {
+	border: 5px solid #DDD;
+}
+input[type="text"] {
+  display:inline-block;
+  height:20px;
+  width: 290px;
+  padding: 10px;
+  font-size: inherit;
+  border: rgb(243, 79, 8) 5px solid;
+  border-radius:6px;
+}
+#result {
+  margin:10px auto;
+  padding:0 20px;
+  overflow:hidden;
+  width:400px;
+  text-align:center;
+  background-color:gray;
+  max-height:0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.solved #result {
+  max-height:2000px;
+  padding:20px;
+  color:#FFF;
+}
+.answer {
+  clear:both;
+  text-align:center;
+}
+.group {
+  padding:5px;
+  margin:5px;
+  border:1px solid #FFF;
+  display:inline-block;
+}
+.group.operator {
+  border:0;
+}
+.final {
+  color:#FFF;
+  font-size:60px;
+  text-align:left;
+  font-family: 'Open Sans', sans-serif;
+}
+.error {
+  background-color:#6B1010;
+  padding:10px;
+  opacity:0.7;
+}
+canvas{
+  background-color: rgb(218, 244, 245);
+}
