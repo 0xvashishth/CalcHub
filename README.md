@@ -18,13 +18,8 @@
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
----
 
-## Instructions :-
-
-- Read The [Contributing Guidelines](./.github/ContributingGuidelines.md) and [Code Of Conduct](https://github.com/vasu-1/CalcHub/blob/main/CODE_OF_CONDUCT.md)
-
-#### Steps To Contribute :-
+# Getting Started 🚀
 
 - Fork this Repository.
 - Clone the Repository: `git clone "url of this repo"`
@@ -43,7 +38,6 @@
 - And Boom! You're done 🥳
 - I will review and merge your changes into the master branch of this project. You will be automatically notified via E-mail once the changes have been merged.
 
----
 
 # Calculators List 📑
 
@@ -97,12 +91,23 @@
 | 46            | [Kinetic_Theory_of_Gases_Calculator](./Calculators/Kinetic_Theory_of_Gases_Calculator/) |
 | 47            | [Calculators/Electric vs Petrol Economy Price Calculator/](./Calculators/Electric%20vs%20Petrol%20Economy%20Price%20Calculator/)  |
 | 48            | [Divisors Calculator](./Calculators/Divisors%20Calculator/) |
+| 49            | [Graph Calculator](./Calculators/Graph%20Calculator/)
 
-<h1> Project Maintainer ⚡ </h1>
-  <a href="https://github.com/vasu-1"><img src="https://avatars.githubusercontent.com/u/76911582?s=40&v=4"/></a>
 
----
+## Contributing Guidelines
 
-# Contribution is fun! 🧡
+Read our [Contributing Guidelines](./.github/ContributingGuidelines.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to CalcHub.
+
+## Code Of Conduct
+
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/vasu-1/CalcHub/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+
+## Credits
+This project exists thanks to all the people who contribute.
+
+<a href="graphs/contributors"><img src="https://contrib.rocks/image?repo=vasu-1/CalcHub" /></a>
+
+## Contribution is fun! 🧡
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
