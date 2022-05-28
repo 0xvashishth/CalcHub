@@ -45,7 +45,7 @@
 | ------------- |:---------------------------------------------------------------| 
 | 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic)           |
 | 2             | [Scientific Calculator](./Calculators/Scientific_Calculator)   |
-| 3             | [Simple Matrix Calculator](./Calculators/Matrix_Simple)        |
+| 3             | [Simple Matrix Calculator](./Calculators/Matrix_Operations_Calculator/)        |
 | 4             | [Statistics Calculator](./Calculators/Statistics%20Calculator) |
 | 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
 | 6             | [BaseX Calculator](./Calculators/BaseX_Calculator)             |
@@ -81,7 +81,7 @@
 | 36            | [Sleep Calculator](./Calculators/Sleep_Calculator/) |
 | 37			      | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/) |
 | 38			      | [Complex Number Calculator](./Calculators/Complex_Number_Calculator/) |
-| 39            | [Matrix Operations Calculator](./Calculators/Matrix_Operations_Calculator/) |
+| 39            | [Unit Converter](./Calculators/Unit%20Converter/) |
 | 40            | [Multiplication Table](./Calculators/Multiplication_table/)  |
 | 41            | [VAT_Calculator](./Calculators/VAT_Calculator/) |
 | 42            | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)  |
@@ -96,7 +96,6 @@
 | 51            | [Covid Calculator](./Calculators/Covid%20Calculator/) |
 | 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
 | 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
-| 54            | [Unit Converter](./Calculators/Unit%20Converter/) |
 
 ## Contributing Guidelines
 
