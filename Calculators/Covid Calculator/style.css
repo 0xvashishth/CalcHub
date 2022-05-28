@@ -1,0 +1,76 @@
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+body {
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=range] {
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin: 20px 40px;
+  width: 300px;
+}
+@media screen and (max-width: 550px) {
+  .input-group {
+    width: calc(100% - 80px);
+  }
+}
+
+.output {
+  display: block;
+  padding: 0px 40px;
+}
+
+.notes {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  position: fixed;
+  width: calc(100% - 80px);
+  bottom: 0;
+  padding: 20px 40px;
+}
+@media screen and (max-width: 550px) {
+  .footer {
+    position: relative;
+  }
+}
+.footer .notes {
+  font-size: 12px;
+}
