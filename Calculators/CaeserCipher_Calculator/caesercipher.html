@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="caesercss.css">
+  <script src="caeser.js"></script>
+  <title>Caesar Cipher</title>
+
+</head>
+
+<body>
+  <div class="card">
+   
+    <h1>Caeser Cipher</h1>
+    <!-- //Information about Caeser Cipher Algorithm -->
+    <p class="para" >The Caesar Cipher technique is one of the earliest and simplest method of encryption technique. It’s simply a type of substitution cipher, i.e., each letter of a 
+      given text is replaced by a letter some fixed number of positions down the alphabet.
+      Below Image shows the working of Algorithm.</p>
+    <img
+    
+      src="https://www2.seas.gwu.edu/~simhaweb/cs1111/classwork/module14/figures/caesarpicture.PNG"
+      alt="" class="img">
+       <!-- Image explaning about Caeser Cipher Algorithm -->
+    <div class="container">
+      <!-- Required Text which we need to encrypt(cipher) to put -->
+      <div class="speech">Put the text to cipher in the input.</div>
+      <br>
+      <div class="input">
+        <form id="form">
+          Text:
+          <input type="text" id="cypher" placeholder="Provide plaintext" style="margin-left: 30px;"><br/><br/>
+          Offset:
+          <input type="number" value="" id="offset" placeholder="Provide integer key" />
+          <br />
+          <br />
+          Finish:
+          <input type="text" id="finish" placeholder="Click here to get Ciphertext" />
+          <!-- After clicking in this box we will get the required output -->
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
