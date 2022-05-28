@@ -6,16 +6,16 @@
 - Subtraction
 - Division
 - Multiplication
+- Percentage Calculation
+- Memory Add
+- Memory Substract
+- Memory Recall
+- Memory Clear
 
 ### Built With :-
 
-- Html, Css, Javascript
+- HTML5, CSS3, JavaScript
 
 ### ScreenShot :-
 
-![image](https://user-images.githubusercontent.com/76911582/153572570-cfa2bdee-8048-4804-b13c-d4ceb2c2b676.png)
-
-### Video :-
-
-
-## [Calculator Link](./index.html)
+![image](img/Calculator.png)
