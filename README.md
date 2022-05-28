@@ -94,7 +94,7 @@
 | 49            | [Graph Calculator](./Calculators/Graph%20Calculator/) |
 | 50            | [Basic_physics calculator](./Calculators/Basic_physics%20calculator/) |
 | 51            | [Covid Calculator](./Calculators/Covid%20Calculator/) |
-
+| 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
 
 ## Contributing Guidelines
 
