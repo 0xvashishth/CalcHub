@@ -96,6 +96,7 @@
 | 51            | [Covid Calculator](./Calculators/Covid%20Calculator/) |
 | 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
 | 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
+| 54            | [Unit Converter] (./Calculators/Unit%20Converter/) |
 
 ## Contributing Guidelines
 
