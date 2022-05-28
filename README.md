@@ -95,6 +95,7 @@
 | 50            | [Basic_physics calculator](./Calculators/Basic_physics%20calculator/) |
 | 51            | [Covid Calculator](./Calculators/Covid%20Calculator/) |
 | 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
+| 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
 
 ## Contributing Guidelines
 
