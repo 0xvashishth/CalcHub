@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box
+}
+
+form, div, p, ol, ul, li, table, td,
+tr, th, img, a, a:visited, a:hover {
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 15px;
+  font-family: 'Roboto', arial;
+}
+
+input,
+select {
+  font-size: 15px
+}
+
+body {
+  background: none;
+  margin-top: 40px;
+  padding: 0
+}
+h1 {
+  text-align: center;
+  color: #066;
+  text-decoration: underline;
+}
+h1, h3 {
+  font-family: Georgia, serif;
+}
+.border {
+  border: solid;
+  border-style: ridge;
+  border-color: #17c2dfe6;
+  border-width: 7px;
+  width: 50%;
+  padding: 16px;
+}
+.info {
+  width:90%;
+  font-size: 20px;
+}
+
+#outer,
+.outer {
+  width: 90%;
+  background: #fff;
+  text-align: center;
+  margin-top: 20px;
+  overflow-x: hidden
+}
+
+#cover,
+.cover {
+  border-radius: 10px;
+  padding-bottom: 10px
+}
+
+#title,
+.title {
+  letter-spacing: 1px;
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 0 7px 0;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  font-size: 105%;
+  font-weight: 500
+}
+
+#title a {
+  width: 100%;
+  display: block
+}
+
+.head {
+  border-radius: 5px;
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 110%;
+}
+
+.wname,
+.wname:hover {
+  padding: 5px 0;
+  font-size: 110%;
+  text-decoration: none;
+  text-align: center
+}
+
+#title a,
+#title a:hover {
+  color: #fff;
+  font-weight: 500
+}
+
+.calendar,
+.encl,
+.main {
+  table-layout: fixed;
+  width: 94%
+}
+
+td {
+  padding: 2px 1%;
+  vertical-align: middle;
+  text-align: left
+}
+
+td.day {
+  padding: 2px 0;
+  font-weight: 500
+}
+
+#d2,
+#d3 {
+  width: 100%;
+  display: none;
+  padding: 0
+}
+
+#d1 {
+  width: 100%;
+  display: block;
+  padding: 0
+}
+
+ul {
+  padding: 0 0 4px 5px;
+  margin-left: 10px
+}
+
+li {
+  margin: 4px 0 0 5%;
+  text-align: left;
+  font-weight: 500
+}
+
+input {
+  width: 98%;
+  border: 1px solid #ddd;
+  margin: 1px 0;
+  padding: 1px 3%;
+  text-align: left;
+  background: #fff
+}
+
+input.op {
+  pointer-events: none
+}
+
+.calendar input {
+  text-align: center
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield
+}
+
+select {
+  width: 98%;
+  border: 1px inset #ccc;
+  margin: 1px 0;
+  padding: 1px 1%;
+  background: #fff
+}
+
+a,
+a:visited {
+  color: #03c;
+  text-decoration: none
+}
+
+a:hover {
+  color: #f30
+}
+
+a.b,
+a.b:visited {
+  width: 98%;
+  margin: 3px 0;
+  text-align: center;
+  display: block;
+  padding: 2px 0;
+  border-radius: 5px;
+  color: #fff
+}
+
+a.c,
+a.c:visited {
+  width: 98%;
+  margin: 7px 0;
+  text-align: center;
+  display: block;
+  padding: 2px 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #fdd;
+  box-shadow: inset 0 20px 25px #a00
+}
+
+a.c:hover {
+  box-shadow: inset 0 -20px 25px #a00
+}
+
+#ad {
+  margin-top: 1px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden
+}
+
+td.b,
+input.b,
+b,
+strong,
+th {
+  font-weight: 500
+}
+
+p {
+  margin: 10px 0
+}
+
+.w50 {
+  width: 50%
+}
+
+#cover,
+.cover {
+  background: #eff;
+  box-shadow: inset 0 0 200px #066
+}
+
+#title,
+.title {
+  background: #aff;
+  box-shadow: inset 0 -25px 50px #066
+}
+
+a.b,
+a.b:visited {
+  background: #aff;
+  box-shadow: inset 0 20px 25px #066
+}
+
+a.b:hover {
+  box-shadow: inset 0 -20px 25px #066
+}
+
+#table1 {
+  display: block;
+  width: 100%;
+}
+
+#table2,
+#table3,
+#table4,
+#table5,
+#table6 {
+  display: none;
+  width: 100%;
+}
+
+input.op {
+  text-shadow: 0 0;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2px 0;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto
+}
+
+input,
+select {
+  margin: 2px 0
+}
+
+@media screen and (max-width: 800px) {
+  /* #outer,.info */
+  .border {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+    border-width: thick;
+  }
+}
