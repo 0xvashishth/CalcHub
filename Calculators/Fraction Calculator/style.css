@@ -208,3 +208,14 @@ p, h1, h2, h3, h4, h5, h6, caption, text, font, li, ul  {
 .maintable{
   background: #73b0c0;
 }
+
+#n1,#d1,#d2,#n2,#An,#Ad
+    {
+     font-size:18px;
+     height:50px;
+     width:80px;
+    }
+
+    table {
+      border-spacing: 30px;
+    }
