@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unit Converter</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="border">
+    <h1>Unit Converter</h1>
+    <div class="info"><b>Converts measurement units of length, speed, weight, volume, area and temperature instantaneously.</> <br><br>
+      <b>Steps to use the Unit Converter</b>
+      <ul>
+        <li>Select the Unit Type</li>
+        <li>Select No. of Units</li>
+        <li>Select the unit from which you have to changed</li>
+        <li>Select the unit in which you have to convert</li>
+        <li>Click on Convert Button</li>
+      </ul>
+    </div>
+
+  <div id="outer">
+    <div id="cover">
+      <div id="title">
+        <h3>Unit Converter</h3>
+      </div>
+      <div id="box">
+        <form name="uc">
+          <table class="main">
+            <colgroup>
+              <col class="w50">
+              <col class="w50">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>Unit Type</td>
+                <td>
+                  <select id="ut" onchange="unitconv();">
+                    <option value="1">Length</option>
+                    <option value="2">Area</option>
+                    <option value="3">Speed</option>
+                    <option value="4">Weight</option>
+                    <option value="5">Volume</option>
+                    <option value="6">Temperature</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="table1" style="display:none">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>No. of Units</td>
+                  <td>
+                    <input type="number" id="lip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="flength" onchange="unitconv();">
+                      <option value="1">Millimeter</option>
+                      <option value="10">Centimeter</option>
+                      <option value="1000" selected>Meter</option>
+                      <option value="1000000">Kilometer</option>
+                      <option value="25.4">Inch</option>
+                      <option value="304.8">Feet</option>
+                      <option value="914.4">Yard</option>
+                      <option value="1609344">Mile</option>
+                      <option value="1852000">Nautical Mile</option>
+                      <option value="1701.8">Smoot</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="tlength" onchange="unitconv();">
+                      <option value="1">Millimeter</option>
+                      <option value="10">Centimeter</option>
+                      <option value="1000">Meter</option>
+                      <option value="1000000">Kilometer</option>
+                      <option value="25.4">Inch</option>
+                      <option value="304.8">Feet</option>
+                      <option value="914.4" selected>Yard</option>
+                      <option value="1609344">Mile</option>
+                      <option value="1852000">Nautical Mile</option>
+                      <option value="1701.8">Smoot</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="lop">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="table2" style="display:block">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>No. of Units</td>
+                  <td>
+                    <input type="number" id="aip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="farea" onchange="unitconv();">
+                      <option value=".01">Sq. Millimeter</option>
+                      <option value="1">Sq. Centimeter</option>
+                      <option value="10000" selected>Sq. Meter</option>
+                      <option value="10000000000">Sq. Kilometer</option>
+                      <option value="6.4516">Sq. Inch</option>
+                      <option value="929.0304">Sq. Feet</option>
+                      <option value="25899881103.36">Sq. Mile</option>
+                      <option value="100000000">Hectare</option>
+                      <option value="40468564">Acre</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="tarea" onchange="unitconv();">
+                      <option value=".01">Sq. Millimeter</option>
+                      <option value="1">Sq. Centimeter</option>
+                      <option value="10000">Sq. Meter</option>
+                      <option value="10000000000">Sq. Kilometer</option>
+                      <option value="6.4516">Sq. Inch</option>
+                      <option value="929.0304">Sq. Feet</option>
+                      <option value="25899881103.36" selected>Sq. Mile</option>
+                      <option value="100000000">Hectare</option>
+                      <option value="40468564">Acre</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="aop">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="table3" style="display:none">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>No. of Units</td>
+                  <td>
+                    <input type="number" id="sip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="fspeed" onchange="unitconv();">
+                      <option value="0.1">Millimeter /Sec</option>
+                      <option value="1">Centimeter /Sec</option>
+                      <option value="100" selected>Meter /Sec</option>
+                      <option value="100000">Kilometer /Sec</option>
+                      <option value="27.77778">Kilometer /Hour</option>
+                      <option value="2.54">Inch /Sec</option>
+                      <option value="91.44">Feet /Sec</option>
+                      <option value="160934.4">Mile /Sec</option>
+                      <option value="44.704">Mile /Hour</option>
+                      <option value="51.4443">Knot</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="tspeed" onchange="unitconv();">
+                      <option value="0.1">Millimeter /Sec</option>
+                      <option value="1">Centimeter /Sec</option>
+                      <option value="100">Meter /Sec</option>
+                      <option value="100000">Kilometer /Sec</option>
+                      <option value="27.77778">Kilometer /Hour</option>
+                      <option value="2.54">Inch /Sec</option>
+                      <option value="91.44">Feet /Sec</option>
+                      <option value="160934.4">Mile /Sec</option>
+                      <option value="44.704" selected>Mile /Hour</option>
+                      <option value="51.4443">Knot</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="sop">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="table4" style="display:none">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>No. of Units</td>
+                  <td>
+                    <input type="number" id="wip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="fweight" onchange="unitconv();">
+                      <option value="1">Gram</option>
+                      <option value="1000" selected>Kilogram</option>
+                      <option value="100000">Quart</option>
+                      <option value="1000000">Tonnes</option>
+                      <option value="11.66381">Tola (Indian)</option>
+                      <option value="28.34952">Ounce</option>
+                      <option value="453.59237">Pound</option>
+                      <option value="907184.74">Short Ton (US)</option>
+                      <option value="1016047">Long Ton (UK)</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="tweight" onchange="unitconv();">
+                      <option value="1">Gram</option>
+                      <option value="1000">Kilogram</option>
+                      <option value="100000">Quart</option>
+                      <option value="1000000">Tonnes</option>
+                      <option value="11.66381">Tola (Indian)</option>
+                      <option value="28.34952">Ounce</option>
+                      <option value="453.59237" selected>Pound</option>
+                      <option value="907184.74">Short Ton (US)</option>
+                      <option value="1016047">Long Ton (UK)</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="wop">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="table5" style="display:none">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>No. of Units</td>
+                  <td>
+                    <input type="number" id="vip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="fvol" onchange="unitconv();">
+                      <option value="1">Milliliter</option>
+                      <option value="1000" selected>Litre</option>
+                      <option value="1000000">Cubic Meter</option>
+                      <option value="16.38706">Cubic Inch</option>
+                      <option value="28316.85">Cubic Feet</option>
+                      <option value="764554.858">Cubic Yard</option>
+                      <option value="29.5735">Ounce</option>
+                      <option value="3785.41">Gallon</option>
+                      <option value="473.17625">Pint</option>
+                      <option value="946.3525">Quart</option>
+                      <option value="14.78676">Tablespoon</option>
+                      <option value="4.92892">Teaspoon</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="tvol" onchange="unitconv();">
+                      <option value="1">Milliliter</option>
+                      <option value="1000">Litre</option>
+                      <option value="1000000">Cubic Meter</option>
+                      <option value="16.38706">Cubic Inch</option>
+                      <option value="28316.85" selected>Cubic Feet</option>
+                      <option value="764554.858">Cubic Yard</option>
+                      <option value="29.5735">Ounce</option>
+                      <option value="3785.41">Gallon</option>
+                      <option value="473.17625">Pint</option>
+                      <option value="946.3525">Quart</option>
+                      <option value="14.78676">Tablespoon</option>
+                      <option value="4.92892">Teaspoon</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="vop">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="table6" style="display:none">
+            <table class="main">
+              <colgroup>
+                <col class="w50">
+                <col class="w50">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>Temperature</td>
+                  <td>
+                    <input type="number" id="tip" value="1" onchange="unitconv();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert from</td>
+                  <td>
+                    <select id="ftemp" onchange="unitconv();">
+                      <option value="1" selected>Degree Celcius</option>
+                      <option value="2">Degree Fahrenhite</option>
+                      <option value="3">Kelvin</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Convert to</td>
+                  <td>
+                    <select id="ttemp" onchange="unitconv();">
+                      <option value="1">Degree Celcius</option>
+                      <option value="2" selected>Degree Fahrenhite</option>
+                      <option value="3">Kelvin</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="b" onclick="unitconv()">Convert</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input class="op" id="top">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
