@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Open Sans',sans-serif;
+    user-select: none;
+}
+body{
+    background:#2A283F;
+}
+.container{
+    text-align: center;
+    max-width: 1000px;
+    margin:0 auto;
+}
+.container h1{
+    font-size:30px;
+    color:white;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing:6px;
+    padding:80px 0px 0px;
+}
+.container p{
+    color:white;
+    letter-spacing:1px;
+    font-size: 14px;
+    max-width: 600px;
+    margin:30px auto;
+    line-height: 2;
+}
+
+.inp-container{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    background-color: #3D3A59;
+    width:fit-content;
+    margin:40px auto 0px;
+}
+.values{
+    margin:8px 0px;
+}
+
+.inp-container label{
+    margin-right:40px;
+    letter-spacing:2px;
+}
+
+.inp-container input{
+    outline:0;
+    border:0;
+    height:36px;
+    padding:5px;
+    font-size:16px;
+}
+
+.submit{
+    border:0;
+    margin:32px 0px;
+    font-size:16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding:10px 20px;
+    color:white;
+    background:#2c94b1;
+}
+  
+.gcd-final,.lcm-final{
+    width: fit-content;
+    margin: 0 auto;
+    color:#eee;
+    font-weight:600;
+    font-size:20px;
+    letter-spacing: 2px;
+    background: #19172b;
+    padding:10px 20px;
+    flex-direction:row;
+    display:none;
+}
+.gcd-final.show,.lcm-final.show{
+    display:flex;
+}
+.lcm-final{
+    margin:15px auto;
+}
+.gcd-final .gcd,.lcm-final .lcm{
+    font-weight:700;
+    color:#2c94b1;
+}

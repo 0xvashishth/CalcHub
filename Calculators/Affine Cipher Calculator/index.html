@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Affine Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="left-wrapper" class="left-wrapper">
+      <div id="left-container" class="left-container">
+        <form>
+          <h1>Encrypt</h1>
+          <div class="form-group">
+            <label for="plaintext">Plaintext</label>
+            <input
+              type="text"
+              class="form-control"
+              id="plaintext"
+              placeholder="Enter text to encrypt"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="key">a</label>
+
+            <input
+              type="number"
+              class="form-control"
+              id="key"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <label for="key">b</label>
+            <input
+              type="number"
+              class="form-control"
+              id="key1"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <button id="btn-encrypt" class="btn btn-default" onClick="affine()">
+              Encrypt
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="output">Ciphertext Output</label>
+            <textarea class="form-control" id="output" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div id="left-container" class="left-container">
+        <form>
+          <h1>Decrypt</h1>
+          <div class="form-group">
+            <label for="ciphertext">Ciphertext</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ciphertext"
+              placeholder="Enter text to decrypt"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="key">a</label>
+
+            <input
+              type="number"
+              class="form-control"
+              id="keycipher"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <label for="key">b</label>
+            <input
+              type="number"
+              class="form-control"
+              id="keycipher1"
+              placeholder="Enter a numeric key"
+              required
+              autocomplete="off"
+            />
+            <button
+              id="btn-decrypt"
+              type="button"
+              class="btn btn-default"
+              onclick="deaffine()"
+            >
+              Decrypt
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="deoutput">Plaintext Output</label>
+            <textarea class="form-control" id="deoutput" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="right-wrapper" class="right-wrapper">
+      <div id="right-container" class="right-container">
+        <h1>AFFINE CIPHER</h1>
+        <h2>
+          The Affine cipher is a monoalphabetic substitution cipher, where each
+          letter in the alphabet is mapped to another letter through a simple
+          mathematical formula: (ax + b) mod 26. It can be broken using the
+          standard statistical methods for monoalphabetic substitution ciphers.
+        </h2>
+        <button id="btn-encrypt-desc" class="default-button">Encrypt</button>
+        <button id="btn-decrypt-desc" class="default-button">Decrypt</button>
+        <button id="btn-start" class="mobile-button">Start</button>
+      </div>
+    </div>
+  </body>
+  <script src="interactionHandler.js"></script>
+  <script src="calculator.js"></script>
+</html>

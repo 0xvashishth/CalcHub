@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, white, rgb(167, 164, 164));
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(6, 74, 151);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* LEFT-WRAPPER */
+
+.left-wrapper {
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 658px) {
+    .left-wrapper {
+        display: none;
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* RIGHT-WRAPPER */
+
+.right-wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 658px) {
+    .right-wrapper {
+        display: flex;
+        position: absolute;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* CLASSES FOR ELEMENTS IN  */
+/* LEFT CONTAINER */
+
+.left-container {
+    opacity: 0%;
+    transition: 0.2s ease-in-out all;
+}
+
+.left-container.active {
+    opacity: 100%;
+}
+
+/* LEFT CONTAINER */
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+
+.form-group label{
+    font-size: 20px;
+}
+
+.form-group input, textarea{
+    display: block;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: auto;
+    outline: none;
+    padding: 5px;
+    width: 90%;
+    transition: 0.2s ease-in-out all;
+}
+
+.form-group input:focus {
+    border: 1px solid darkcyan;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group button {
+    width: 90%;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(39, 114, 199);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-group button:hover {
+    background-color: rgb(12, 78, 153);
+}
+/* FORM GROUP */
+
+/* CLASSES FOR ELEMENTS IN RIGHT-CONTAINER */
+/* RIGHT CONTAINER */
+
+.right-container {
+    display: block;
+    width: 400px;
+    opacity: 0%;
+    transition: 0.2s ease-in-out all;
+}
+
+.right-container.active {
+    opacity: 100%;
+}
+
+.right-container .default-button {
+    width: 40%;
+    margin-left: 20px;
+    background: linear-gradient(to left, rgb(16, 96, 187),rgb(6, 44, 88));
+    padding: 5px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+}
+
+
+.right-container .default-button:hover {
+    transform: scale(1.05);
+}
+.right-container button.mobile-button {
+    display: none;
+}
+
+.right-container button.mobile-button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 650px) {
+    .right-container .default-button {
+        display: none;
+    }
+    .right-container button.mobile-button {
+        width: 100%;
+        display: block;
+        background: linear-gradient(to left, rgb(16, 96, 187),rgb(6, 44, 88));
+        padding: 5px;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out all;
+    }
+}
