@@ -76,7 +76,7 @@ a.btn:hover{
     margin: 3px;
 }
 main{
-  padding:: 20px;
+  padding: 20px;
   
 }
 
@@ -178,7 +178,7 @@ code{
 
 .calculator {
 max-width: 530px;
-background-color: beige;
+background-color: rgb(170, 167, 167);
 padding: 20px;
 border-radius: 5px;
 margin: 10px auto;
@@ -208,7 +208,9 @@ justify-content: space-between;
 .button {
    margin: 3px;
 width: 83px;
-border: none;
+border: 3px solid black;
+font-weight: bold;
+font-size: 20px;
 height: 45px;
 border-radius: 4px;
 color: #000000;
@@ -216,7 +218,7 @@ cursor: pointer;
 }
 
 button:hover {
-  background-color: hsla(180, 100%, 40%, 0.3);
+  background-color: hsl(180, 33%, 92%);
   transition: .2s;
 }
 
