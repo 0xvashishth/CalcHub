@@ -7,13 +7,17 @@
 
         .shape{
             background-color: azure;
-            width: 400px;
-            height: 400px;
+            max-width : 550px;
+            width: 40%;
+            height: 450px;
             border: 3px solid darkblue;
             border-radius:  7px;
             box-shadow: 0px 5px 20px lightcoral; 
-            margin:  100px 300px 30px 370px;
-            padding: 30px;
+            margin:  50px 100px 10px 90px;
+            padding: 25px 30px;
+            position: relative;
+            left: 80px;
+            top: 2px;
         }
             
         input[type="text"]{ 
@@ -21,7 +25,10 @@
         }
 
         h3{
-        	text-align: center;
+            text-align: center;
 
         }
+        
+       
+        
         
