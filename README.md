@@ -97,6 +97,7 @@
 | 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
 | 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
 | 54            | [Volume Calculator](./Calculators/Volume%20Calculator) |
+| 55            | [Fraction Calculator](./Calculators/Fraction%20Calculator/) |
 
 ## Contributing Guidelines
 
