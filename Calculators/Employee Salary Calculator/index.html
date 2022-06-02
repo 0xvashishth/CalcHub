@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    
+	<title>Calculator</title>
+	<font face="Arial" size="3">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <div class="shape">
+        <h2 align = "center">Employee Salary Calculator</h3>
+    <p>
+        The Employee salary Calculator determines the Net Salary of the employee along with the amount given for the income tax by providing the Basic Salary and rate of tax.
+    </p>
+
+    	
+        <table>
+    		<tr>
+                <td>Enter Basic salary</td>
+    			<td>
+                    
+                    <input type="text" id="a">
+                </td>
+            </tr>
+            <tr>
+                <td>Income Tax</td>
+    			<td>
+                    
+                    <input type = "text" id="b">
+                </td>
+    			
+            </tr>
+        </table>
+        <br>
+        <table>
+            
+            <tr>
+
+                <td>
+                    <button onclick="sal()">Calculate</button> 
+                    
+                </td> 
+
+            </tr>
+        </table>
+        <div id="res">
+        </div>
+
+    </div>
+    <script src = "salary.js"></script>
+    
+</body>
+</html>
