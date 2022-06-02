@@ -98,6 +98,7 @@
 | 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
 | 54            | [Volume Calculator](./Calculators/Volume%20Calculator) |
 | 55            | [Fraction Calculator](./Calculators/Fraction%20Calculator/) |
+| 56            | [Employee Salary Calculator](./Calculators/Employee%20Salary%20Calculator/) |
 
 ## Contributing Guidelines
 
