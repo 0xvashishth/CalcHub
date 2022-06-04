@@ -99,7 +99,7 @@
 | 54            | [Volume Calculator](./Calculators/Volume%20Calculator) |
 | 55            | [Fraction Calculator](./Calculators/Fraction%20Calculator/) |
 | 56            | [Employee Salary Calculator](./Calculators/Employee%20Salary%20Calculator/) |
-| 57            | [twin Paradox Calculator](./Calculators/Twin-Paradox%20Calculator/)|
+| 57            | [Twin Paradox Calculator](./Calculators/Twin-Paradox%20Calculator/)|
 ## Contributing Guidelines
 
 Read our [Contributing Guidelines](./.github/ContributingGuidelines.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to CalcHub.
