@@ -18,13 +18,13 @@ Fixes # <issue_number_here>
 
 <hr>
 
-## Contribution Event Name
-<!-- Please uncomment any of the following contribution event that is relevant to you. -->
+<!-- ⚠️⚠️⚠️⚠️⚠️⚠️ Please remove all which are not relevant !!! ⚠️⚠️⚠️⚠️⚠️⚠️ -->
 <!-- GSSOC22 -->
 <!-- Community Exchange -->
 <!-- Other -->
 
-<hr>
+<!-- ⚠️⚠️⚠️⚠️⚠️⚠️ -->
+
 
 <!----Please delete options that are not relevant.And in order to tick the check box just but x inside them for example [x] like this----->
 
