@@ -43,7 +43,6 @@
 
 No | Name of Calculator
 -- | --
-  |  
 1 | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)
 2 | [Age Calculator](./Calculators/Age_Calculator/)
 3 | [Arithmatic Equation   Solver](./Calculators/Arithmatic%20Equation%20Solver/)
