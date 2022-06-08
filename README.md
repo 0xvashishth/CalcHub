@@ -41,65 +41,66 @@
 
 # Calculators List 📑
 
-| No            | Name Of Calculator                                             |  
-| ------------- |:---------------------------------------------------------------| 
-| 1             | [Simple Arithmetic](./Calculators/Simple_Arithmetic)           |
-| 2             | [Scientific Calculator](./Calculators/Scientific_Calculator)   |
-| 3             | [Simple Matrix Calculator](./Calculators/Matrix_Operations_Calculator/)        |
-| 4             | [Statistics Calculator](./Calculators/Statistics%20Calculator) |
-| 5             | [Age Calculator](./Calculators/Age_Calculator/)                |
-| 6             | [BaseX Calculator](./Calculators/BaseX_Calculator)             |
-| 7             | [Temperature Calculator](./Calculators/Temperature_Calculator) |
-| 8             | [Vigenere Cipher Calculator](http://vashishth.me/CalcHub/Calculators/VigenereCipher_Calculator/) |
-| 9             | [Tax Calculator](./Calculators/IncomeTaxCalculator) |
-| 10            | [Quadratic Equation Calculator](./Calculators/Quadratic_Equation_Calculator)  |
-| 11            | [Bitwise Calculator](./Calculators/Bitwise_Calculator/)  |
-| 12            | [Simple Interest Calculator](./Calculators/Simple_Interest/) |
-| 13            | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)  |
-| 14            | [Binary Calculator](./Calculators/Binary_Calculator/) |
-| 15            | [Number System Conversation](./Calculators/NumberSystemCoversion_Calculator/) |
-| 16            | [Matrix Adjoint and Inverse Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/) |
-| 17            | [Visual Type Scale Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)  |
-| 18            | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)  |
-| 19            | [Roman To Integer Calculator](./Calculators/Roman_To_Integer_Calculator/)  |
-| 20            | [Transpose 3X3 Matrix Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/) |
-| 21            | [Tip Calculator](./Calculators/Tip_Calculator/)  |
-| 22            | [Grade Calculator](./Calculators/Grade_Calculator/) |
-| 23            | [Euclidean Algorithm Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)  |
-| 24            | [Log&Antilog Calculator](./Calculators/Log_Calculator/) |
-| 25            | [Stock Profit And Loss Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/) |
-| 26            | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/) |
-| 27            | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/) |
-| 28            | [Currency_Calculator](./Calculators/Currency-Calculator/) |
-| 29            | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/) |
-| 30            | [Color_Code_Converter](./Calculators/Color_Code_Converter/) |
-| 31            | [EMI Calculator](./Calculators/EMI_Calculator/) |
-| 32            | [BMI Calculator](./Calculators/BMI_Calculator/) |
-| 33            | [GPA_Calculator](./Calculators/GPA_Calculator/index.html) |
-| 34            | [Permutation and Combination Calculator](./Calculators/Permutation%20and%20Combination%20Calculator/) |
-| 35            | [Day Calculator](./Calculators/DayCalculator/) |
-| 36            | [Sleep Calculator](./Calculators/Sleep_Calculator/) |
-| 37			      | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/) |
-| 38			      | [Complex Number Calculator](./Calculators/Complex_Number_Calculator/) |
-| 39            | [Unit Converter](./Calculators/Unit%20Converter/) |
-| 40            | [Multiplication Table](./Calculators/Multiplication_table/)  |
-| 41            | [VAT_Calculator](./Calculators/VAT_Calculator/) |
-| 42            | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)  |
-| 43            | [Resonant frequency calculator](./Calculators/Resonant_frequency_calculator/) |
-| 44            | [Daily Water Intake Calculator](./Calculators/Daily_Water_Intake_Calculator) |
-| 45            | [Compound Interest](./Calculators/Compound%20interest%20Calculator)   |
-| 46            | [Kinetic_Theory_of_Gases_Calculator](./Calculators/Kinetic_Theory_of_Gases_Calculator/) |
-| 47            | [Calculators/Electric vs Petrol Economy Price Calculator/](./Calculators/Electric%20vs%20Petrol%20Economy%20Price%20Calculator/)  |
-| 48            | [Divisors Calculator](./Calculators/Divisors%20Calculator/) |
-| 49            | [Graph Calculator](./Calculators/Graph%20Calculator/) |
-| 50            | [Basic_physics calculator](./Calculators/Basic_physics%20calculator/) |
-| 51            | [Covid Calculator](./Calculators/Covid%20Calculator/) |
-| 52            | [Arithmatic Equation Solver](./Calculators/Arithmatic%20Equation%20Solver/) |
-| 53            | [binomial coefficient calculator](./Calculators/Binomial_Coeff_Calc/) |
-| 54            | [Volume Calculator](./Calculators/Volume%20Calculator) |
-| 55            | [Fraction Calculator](./Calculators/Fraction%20Calculator/) |
-| 56            | [Employee Salary Calculator](./Calculators/Employee%20Salary%20Calculator/) |
-| 57            | [Twin-Paradox Calculator](./Calculators/Twin-Paradox%20Calculator) |
+No | Name of Calculator
+-- | --
+  |  
+1 | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)
+2 | [Age Calculator](./Calculators/Age_Calculator/)
+3 | [Arithmatic Equation   Solver](./Calculators/Arithmatic%20Equation%20Solver/)
+4 | [BaseX Calculator](./Calculators/BaseX_Calculator)
+5 | [Basic_physics   calculator](./Calculators/Basic_physics%20calculator/)
+6 | [Binary Calculator](./Calculators/Binary_Calculator/)
+7 | [binomial coefficient   calculator](./Calculators/Binomial_Coeff_Calc/)
+8 | [Bitwise Calculator](./Calculators/Bitwise_Calculator/)
+9 | [BMI Calculator](./Calculators/BMI_Calculator/)
+10 | [Calculators/Electric vs Petrol Economy Price   Calculator/](./Calculators/Electric%20vs%20Petrol%20Economy%20Price%20Calculator/)
+11 | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/)
+12 | [Color_Code_Converter](./Calculators/Color_Code_Converter/)
+13 | [Complex Number Calculator](./Calculators/Complex_Number_Calculator/)
+14 | [Compound Interest](./Calculators/Compound%20interest%20Calculator)
+15 | [Covid Calculator](./Calculators/Covid%20Calculator/)
+16 | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/)
+17 | [Currency_Calculator](./Calculators/Currency-Calculator/)
+18 | [Daily Water Intake   Calculator](./Calculators/Daily_Water_Intake_Calculator)
+19 | [Day Calculator](./Calculators/DayCalculator/)
+20 | [Digital_Storage_Calculator](./Calculators/Digital_Storage_Calculator/)
+21 | [Divisors Calculator](./Calculators/Divisors%20Calculator/)
+22 | [EMI Calculator](./Calculators/EMI_Calculator/)
+23 | [Employee Salary   Calculator](./Calculators/Employee%20Salary%20Calculator/)
+24 | [Euclidean Algorithm   Calculator(LCM,GCD)](./Calculators/Euclidean_Algorithm_Calculator/)
+25 | [Fraction Calculator](./Calculators/Fraction%20Calculator/)
+26 | [GPA_Calculator](./Calculators/GPA_Calculator/index.html)
+27 | [Grade Calculator](./Calculators/Grade_Calculator/)
+28 | [Graph Calculator](./Calculators/Graph%20Calculator/)
+29 | [Kinetic_Theory_of_Gases_Calculator](./Calculators/Kinetic_Theory_of_Gases_Calculator/)
+30 | [Log&Antilog Calculator](./Calculators/Log_Calculator/)
+31 | [Matrix Adjoint and Inverse   Calculator](./Calculators/Matrix%20Adjoint%20and%20Inverse%20Calculator/)
+32 | [Modulo_Inverse-Modulo_Calculator](./Calculators/Modulo_Inverse-Modulo_Calculator/)
+33 | [Multiplication Table](./Calculators/Multiplication_table/)
+34 | [Number System   Conversation](./Calculators/NumberSystemCoversion_Calculator/)
+35 | [Permutation and Combination   Calculator](./Calculators/Permutation%20and%20Combination%20Calculator/)
+36 | [Prime Factor Calculator](./Calculators/PrimeFactors_Calculator/)
+37 | [Quadratic Equation   Calculator](./Calculators/Quadratic_Equation_Calculator)
+38 | [Resonant frequency   calculator](./Calculators/Resonant_frequency_calculator/)
+39 | [Roman To Integer   Calculator](./Calculators/Roman_To_Integer_Calculator/)
+40 | [Scientific Calculator](./Calculators/Scientific_Calculator)
+41 | [Simple Arithmetic](./Calculators/Simple_Arithmetic)
+42 | [Simple Interest Calculator](./Calculators/Simple_Interest/)
+43 | [Simple Matrix   Calculator](./Calculators/Matrix_Operations_Calculator/)
+44 | [Sleep Calculator](./Calculators/Sleep_Calculator/)
+45 | [Statistics Calculator](./Calculators/Statistics%20Calculator)
+46 | [Stock Profit And Loss   Calculator](./Calculators/Stock_Profit%20_And_Loss_Calculator/)
+47 | [Tax Calculator](./Calculators/IncomeTaxCalculator)
+48 | [Temperature Calculator](./Calculators/Temperature_Calculator)
+49 | [Tip Calculator](./Calculators/Tip_Calculator/)
+50 | [Transpose 3X3 Matrix   Calculator](./Calculators/Transpose_3X3_Matrix_Calculator/)
+51 | [Twin-Paradox Calculator](./Calculators/Twin-Paradox%20Calculator)
+52 | [Unit Converter](./Calculators/Unit%20Converter/)
+53 | [VAT_Calculator](./Calculators/VAT_Calculator/)
+54 | [Vigenere Cipher   Calculator](http://vashishth.me/CalcHub/Calculators/VigenereCipher_Calculator/)
+55 | [Visual Type Scale   Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)
+56 | [Volume Calculator](./Calculators/Volume%20Calculator)
+57 | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)
 
 ## Contributing Guidelines
 
