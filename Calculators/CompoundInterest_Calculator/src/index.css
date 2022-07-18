@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(187, 187, 221);
+}
+
+.container {
+  /* height: 100vh; */
+  background-color: rgb(187, 187, 221);
+}
+
+.title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2.8rem;
+  font-family: "Electrolize", sans-serif;
+}
+.title p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 5.95rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem 1.9rem;
+  font-size: 1.7rem;
+  box-shadow: 2px 1.2px 3.9px rgba(0, 0, 0, 0.024),
+    4.9px 2.9px 9.3px rgba(0, 0, 0, 0.037),
+    9.3px 5.4px 17.8px rgba(0, 0, 0, 0.045),
+    16.5px 9.6px 32.4px rgba(0, 0, 0, 0.051),
+    30.9px 18px 62.9px rgba(0, 0, 0, 0.063), 74px 43px 140px rgba(0, 0, 0, 0.11);
+}
+
+.card div {
+  padding: 0.8rem 0rem;
+}
+
+input {
+  background-color: transparent;
+  font-size: 1.5rem;
+  width: 15vw;
+  padding: 10px;
+  margin: 0 8px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="text"] {
+  cursor: not-allowed;
+}
+
+.btn-container {
+  margin-top: 0.6rem;
+}
+
+.button,
+.dropdown {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100px;
+  background-color: rgb(198, 221, 224);
+  border: none;
+  border-radius: 10px;
+}
+
+.dropdown {
+  width: auto;
+}
+
+option {
+  background-color: wheat;
+}
+
+.button:hover,
+.dropdown:hover {
+  background-color: rgb(153, 204, 211);
+  cursor: pointer;
+}
+
+.error {
+  font-size: 1.3rem;
+  color: red;
+  text-align: center;
+}
+
+.display {
+  display: none;
+}
+
+.displayAnswer {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.displayAnswer p,
+.displayAnswer span {
+  display: inline;
+}
+
+#money {
+  color: #0d0d6d;
+  border-bottom: 2px solid #0d0d6d;
+}
+
+@media only screen and (max-width: 661px) {
+  .container {
+    height: auto;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding-bottom: 0rem;
+  }
+
+  .card {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0rem;
+    width: 85vw;
+  }
+
+  .card div {
+    margin: 0 0.5rem;
+  }
+
+  .card div:nth-child(1) {
+    margin-top: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .button,
+  .dropdown {
+    font-size: 1rem;
+  }
+  .error {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .title p {
+    margin: 1rem 0.5rem;
+  }
+
+  .hero {
+    padding-bottom: 0;
+  }
+  .card input {
+    display: block;
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+  }
+
+  .frequency select {
+    margin-left: 20vw;
+    margin-top: 0.8rem;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .displayAnswer {
+    margin: 0 0.5rem;
+  }
+}
