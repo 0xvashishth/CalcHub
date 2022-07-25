@@ -1,0 +1,69 @@
+body {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 25%;
+  font-size: x-large;
+  background-image: linear-gradient(#00ffde,#097945,#002415);
+
+  background-size: cover;
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+table {
+  font-size: 150%;
+  color:white;
+  width: 100%;
+  font-weight: 600;
+
+
+}
+.hit-the-floor {
+  color: #fff;
+  font-size: 75px;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.hit-the-floor {
+  text-align: center;
+}
+
+
+
+tr {
+  height: 70px;
+  color:white;
+}
+
+input[type=number] {
+  width: 50%;
+  font-size: 75%;
+  padding: 12px;
+}
+
+#main {
+  width: 1000px;
+  padding: 10px;
+  border: 5px solid gray;
+
+  color:white;
+  margin: 0;
+}
