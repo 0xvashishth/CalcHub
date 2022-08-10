@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Compound Interest Calculator</h1>
+        <p>
+          Determine how much your money can grow using the power of compound
+          Interest
+        </p>
+      </div>
+      <div class="hero">
+        <div class="card">
+          <div class="error display"></div>
+          <div class="investment">
+            Initial investment (in &#8377;):
+            <input type="number" id="initialMoney" />
+          </div>
+          <div class="rate">
+            Interest Rate (in %):
+            <input type="number" id="interestRate" />
+          </div>
+          <div class="time">
+            Length of time (in years):
+            <input type="number" id="years" />
+          </div>
+          <div class="frequency">
+            Compound frequency:
+            <select name="" id="ddlitems" class="dropdown">
+              <option value="anually">Anually</option>
+              <option value="semiAnually">Semianually</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="monthly">monthly</option>
+            </select>
+          </div>
+          <div class="btn-container">
+            <button class="button" id="calculateBtn">Calculate</button>
+            <button class="button" id="resetBtn">Reset</button>
+          </div>
+          <div class="displayAnswer">
+            <p id="answer"></p>
+            <span id="money"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

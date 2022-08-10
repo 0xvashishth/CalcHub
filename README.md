@@ -56,7 +56,7 @@ No | Name of Calculator
 11 | [Catalan_Number_Calculator](./Calculators/Catalan_Number_Calculator/)
 12 | [Color_Code_Converter](./Calculators/Color_Code_Converter/)
 13 | [Complex Number Calculator](./Calculators/Complex_Number_Calculator/)
-14 | [Compound Interest](./Calculators/Compound%20interest%20Calculator)
+14 | [Compound Interest Calculator](./Calculators/CompoundInterest_Calculator)
 15 | [Covid Calculator](./Calculators/Covid%20Calculator/)
 16 | [Cubic Equation Calculator](./Calculators/Cubic_Equation_Calc/)
 17 | [Currency_Calculator](./Calculators/Currency-Calculator/)
