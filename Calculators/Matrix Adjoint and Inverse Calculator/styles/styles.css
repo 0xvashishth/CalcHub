@@ -62,3 +62,10 @@ p {
 	margin: 10px 10px 0px 0px;
 	color: #fff;
 }
+
+@media screen and (max-width: 800px){
+	.block {
+		width: 35px;
+		height: 25px;
+	}
+}
