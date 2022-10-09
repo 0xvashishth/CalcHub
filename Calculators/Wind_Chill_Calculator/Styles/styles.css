@@ -4,10 +4,11 @@ body{
 
 .container{
     margin: auto;
-    width: 40%;
-    height: 40%;
+    align-items: center;
+    width: 70%;
+    height: 70%;
     padding: 3% 10% 3% 10%;
-    margin-left: 18%;
+    /* margin-left: 18%; */
     margin-top: 5%;
     background-color: #DAB88B;
     border-radius: 15px;
@@ -46,25 +47,29 @@ div select{
 }
 
 .answer{
-    margin-left: 25%;
+    margin-left: 10%;
+    align-items: center;
 }
 
 #result{
-    width: 51%;
+    width: 90%;
     font-size: 170%;
-    margin-left: 3%;
+    align-items: center;
+    /* margin-left: 3%; */
 }
 
+
 .r_title{
+    align-items: center;
     background-color: #97DBAE;
-    width: 51%;
+    width: 80%;
     padding: 1%;
     border-radius: 8px;
 }
 
 #advice{
-    width: 51%;
+    width: 90%;
     font-size: 110%;
     margin-bottom: 2%;
-    margin-left: 3%;
+    /* margin-left: 3%; */
 }
