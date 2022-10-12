@@ -42,6 +42,7 @@ body:
       options:
         - Community Exchange
         - GSSOC22
+        - Hacktoberfest
         - Other
   - type: checkboxes
     id: terms
