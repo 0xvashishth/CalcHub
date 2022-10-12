@@ -19,6 +19,7 @@ Fixes # <issue_number_here>
 <hr>
 
 <!-- ⚠️⚠️⚠️⚠️⚠️⚠️ Please remove all which are not relevant !!! ⚠️⚠️⚠️⚠️⚠️⚠️ -->
+<!-- Hacktoberfest -->
 <!-- GSSOC22 -->
 <!-- Community Exchange -->
 <!-- Other -->
