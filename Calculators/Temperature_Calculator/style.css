@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: #a399b2;
-  background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+  background-color: #19171a;
+  /* background-color: linear-gradient(147deg, #7633da 0%, #6836b8 74%); */
 }
 
 main {
   width: 50%;
   height: 50%;
-  overflow: auto;
+  overflow: visible;
   margin: auto;
   position: absolute;
   top: 0;
@@ -20,13 +20,14 @@ main {
   bottom: 0;
   right: 0;
   text-align: center;
+  border-radius: 20px;
 }
 
 label {
   flex: 1 1 40%;
   border-radius: 8px;
   padding: 15px;
-  color: #b4886b;
+  color: #b9825d;
   font-weight: bold;
 }
 .values {
@@ -36,8 +37,17 @@ label {
   align-items: center;
   max-width: 768px;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #3a3434;
   padding: 20px;
+}
+
+.values input{
+  background-color:  #141314;
+  color: #fff;
+}
+
+::placeholder{
+  color: rgb(83, 60, 60);
 }
 
 .value {
@@ -51,4 +61,11 @@ label {
   border: none;
   outline: none;
   transition: 0.4s;
+}
+
+@media screen and (max-width: 420px) {
+  .col420{
+    width: 20%;
+    margin-top: 0;
+  }
 }
