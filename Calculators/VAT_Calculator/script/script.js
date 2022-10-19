@@ -14,10 +14,8 @@ function VATInclusiveAmount(price, rate) {
 
 calcBtn.addEventListener('click', function() {
 	if (netPrice.value === "" || isNaN(netPrice.value)) {
-		// show red border
 		netPrice.style.border = "1px solid red";
 
-		// removing red border after 1.5s
 		setTimeout(function() {
 			netPrice.style.border = "1px solid transparent";
 		}, 1500);
@@ -26,15 +24,12 @@ calcBtn.addEventListener('click', function() {
 	}
 
 	if (vatRate.value === "" || isNaN(vatRate.value)) {
-		// show red border
 		vatRate.style.border = "1px solid red";
 
-		// removing red border after 1.5s
 		setTimeout(function() {
 			vatRate.style.border = "1px solid transparent";
 		}, 1500);
 
-		// remove wrong value
 		vatRate.value = "";
 	}
 
