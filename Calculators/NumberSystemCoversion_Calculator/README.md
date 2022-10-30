@@ -1,33 +1,33 @@
+# Number System Conversion
 
-#  Number System Conversion Calculator
+## Descriptions :
 
-The Number System Conversion Calculator is used to convert various type of number system to be converted into each other and vice versa.
--
+> Convert Number in to other formate like as binary, octal and hex.
+
+## Functionality :
+> able to convert number in to following types
+
+```
+> Decimal To Binary
+> Decimal To Octal
+> Decimal To Hex
+
+> Binary To Decimal
+> Binary To Octal
+> Binary To Hex
+
+> Octal To Decimal
+> Octal To Binary
+> Octal To Hex
+
+> Hex To Decimal
+> Hex To Binary
+> Hex To Octal
+```
+
+### Video:
+
+https://user-images.githubusercontent.com/84856389/198850710-98d2ea69-a232-46ef-a31c-f43bfc750a30.mp4
 
 
-
-
-The types of Number System which the calculator support are:
-
-- Binary
-- Octal
-- Decimal
-- Hexadecimal
-
-
-## Built with:
-
-- HTML
-- CSS
-- JavaScript
-
-
-## Screenshots
-
-![App Screenshot](https://user-images.githubusercontent.com/91826109/156524610-ff86e3f3-d836-4b2d-bb0c-7ef59ea6bf60.JPG)
-
-
-## Video:
-
-[Calculator Link](https://drive.google.com/file/d/1txP-7aOfiq7v2NveF1nlpygQTWfK4yK7/view?usp=drivesdk)
-
+## [RapidConversion Calculator Link](./index.html)
