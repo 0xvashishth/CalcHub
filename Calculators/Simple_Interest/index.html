@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,32 @@
     <title>Simple Interest Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <form id="form" class="form">
             <h2>Simple Interest Calculator</h2>
             <div class="form-control">
                 <label for="principal">Principal (<em>P in ₹</em>)</label>
-                <input type="number" id="principal" placeholder="100000" required>
+                <input type="number" id="principal" placeholder="100000" onchange="checkNumberP()" required>
+                <strong id="errorMsgP" class=""></strong>
             </div>
             <div class="form-control">
                 <label for="rate">Rate (<em>R in % per annum</em>)</label>
-                <input type="number" id="rate" placeholder="10" required>
+                <input type="number" id="rate" placeholder="10" onchange="checkNumberR()" required>
+                <strong id="errorMsgR" class=""></strong>
             </div>
             <div class="form-control">
                 <label for="time">Time (<em>n in years</em>)</label>
-                <input type="number" id="time" placeholder="1" required>
+                <input type="number" id="time" placeholder="1" onchange="checkNumberN()" required>
+                <strong id="errorMsgN" class=""></strong>
             </div>
             <button>Submit</button>
+            <button onclick="resetInputs()">Reset</button>
         </form>
         <div id="result" class="result hide">
-            <h4>Total Interest  <span class="resItem" id="resultInterest">5000</span></h4>
-            <h4>Total Amount  <span class="resItem" id="resultAmount">5000</span></h4>
+            <h4>Total Interest <span class="resItem" id="resultInterest">5000</span></h4>
+            <h4>Total Amount <span class="resItem" id="resultAmount">5000</span></h4>
         </div>
     </div>
 
@@ -35,4 +41,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

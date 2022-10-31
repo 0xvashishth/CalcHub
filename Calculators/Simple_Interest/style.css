@@ -79,3 +79,9 @@ h2 {
     padding: 50px;
     color: teal;
 }
+.alert {
+    font-weight: bolder;
+}
+.alert-warning {
+    background-color: orange;
+}
