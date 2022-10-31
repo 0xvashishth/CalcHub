@@ -2,19 +2,24 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/style.css">
         <title>Color Code Calculator</title>
-        <script src="./scripts/app.js"></script>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     </head>
     
     <body>
-        <div class="box">
-            <div>
-                <label>Enter Color to Convert: </label>
-                <input name="to_convert" id="to_convert" type="text" style="width: 50%;" placeholder="Enter Color Format">
-                <button onclick="convert()" style="width: 10%;">Convert</button>
+      <div class="container p-2">
+      <h2 align="center">Color Code Converter</h2>
+        </div>
+        <div class="container p-5">
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Enter Color to Convert: </label>
+                <div class="col-sm-10">
+                  <input name="to_convert" id="to_convert" type="text" class="form-control" placeholder="Enter Color Format">
+                </div>
             </div>
-
+            <button onclick="convert()" class="btn btn-outline-primary">Convert</button>
+            <br/><br/>
             <div style="text-align:left;">
                 <p>Supported formats examples:</p>
                 <ul>
@@ -25,13 +30,43 @@
                 </ul>
             </div>
 
-            <div style="text-align: left;">
+            <div>
                 <h2 style="margin-top: 10%;">Results</h2>
-                RGB: <input readonly id="rgb" style="width: 30%;"><br><br>
-                HEX: <input readonly id="hex" style="width: 30%;"><br><br>
-                CMYK: <input readonly id="cmyk" style="width: 30%;"><br><br>
-                Hsl: <input readonly id="hsl" style="width: 30%;"><br><br>
+                <div class="row">
+                  <div class="col-1">
+                    <label class="col-sm-4 col-form-label">RGB:</label>
+                  </div>
+                  <div class="col-11">
+                    <input class="form-control" readonly id="rgb"> 
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <label class="col-sm-4 col-form-label">HEX:</label>
+                  </div>
+                  <div class="col-11">
+                    <input class="form-control" readonly id="hex"> 
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <label class="col-sm-4 col-form-label">CMYK:</label>
+                  </div>
+                  <div class="col-11">
+                    <input class="form-control" readonly id="cmyk"> 
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <label class="col-sm-4 col-form-label">HSL:</label>
+                  </div>
+                  <div class="col-11">
+                    <input class="form-control" readonly id="hsl"> 
+                  </div>
+                </div>
             </div>
         </div>  
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </body>
 </html>
