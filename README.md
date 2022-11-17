@@ -1,7 +1,5 @@
 <h1 align="center">CalcHub</h1>
-
 <h3 align="center">This Open-Source repository is all about making new calculators on different aspects of Mathematics.</h3>
-
 <div align="center">
 <a href="https://github.com/vasu-1/CalcHub"><img src="https://sloc.xyz/github/vasu-1/CalcHub" alt="total lines"/></a>
 <a href="https://github.com/vasu-1/CalcHub"><img src="https://img.shields.io/github/stars/vasu-1/CalcHub" alt="Stars"/></a>
@@ -37,7 +35,6 @@
 - Submit your changes for review.
 - And Boom! You're done 🥳
 - I will review and merge your changes into the master branch of this project. You will be automatically notified via E-mail once the changes have been merged.
-
 
 # Calculators List 📑
 
@@ -108,7 +105,6 @@ Read our [Contributing Guidelines](./.github/ContributingGuidelines.md) to learn
 ## Code Of Conduct
 
 This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/vasu-1/CalcHub/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
-
 
 ## Credits
 This project exists thanks to all the people who contribute.
