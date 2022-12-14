@@ -40,7 +40,7 @@
 
 No | Name of Calculator
 -- | --
-1 | [Affine_Cipher_Calculator](http://vashishth.me/CalcHub/Calculators/Affine_Cipher_Calculator/)
+1 | [Affine_Cipher_Calculator](./Calculators/Affine_Cipher_Calculator/)
 2 | [Age Calculator](./Calculators/Age_Calculator/)
 3 | [Arithmatic Equation   Solver](./Calculators/Arithmatic%20Equation%20Solver/)
 4 | [BaseX Calculator](./Calculators/BaseX_Calculator)
@@ -93,7 +93,7 @@ No | Name of Calculator
 51 | [Twin-Paradox Calculator](./Calculators/Twin-Paradox%20Calculator)
 52 | [Unit Converter](./Calculators/Unit%20Converter/)
 53 | [VAT_Calculator](./Calculators/VAT_Calculator/)
-54 | [Vigenere Cipher   Calculator](http://vashishth.me/CalcHub/Calculators/VigenereCipher_Calculator/)
+54 | [Vigenere Cipher   Calculator](./Calculators/VigenereCipher_Calculator/)
 55 | [Visual Type Scale   Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)
 56 | [Volume Calculator](./Calculators/Volume%20Calculator)
 57 | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)
@@ -104,7 +104,7 @@ Read our [Contributing Guidelines](./.github/ContributingGuidelines.md) to learn
 
 ## Code Of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/vasu-1/CalcHub/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by the [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## Credits
 This project exists thanks to all the people who contribute.
