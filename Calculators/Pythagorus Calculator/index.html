@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pythagorean Theorem Calculator</title>
+</head>
+<body>
+
+    <div id="class">
+    <h1>Pythagorean Theorem Calculator</h1>
+    <label for="side1">Enter the length of side 1:</label>
+    <input type="text" id="side1"><br><br>
+    <label for="side2">Enter the length of side 2:</label>
+    <input type="text" id="side2"><br><br>
+    <button onclick="calculateThirdSide()">Calculate</button><br><br>
+    <div id="result"></div>
+    </div>
+    <div class="front">
+        <h1>Pythagorean theorem </h1>
+        <p id="hi">
+            The Pythagorean theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. 
+       <br><Br>
+        </p>
+       
+        <img id="image" src="img/triangle.jfif" alt="your img">
+      
+        <br><br>
+        <p>
+        In mathematical terms, it can be expressed as:
+
+c² = a² + b²
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
