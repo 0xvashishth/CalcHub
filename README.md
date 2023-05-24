@@ -97,6 +97,7 @@ No | Name of Calculator
 55 | [Visual Type Scale   Calculator](./Calculators/Visual%20Type%20Scale%20Calculator/)
 56 | [Volume Calculator](./Calculators/Volume%20Calculator)
 57 | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)
+58 | [Pythagoras Calculator](./Calculators/Pythagorus%20Calculator/)
 
 ## Contributing Guidelines
 
