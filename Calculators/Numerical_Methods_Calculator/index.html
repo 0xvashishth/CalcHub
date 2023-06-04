@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Numerical Methods</title>
+   
+
+
+</head>
+
+<body>
+
+    <h1>Welcome to Maths Zone</h1>
+    <h2>Numerical Methods</h2>
+
+    <p>Note: Use proper brackets and use log or sqrt before the variable if you want to use that. </p>
+
+    <form id="myForm">
+        <div>
+            <label for="functionInput">Write dy/dx :</label>
+            <input type="text" id="functionInput">
+        </div>
+
+        <div>
+            <label for="x0Input">x0 value:</label>
+            <input type="text" id="x0Input">
+        </div>
+        <div>
+            <label for="y0Input">y0 value at x0:</label>
+            <input type="text" id="y0Input">
+        </div>
+
+        <div>
+            <label for="stepHeightInput">Step Height(h):</label>
+            <input type="text" id="stepHeightInput">
+        </div>
+        <div>
+            <label for="y0Input">n to find yn at xn:</label>
+            <input type="text" id="nInput">
+        </div>
+        <div>
+            <label for="method">Select Method:</label>
+            <select name="method" id="method">
+                <option value="Euler Method">Euler's Method</option>
+                <option value="Improved Euler Method">Improved Euler's Method</option>
+                <option value="R-K Method">Runge-Kutta's Method</option>
+            </select>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Solve</button>
+        </div>
+        
+        <div id="output"></div>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
