@@ -1,0 +1,44 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+
+}
+h1{
+    color: greenyellow;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+h2{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+p{
+    text-align: center;
+}
+
+form h2 {
+    font-size: 18px;
+    margin: 2px;
+}
+
+form div {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    width: 100px;
+}

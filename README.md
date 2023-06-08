@@ -98,6 +98,7 @@ No | Name of Calculator
 56 | [Volume Calculator](./Calculators/Volume%20Calculator)
 57 | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)
 58 | [Pythagoras Calculator](./Calculators/Pythagorus%20Calculator/)
+59 | [Numerical_Methods_Calculator](./Calculators/Numerical_Methods_Calculator/)
 
 ## Contributing Guidelines
 
