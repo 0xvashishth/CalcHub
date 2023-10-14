@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Time Remaining Calculator</title>
+    </head>
+    <body>
+        <div id="calculator" class="calculator">
+            <header class="header">
+                <div class="mode-switch">
+                    <label for="mode-toggle">
+                        <span id="mode">Light</span> Mode</label
+                    >
+                    <input type="checkbox" id="mode-toggle" />
+                </div>
+                <h1>Time Remaining Calculator</h1>
+            </header>
+            <main>
+                <div class="options">
+                    <label for="unit">Select unit:</label>
+                    <select id="unit">
+                        <option value="hours" selected>Hours</option>
+                        <option value="days">Days</option>
+                        <option value="years">Years</option>
+                    </select>
+                </div>
+                <div class="input-section">
+                    <div id="timeInput">
+                        <label for="time">Select time:</label>
+                        <input type="time" id="time" />
+                    </div>
+                    <div id="dateInput">
+                        <label for="date">Select date:</label>
+                        <input type="date" id="date" />
+                    </div>
+                </div>
+                <div class="calculate-button">
+                    <button id="calculate">Calculate</button>
+                </div>
+                <div class="result">
+                    <p>Time <span id="direction"></span>: <span id="time-remaining"></span></p>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
