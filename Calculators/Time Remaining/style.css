@@ -30,22 +30,30 @@ body {
     gap: 2rem;
 }
 
-main {
-    height: 75%;
-    display: grid;
-    place-content: center;
-}
 
 .mode-switch {
-    align-self: flex-end;
+	align-self: flex-end;
 }
 
 .mode-switch label {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 input[type='checkbox'] {
-    visibility: hidden;
+	visibility: hidden;
+}
+
+main {
+	height: 75%;
+	display: grid;
+	place-content: center;
+}
+
+#current-time{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 10px;
 }
 
 .options,

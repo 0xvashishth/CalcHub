@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
         <title>Time Remaining Calculator</title>
     </head>
     <body>
@@ -18,6 +19,11 @@
                 <h1>Time Remaining Calculator</h1>
             </header>
             <main>
+				<div id="current-time">
+					<h2>Today</h2>
+					<p>Current Date: <span id="current-date-display"></span></p>
+					<p>Current Time: <span id="current-time-display"></span></p>
+				</div>
                 <div class="options">
                     <label for="unit">Select unit:</label>
                     <select id="unit">

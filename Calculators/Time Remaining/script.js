@@ -8,6 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const mode = document.getElementById('mode');
     const modeToggle = document.getElementById('mode-toggle');
     const direction = document.getElementById('direction');
+    const currentDateDisplay = document.getElementById('current-date-display');
+    const currentTimeDisplay = document.getElementById('current-time-display');
+
+    // Function to update the current date and time
+    function updateCurrentDateTime() {
+        const currentTime = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentTime.toLocaleString("en-UK", options);
+        const formattedTime = currentTime.toLocaleTimeString('en-US', {
+            hour12: false,
+        });
+
+        currentDateDisplay.textContent = formattedDate;
+        currentTimeDisplay.textContent = formattedTime;
+
+        const currentDate = new Date();
+    }
+
+    // Update the current date and time initially
+    updateCurrentDateTime();
+
+    // Set up a timer to update the current date and time every second
+    setInterval(updateCurrentDateTime, 1000);
 
     // Function to toggle the visibility of the time input based on the selected unit
     function toggleTimeInputVisibility() {
@@ -84,8 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
             timeInput.blur();
             dateInput.blur();
         }
-	}
-	
+    }
+
     modeToggle.addEventListener('change', () => {
         document.body.classList.toggle('light-mode');
         calculator.classList.toggle('light-mode');
