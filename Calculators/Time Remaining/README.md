@@ -1,6 +1,7 @@
 # Time Remaining Calculator
 
-![Calculator Screenshot](screenshot.png)
+![Calculator Screenshot - Dark mode](./images/dark-mode.PNG)
+![Calculator Screenshot - Light mode](./images/light-mode.PNG)
 
 A simple "Time Remaining" calculator with options to calculate the time remaining from the current time to a future time, with units in hours, days, or years. The calculator provides a user-friendly interface with support for light and dark modes.
 
