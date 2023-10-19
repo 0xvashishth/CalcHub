@@ -1,8 +1,5 @@
 # Time Remaining Calculator
 
-![Calculator Screenshot - Dark mode](./images/dark-mode.PNG)
-![Calculator Screenshot - Light mode](./images/light-mode.PNG)
-
 A simple "Time Remaining" calculator with options to calculate the time remaining from the current time to a future time, with units in hours, days, or years. The calculator provides a user-friendly interface with support for light and dark modes.
 
 ## Features
@@ -32,10 +29,6 @@ A simple "Time Remaining" calculator with options to calculate the time remainin
 ## Authors
 
 - [aweSAM](https://github.com/awesam-XS)
-
-## Contact
-
-If you have any questions or suggestions, please feel free to reach out to [sam.kiprop23@gmail.com](mailto:sam.kiprop23@gmail.com).
 
 ## Disclaimer
 
