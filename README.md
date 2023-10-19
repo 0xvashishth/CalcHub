@@ -99,6 +99,7 @@ No | Name of Calculator
 57 | [Wind_Chill_Calculator](./Calculators/Wind_Chill_Calculator/)
 58 | [Pythagoras Calculator](./Calculators/Pythagorus%20Calculator/)
 59 | [Numerical_Methods_Calculator](./Calculators/Numerical_Methods_Calculator/)
+60 | [Time Remaining Calculator](./Calculators/Time%20Remaining/)
 
 ## Contributing Guidelines
 
