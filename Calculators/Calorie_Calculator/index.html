@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calorie Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white">
+    <div class="container">
+        <div class="mt-5 offset-sm-2 col-sm-8 box">
+            <h1 class="text-center ">Based on Mifflin-St Jeor Equation</h1>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs ps-2 pe-2">
+                <li class="nav-item">
+                    <a class="nav-link active " data-bs-toggle="tab" href="#Metric">Metric Units</a>
+                </li>
+                
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content p-2">
+                <div class="tab-pane container active container-form " id="Metric">
+                    <form class="row g-3 box-form tab-pane active" id="">
+                        <div class="col-6">
+                            <label for="mAge" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="mAge">
+                        </div>
+                        <div class="col-12">
+                            <label for="Age" class="form-label">Gender</label><br>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
+                                id="mGender">
+                                <input type="radio" class="btn-check" name="btnradio" id="mMale" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-warning" for="mMale">Male</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="mFemale" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="mFemale">Female</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="mHeight" class="form-label">Height</label>
+                            <input type="number" class="form-control" id="mHeight" placeholder="in cm">
+                        </div>
+                        <div class="col-6">
+                            <label for="mWeight" class="form-label">Weight</label>
+                            <input type="number" class="form-control" id="mWeight" placeholder="in kg">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="button" class="btn btn-success" id="mbutton">Calculate</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <h1 id="mResult"></h1>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,8 @@
+.box{
+    background-color: rgb(114, 45, 233);
+    border: 2px solid rgb(114, 45, 233);
+    border-radius: 5px;
+}
+a{
+    color: red !important; 
+}
