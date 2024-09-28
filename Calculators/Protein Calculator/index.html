@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Protein Calculator</title>
+
+    <!-- Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            color: white;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+        .sub {
+            margin-right: 500px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                background: rgb(21, 131, 185);
+                height: auto;
+                margin-right: 200px;
+            }
+        }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        
+        @media only screen and (min-width: 600px) {
+            .container {
+                background: rgb(21, 131, 185);
+            }
+        }
+        /* Medium devices (landscape tablets, 768px and up) */
+        
+        @media only screen and (min-width: 768px) {
+            .container {
+                background: rgb(21, 131, 185);
+            }
+        }
+        /* Large devices (laptops/desktops, 992px and up) */
+        
+        @media only screen and (min-width: 992px) {
+            .container {
+                background: rgb(21, 131, 185);
+            }
+        }
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        
+        @media only screen and (min-width: 1200px) {
+            .container {
+                background: rgb(21, 131, 185);
+            }
+        }
+        
+        .container {
+            width: 500px;
+            height: auto;
+            margin-left: auto;
+            background-color: ;
+            padding-left: 30px;
+            margin-top: 30px;
+        }
+        
+        h1.thick {
+            font-weight: bold;
+        }
+        
+        .btn {
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container sub">
+
+        <h1 class="text-center">Protein Calculator</h1>
+
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input class='form-control text-center' type="text" id="name" placeholder="name" autocomplete="off">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label>Height</label>
+                <input class='form-control text-center' type="text" id="height" placeholder="cm" autocomplete="off">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label>Weight</label>
+                <input class='form-control text-center' type="text" id="weight" placeholder="kg" autocomplete="off">
+            </div>
+            <hr>
+
+            <label for="sel">Active Type (select one):</label>
+            <select class="form-control" id="sel" name="sellist">
+                <option value="sedentary" style="color:black;">sedentary adult</option>
+                <option value="endurance"style="color:black;">endurance runner</option>
+                <option value="strength"style="color:black;">strength training</option>
+            </select>
+            <br>
+
+            <button type="submit" class="btn btn-primary" style="color:black; background-color:whitesmoke;">Calculate</button>
+            <ul id="results"></ul>
+            <hr>
+
+            <button type="button" id="history-button" class="btn btn-secondary" style="color:black; background-color:whitesmoke;">View History</button>
+            <hr>
+            <table id="myTable"></table>
+            <hr>
+            <hr>
+
+        </form>
+    </div>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            name = document.getElementById("name").value;
+            const height = parseInt(document.querySelector('#height').value);
+            const weight = parseInt(document.querySelector('#weight').value);
+            const selection = document.getElementById("sel").value;
+            const results = document.querySelector('#results');
+            var strResult = new String();
+
+            var date = new Date();
+
+            var pro;
+
+            var strDate = date.toUTCString();
+
+            if (name.length === 0) {
+                results.innerHTML = "Please provide your name";
+            } else if ((height === '') || (height < 0) || (isNaN(height))) {
+                results.innerHTML = "Please provide a valid height";
+            } else if (weight === '' || weight < 0 || isNaN(weight)) {
+                results.innerHTML = "Please provide a valid weight";
+            } else {
+                if (selection === "sedentary") {
+                    pro = (weight / 2.2 * 0.8).toFixed(2);
+                    strResult = "~ Require " + `<span>${pro}</span>` + " grams of protein daily." + `<br>` + "~ Record Date: " + date;
+                    results.innerHTML = strResult;
+                } else if (selection === "endurance") {
+                    pro = (weight / 2.2 * 1.4).toFixed(2);
+                    strResult = "~ Require " + `<span>${pro}</span>` + " grams of protein daily." + `<br>` + "~ Record Date: " + date;
+                    results.innerHTML = strResult;
+                } else if (selection === "strength") {
+                    pro = (weight / 2.2 * 1.8).toFixed(2);
+                    strResult = "~ Require " + `<span>${pro}</span>` + " grams of protein daily." + `<br>` + "~ Record Date: " + date;
+                    results.innerHTML = strResult;
+                }
+
+            }
+
+            var person = {
+                personHeight: height,
+                personWeight: weight,
+                personSelection: selection,
+                personDate: strDate,
+                personPro: pro
+            };
+
+
+            var userData = [];
+
+            //Check for User info
+            if (localStorage.getItem(name) !== null) {
+                userData = JSON.parse(localStorage.getItem(name));
+            }
+
+            userData.push(person);
+
+            localStorage.setItem(name, JSON.stringify(userData));
+
+
+
+            let button = document.getElementById("history-button");
+            button.addEventListener("click", viewHistory);
+
+            function viewHistory(array) {
+                var retrieveData = JSON.parse(localStorage.getItem(name));
+                console.log(retrieveData.length);
+
+                var table = document.getElementById("myTable");
+
+                for (i = 0; i < retrieveData.length; i++) {
+                    var buffer = retrieveData[i];
+
+                    var row = table.insertRow();
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    var cell4 = row.insertCell(3);
+
+
+                    cell1.innerHTML = "Height: " + buffer.personHeight + "(cm)___";
+                    cell2.innerHTML = "Weight: " + buffer.personWeight + "(lbs)___";
+                    cell3.innerHTML = "Record: " + buffer.personPro + "(protein) needed___";
+                    cell4.innerHTML = "Date: " + buffer.personDate;
+
+                }
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
